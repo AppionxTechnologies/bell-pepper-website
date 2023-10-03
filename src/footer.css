@@ -1,0 +1,39 @@
+.footer1{
+    background-color: #282828;
+    color: white;
+    padding-top: 3em;
+}
+
+.logo{
+    height: 100px;
+}
+
+.f-icon{
+   
+    color: #006769;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-color{
+    color: orange;
+}
+.input-box{
+    outline: none;
+    border:none;
+    background-color:#282828; ;
+    border-bottom: 1.5px solid white;
+    width: 250px;
+    color: azure;
+}
+.footer1 h6{
+    font-size: small;
+}
+.line-color{
+    color: white;
+}
+.copy{
+    font-size: xx-small;
+}
