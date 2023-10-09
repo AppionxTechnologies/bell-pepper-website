@@ -14,7 +14,6 @@ function App() {
 
          <Navbar />
          <Home/>
-          
          <Banner/>
          <Footer/>
    </div>
