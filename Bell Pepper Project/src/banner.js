@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 export default function Banner() {
   return (
-  
+   
       <div className="container-fluid">   
             <div className="boxs">
               <img className="icon-1" src={Image1} alt="Quality Food" />

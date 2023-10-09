@@ -9,7 +9,7 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import ourMenu from "../../assets/our-menu.png";
+import ourMenu from "../../assets/Crispy.png";
 import IconButton from '@mui/joy/IconButton';
 
 
@@ -38,14 +38,14 @@ export default function SubTab() {
         <Tab disableIndicator sx={{border:'1px solid #009E60',color:'#009E60'}}>FIRED RICE</Tab>
       </TabList>
       <TabPanel value={0}>
-      <Card sx={{ width: 320 }}>
+      <Card sx={{ width: 320 }} className="card-sub-menu">
      
-     <AspectRatio minHeight="120px" maxHeight="200px">
+     <AspectRatio >
        <img
          src={ourMenu}
-         srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
          loading="lazy"
          alt=""
+         className="sub-menu-img"
        />
      </AspectRatio>
      <CardContent orientation="horizontal">
@@ -58,7 +58,7 @@ export default function SubTab() {
        <Button
          variant="solid"
          size="md"
-         aria-label="Explore Bahamas Islands"
+         
          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
        >
          View
@@ -72,7 +72,6 @@ export default function SubTab() {
      <AspectRatio minHeight="120px" maxHeight="200px">
        <img
          src={ourMenu}
-         srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
          loading="lazy"
          alt=""
        />

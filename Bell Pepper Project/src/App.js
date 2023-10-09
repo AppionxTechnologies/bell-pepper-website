@@ -15,7 +15,7 @@ function App() {
    <div className='App'> 
 
          <Navbar />
-        
+         
    </div>
    <div className=""></div>
       <Routes>
