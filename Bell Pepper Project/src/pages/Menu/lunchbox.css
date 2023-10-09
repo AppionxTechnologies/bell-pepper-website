@@ -21,3 +21,11 @@
     border: #009E60;
     color: #009E60;
   }
+  .card-sub-menu{
+    padding: 0px !important;
+    width: 100%;
+  }
+  .sub-menu-img{
+    height:300px;
+    align-items: center;
+  }
