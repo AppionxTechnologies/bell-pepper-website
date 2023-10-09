@@ -1,0 +1,23 @@
+
+.tab_spacing {
+    min-width:"25%" !important;
+    color:#009E60 !important;
+
+  }
+  .heading{
+    font-weight: 800;
+    padding:0px;
+    line-height: 5px;
+  }
+  .timing{
+    font-size: 11px;
+    font-weight: 700;
+    color: red;
+  }
+  .content{
+    font-size: 10px;
+  }
+  .tablist{
+    border: #009E60;
+    color: #009E60;
+  }
