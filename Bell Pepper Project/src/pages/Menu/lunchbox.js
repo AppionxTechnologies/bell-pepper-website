@@ -67,10 +67,20 @@ export default function BasicTabs() {
         </Container>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+      <Container style={{paddingLeft:"0%"}}>
+            <h2 className='heading'>TAKEOUT</h2>
+            <span className='timing'>Time: 12p.m - 4p.m </span>
+            <p className='content'>For takeaway, Pickup or Dine in only</p>
+        <SubTab />
+        </Container>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+      <Container style={{paddingLeft:"0%"}}>
+            <h2 className='heading'>MEAL DEALS</h2>
+            <span className='timing'>Time: 12p.m - 4p.m </span>
+            <p className='content'>For takeaway, Pickup or Dine in only</p>
+        <SubTab />
+        </Container>
       </CustomTabPanel>
     </Box>
   );

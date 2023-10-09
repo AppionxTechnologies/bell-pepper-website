@@ -15,6 +15,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import Banner from '../../banner';
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -60,8 +61,8 @@ export default function Home() {
         </p>
       </div>
 
-      {/* explore menu section */}
-      <section className="our_menu">
+       {/* explore menu section */}
+       <section className="our_menu">
         <Container maxWidth="lg">
           <div className="common_title">
             <h2>EXPLORE OUR MENU</h2>
@@ -101,8 +102,8 @@ export default function Home() {
       </section>
 
       {<Meals/>}
-      {/* our loyalty section */}
-      <section className="our_menu">
+     {/* our loyalty section */}
+     <section className="our_menu">
         <Container maxWidth="lg">
           <div className="common_title">
             <h2>Our Loyalty & Rewards Program</h2>
@@ -113,7 +114,7 @@ export default function Home() {
             spacing={{ xs: 3, md: 6 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            <Grid item xs={12} sm={12} md={6}>
+            <Grid item xs={12} sm={12} md={6} >
               <h3 className="loyal-menu">Reward yourself with our new app</h3>
               <p>
                 Unlock a delicious new world of perks when you join our free
@@ -167,6 +168,8 @@ export default function Home() {
         </Container>
         <hr className="line-menu"></hr>
       </section>
+        {/* services section */}
+      <Banner/>
     </>
   );
 }
