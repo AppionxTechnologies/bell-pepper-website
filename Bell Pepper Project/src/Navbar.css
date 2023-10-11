@@ -10,6 +10,7 @@
   background-color: #009E60;
   color: #FFFFFF;
   font-weight: bold;
+
 }
 /* left side */
 .first-div{
@@ -21,6 +22,7 @@
 }
 .first-div > p{
   margin-top: 15px;
+
 }
 .first-div select{
   font-weight: bold;
@@ -29,11 +31,8 @@
   outline: none;
   color: white;
 }
-
 .sec-div{
-
   margin-right: 15%;
-
 }
 
 /* right side */
@@ -55,6 +54,7 @@
 .h-header-icon:first-child>p{
   font-size: 12px;
   padding-top: 10px;
+
 }
 .img{
  height: 30px;
@@ -74,9 +74,12 @@
 }
 
 .img2{
-  height: 70px;
-
+  height: 60px;
 }
+
+
+
+
 
 .bar-icons{
   display: none;
@@ -84,6 +87,12 @@
 .logo-icons{
 display: none;
 }
+
+
+
+
+
+
 
 /* Phone Style  */
 .phone-style{
@@ -109,10 +118,53 @@ padding:  1rem;
   font-size: 1.5rem;
   top: 0;
 }
+
+.pop-all-itmes{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9DA03;
+  display: none;
+
+}
+
+
+.pop-all-itmes button
+{
+  
+  border: none;
+  outline: none;
+  padding:  0 10px;
+  background-color: white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+.pop-items{
+  display: flex;
+  gap: 10px;
+}
+.pop-img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+ }
 /* Phone Style  */
 
+
+
+
+
+
+
+
+
+
+
 /* Media  Querry */
-@media (max-width:768px) {
+@media (max-width:400px) {
 .first-div, .third-div{
     display: none;
     
@@ -130,9 +182,13 @@ padding:  1rem;
     margin-right: 20px;
     display: block;
     color: yellow;
+   
   }
   .navbar{
-    border-bottom: 5px solid yellow;
+    border-bottom: 2px solid yellow;
   }
 
+  .pop-all-itmes{
+    display: flex;
+  }
 }

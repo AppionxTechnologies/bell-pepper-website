@@ -70,11 +70,7 @@ export default function Meals() {
               <div className="icons ">
                 <FaArrowCircleDown />
               </div>
-            </div>
-
-            {/*  silder */}
-
-            {/*  silder */}
+            </div>            
           </div>
         </div>
       </div>

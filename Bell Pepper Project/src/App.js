@@ -8,22 +8,23 @@ import Navbar from './navbar';
 import Footer from './footer';
 
 
+
 function App() {
   return (
    <>
      <BrowserRouter>
-   <div className='App'> 
-
-         <Navbar />
+         <div className='App'> 
+               <Navbar />  
         
-   </div>
-   <div className=""></div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+      <div className=""></div>
+         <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/menu" element={<Menu />} />
+             
         </Routes>
         <Footer/>
-        </BrowserRouter>
+        </div>
+   </BrowserRouter>
          </>
   );
 }

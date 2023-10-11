@@ -1,0 +1,141 @@
+.signin{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  /* background-color:rgba(0,0, 0); */
+  z-index: 99;
+  
+
+}
+
+.main-container{
+  min-height: 400px;
+  text-align: center;
+  width:  400px;
+  background-color: white;
+  border-radius: 10px;
+  padding:0.5rem 2rem 1rem;
+  margin: 6% auto;
+}
+
+.computer-img{
+  height: 25%;
+  width: 25%;
+  margin:0.5rem;
+}
+
+
+form .para{
+  font-weight: bold;
+  margin: 0;
+}
+
+form .para:nth-of-type(2)
+{
+  font-weight: 300;
+  font-size: 14px;
+}
+.hr{
+  border: 1px solid black;
+  width: 93%;
+  margin-left:10px;
+}
+
+.input{
+  width: 96%;
+  padding: 5px 9px;
+  border: 2px solid ;
+  border-radius: 30px;
+}
+
+.input-par
+{
+  position: relative;
+}
+
+.eye_icon_btn{
+
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+.forgot-password
+{
+  text-align: right;
+}
+
+.forgot-password a{
+  color: green;
+}
+
+/* .signin-btn{
+  width: 96% !important;
+  background-color: red;
+} */
+
+.signin-btn{
+  background-color: #009e60;
+  color: #fff;
+  border: none;
+  width: 96%;
+  padding:  5px 10px;
+  border: 2px solid ;
+  border-radius: 30px;
+}
+
+/* Media Screen */
+
+@media (max-width:400px) {
+  .signin{
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    margin-top: 70px;
+  }
+  .main-container{
+    min-height: 100%;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+    margin: 0;
+  }
+  
+.computer-img
+  {
+      height: 20%;
+      width: 20%;
+      margin:0.5rem;
+    }
+form .para:nth-of-type(2)
+    {
+      font-weight: 300;
+      font-size: 12px;
+    }
+    .input{
+      width: 96%;
+      padding:  5px 10px;
+      border: 2px solid ;
+      border-radius: 30px;
+    }
+
+    .eye_icon_btn{
+
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .signin-btn{
+      background-color: #009e60;
+      color: #fff;
+      border: none;
+      width: 96%;
+      padding:  5px 10px;
+      border: 2px solid ;
+      border-radius: 30px;
+    }
+
+}
