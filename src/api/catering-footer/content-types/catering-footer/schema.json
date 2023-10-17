@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catering_footers",
+  "info": {
+    "singularName": "catering-footer",
+    "pluralName": "catering-footers",
+    "displayName": "catering_footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer_heading": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "footer_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

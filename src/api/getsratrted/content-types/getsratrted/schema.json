@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "getsratrteds",
+  "info": {
+    "singularName": "getsratrted",
+    "pluralName": "getsratrteds",
+    "displayName": "getsratrted"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "get_heading": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "get_content": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "get_button": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
