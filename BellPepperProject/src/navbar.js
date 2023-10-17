@@ -12,6 +12,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import SignIn from "./signin/signin";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
+import Cart from "./cart";
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -22,6 +23,8 @@ const Navbar = () => {
 
   const [signIn,setSignIn] = useState(false)
   const [aboutUs,setAboutUs] = useState(false)
+
+  const [cartPop,setCartPop] = useState(false)
   
  
   const handlePopMenu = () =>{
@@ -36,7 +39,9 @@ const Navbar = () => {
     setPopOpenHead(false)
   }
 
-
+const handleCartPop = () =>{
+  setCartPop(true)
+}
  
   return (
     <>
@@ -99,7 +104,7 @@ const Navbar = () => {
 
           <div className="h-header-icon">
         
-            <img src={cart} className="img" alt="" />
+            <img src={cart} className="img" alt="" onClick={handleCartPop}/>
             <p>17.98 </p>
           </div>
         </div>
@@ -124,6 +129,8 @@ const Navbar = () => {
         signIn  && < SignIn/>
         }
         {/* signInPop */}
+
+       {cartPop  && <Cart/>}
 
 
       
