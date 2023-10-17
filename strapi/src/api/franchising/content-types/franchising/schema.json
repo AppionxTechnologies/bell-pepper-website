@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "franchisings",
+  "info": {
+    "singularName": "franchising",
+    "pluralName": "franchisings",
+    "displayName": "franchising"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "franchising_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "franchising_content": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

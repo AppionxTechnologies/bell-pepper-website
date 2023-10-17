@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caterings",
+  "info": {
+    "singularName": "catering",
+    "pluralName": "caterings",
+    "displayName": "catering",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "catering_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "catering_content": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "catering_button": {
+      "type": "string"
+    }
+  }
+}

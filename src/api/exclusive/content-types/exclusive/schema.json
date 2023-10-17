@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exclusives",
+  "info": {
+    "singularName": "exclusive",
+    "pluralName": "exclusives",
+    "displayName": "exclusive",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exclusive_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "exclusive_heading": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exclusive_contents",
+  "info": {
+    "singularName": "exclusive-content",
+    "pluralName": "exclusive-contents",
+    "displayName": "exclusive-content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exclusive_content": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "exclusive_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
