@@ -7,23 +7,28 @@ import Menu from './pages/Menu/lunchbox';
 import Navbar from './navbar';
 import Footer from './footer';
 
+// import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
+
+
 
 function App() {
   return (
    <>
      <BrowserRouter>
-   <div className='App'> 
-
-         <Navbar />
+         <div className='App'> 
+               <Navbar />  
+       
         
-   </div>
-   <div className=""></div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+      <div className=""></div>
+         <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/menu" element={<Menu />} />
+              {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
+             
         </Routes>
         <Footer/>
-        </BrowserRouter>
+        </div>
+   </BrowserRouter>
          </>
   );
 }
