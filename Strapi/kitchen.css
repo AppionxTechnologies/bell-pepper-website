@@ -1,0 +1,60 @@
+.body{
+    background-color: white;
+    color:black;
+    height: 500px;
+}
+.kitchen-img1{
+    height: 500px;
+    
+}
+.kit-h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.kit-p1{
+    font-size: large;
+}
+.first-div{
+   
+    width: 500px;
+}
+.left-cont{
+    width: 400px;
+}
+.left-cont1{
+    width: 500px;
+}
+.second_div{
+   
+    display: flex;
+    gap: 5px;
+
+
+}
+.kit-h1{
+    font-size: 45px;
+}
+.left-box{
+    margin-left: 9%;
+    margin-top: 10%;
+
+   
+}
+.content-1{
+    width: 190px;
+}
+.kitchen-img2{
+    height: 500px;
+    margin-left: 5%;
+}
+.kit-h6{
+    font-size: small;
+    color:#009E60;
+    font-weight: 700;
+}
+.kit-p3{
+    font-size: small;
+}
+.kit-p2{
+    font-size: large;
+}
