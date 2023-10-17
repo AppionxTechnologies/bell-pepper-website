@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kitchens",
+  "info": {
+    "singularName": "kitchen",
+    "pluralName": "kitchens",
+    "displayName": "kitchen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kitchen_heading": {
+      "type": "string",
+      "required": true
+    },
+    "kitchen_content": {
+      "type": "string"
+    },
+    "kitchen_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
