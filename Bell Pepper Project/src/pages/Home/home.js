@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState, useEffect, useContext, useCallback} from "react";
 import Meals from './value-meals';
 
 import Image1 from "../../assets/food-4.jpg";
@@ -16,19 +16,15 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Banner from '../../banner';
-
+import { categoryService } from '../../services';
+import { AuthContext } from '../../components/context/AuthContext';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import axios from 'axios';
 
 
 export default function Home() {
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  }));
+
   return (
     <>
       <div className="carousel-container">
@@ -93,7 +89,9 @@ export default function Home() {
             </Grid>
             <Grid xs={12} sm={12} md={12} className="menu-btn-align">
               <Button className="menu-btn" variant="contained">
+              <a href="/menu" style={{textDecoration: 'none', color: '#fff'}}>
                 VIEW FULL MENU
+                </a>
               </Button>
             </Grid>
           </Grid>
