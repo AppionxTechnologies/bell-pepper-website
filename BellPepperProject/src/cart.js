@@ -18,7 +18,7 @@ const  Cart = () => {
                         <h6>Change</h6>
                         </div>
                         <div>
-                        <img className="" src={}  />
+                        
                         </div>
                     </div>
                     
