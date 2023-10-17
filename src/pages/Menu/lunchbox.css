@@ -21,3 +21,58 @@
     border: #009E60;
     color: #009E60;
   }
+  .card-sub-menu{
+    padding: 0px !important;
+    width: 100%;
+  }
+  .sub-menu-img{
+    height:300px !important;
+  }
+  .sub-menu{
+    padding: 10px !important;
+    height: 300px !important;
+    background-color: #ffe6d7;
+  }
+  .menu-desc{
+    color: #009E60 !important;
+  }
+  .card-content{
+    padding:10px !important;
+  }
+  .m-desc{
+    color: #009E60 !important;
+    padding-top: 10px;
+  }
+  .view-btn{
+    background: none !important;
+    color: black !important;
+    font-size: 10px !important;
+    border: 1px solid gray !important;
+    padding: 5px 10px;
+    border-radius: 50px !important;
+    margin-top:5px !important;
+    text-decoration: underline !important;
+  }
+  .full-btn{
+    background: #009E60 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+  }
+  .detail-img{
+    background-color: #ffe6d7 !important;
+  }
+  .main-grid{
+    text-align: left !important;
+    padding-left: 15px !important;
+    border: none !important;
+  }
+  .addons-heading{
+    background-color: #dddada;
+    font-weight: 700  !important;
+    color: #464b50  !important;
+    font-size: 18px  !important;
+    padding: 15px  !important;
+    margin-top: 10px !important;
+    width:440px;
+    margin-left: -15px !important;
+  }

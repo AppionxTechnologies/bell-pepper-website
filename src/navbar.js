@@ -74,7 +74,7 @@ const handleCartPop = () =>{
 
                <div className="navbar-left">
                             <nav>
-                                <a href="#ourmenu">OUR MENU</a>
+                                <a href="menu">OUR MENU</a>
                                 <a href="#loaction"> LOCATIONS <MdKeyboardArrowDown/></a>
                                 <a href="#" onClick={() => setAboutUs((prev) => !prev)}> ABOUT US <MdKeyboardArrowDown/> 
                                  { aboutUs &&  <div className="about-us" >
@@ -86,7 +86,9 @@ const handleCartPop = () =>{
                             </nav>
                    </div>
   <div className="sec-div">
+  <a href="/">
 {     !popOpen &&      <img src={logo} className="img2"  />}
+</a>
         </div>
 
         <div className="third-div">
