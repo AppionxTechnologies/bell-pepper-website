@@ -1,0 +1,94 @@
+.cancelmsg {
+    position: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  .cancelcontainer {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem 1rem;
+    margin: 0% auto;
+  }
+  .close{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-inline-start: 210px;
+    width: 10%;
+    margin-bottom: 20px;
+  }
+  .message {
+    font-weight: 700;
+    white-space: nowrap;
+  } 
+  .paracontent {
+    font-size: 20px; 
+  }
+  
+  .tryagain {
+    background-color: #009e60;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    max-width: 100%;
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 10px 120px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Screen */
+  
+  @media (max-width: 400px) {
+    .cancelmsg {
+      height: auto;
+      z-index: 1;
+      width: 100%;
+      margin-top: 30px;
+      align-items: center;
+    }
+  
+    .cancelcontainer {
+      min-height: 100%;
+      width: 100%;
+      padding: 1rem;
+    }
+    .close{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-inline-start: 0px;
+      }
+    .messages {
+      font-size: 18px;
+      white-space: nowrap;
+    }
+    .paracontent {
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .tryagain {
+      background-color: #009e60;
+      color: #fff;
+      font-size: 12px;
+      border: none;
+      padding: 6px 50px;
+      border: 2px solid;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  
