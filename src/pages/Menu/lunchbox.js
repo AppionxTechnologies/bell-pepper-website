@@ -5,8 +5,9 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import SubTab from './sub_tab';
-import { Container } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import "./lunchbox.css";
+import Image3 from "../../assets/food-2.jpg";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,7 +50,11 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+   
+    <Box sx={{ width: '100%', }}>
+       <div sx={{ width: '100%', }}>
+       <img  src={Image3} alt="Image 3" className="img-banner" />
+    </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab style={{minWidth:"25%"}} TabIndicatorProps={{style: {backgroundColor:'#009E60'}}} label="LUNCH BOX" {...a11yProps(0)} />

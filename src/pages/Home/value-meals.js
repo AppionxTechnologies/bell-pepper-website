@@ -1,13 +1,29 @@
-import React from "react";
+import React, { Component }  from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image1 from "../../assets/meals.png";
+import ourMenu from "../../assets/our-menu.png";
 import ImageLine from "../../assets/special meals shapes 2.png";
-
+import "../../assets/css/slick.css";
+import "../../assets/css/slick-theme.css";
+import Slider from "react-slick";
 import "./value-meals.css";
-
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 
 export default function Meals() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    beforeChange: function(currentSlide, nextSlide) {
+      console.log("before change", currentSlide, nextSlide);
+    },
+    afterChange: function(currentSlide) {
+      console.log("after change", currentSlide);
+    }
+  };
   return (
     <>
       <div className="valueMeals">
@@ -27,7 +43,7 @@ export default function Meals() {
             </div>
 
               <div className="col-lg-3">
-                <img className="mealsfood" src={Image1} alt="Quality Food" />
+                <img className="mealsfood" src={ourMenu} alt="Quality Food" />
               </div>
             </div>
 
@@ -74,6 +90,7 @@ export default function Meals() {
           </div>
         </div>
       </div>
+      <hr className="line-menu"></hr>
     </>
   );
 }

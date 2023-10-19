@@ -1,129 +1,129 @@
-.meals1{
-    height: 100px;
+.meals1 {
+  height: 100px;
 }
-.meals{
-    height: 100px;
-    
+.meals {
+  height: 100px;
 }
-.meals2{
-    height: 100px;
+.meals2 {
+  height: 100px;
 }
-.box1{
-    margin-left: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    box-shadow: rgba(1, 1, 1,0.30) 0px 5px 15px;
-    display: flex;
-    align-items: center;
-}
-
-.box2{
-    background-color: #009E60;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    display: flex;
-    align-items: center;
-}
-.box3{
-    margin-left: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    box-shadow: rgba(1, 1, 1,0.30) 0px 5px 15px;
-    display: flex;
-    align-items: center;
-}
-.size{
-    font-size: x-large;
-    font-weight: bolder;
-    text-align: center;
+.box1 {
+  margin-left: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
+  display: flex;
+  align-items: center;
 }
 
-.meals-line{
-   
-    position: relative;
+.box2 {
+  background-color: #009e60;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  display: flex;
+  align-items: center;
 }
-.meals-line-img{
-    height: 450px;
-    width: 500px; 
-  
+.box3 {
+  margin-left: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
+  display: flex;
+  align-items: center;
 }
-
-.mealsfood{
-    height: 250px;
-    width: 350px;
-    position: absolute;
-    top: 25%;
-    right: 0%;
-}
-
-
-.size-food{
-position: absolute;
-top: 35%;
-left: 10%;
+.size {
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
 }
 
+.meals-line {
+  position: relative;
+}
+.meals-line-img {
+  height: 450px;
+  width: 500px;
+}
+
+.mealsfood {
+  height: 363px;
+  width: 350px;
+  position: absolute;
+  top: 14%;
+  right: 0%;
+}
+
+.size-food {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
 
 /* icons Arrow */
-.icons
-{
-    color: #009E60;
-    font-size: 20px;
+.icons {
+  color: #009e60;
+  font-size: 20px;
 }
-.main-box{
-    position: relative;
+.main-box {
+  position: relative;
 }
-.icons:nth-child(1){
-    position: absolute;
-    right: 40px;
-    top: -20px;
+.icons:nth-child(1) {
+  position: absolute;
+  right: 40px;
+  top: -20px;
 }
-.icons:last-child{
-    position: absolute;
-    right: 40px;
-    bottom: -50px;
-}
-
-.phone-style{
-   display: none;
+.icons:last-child {
+  position: absolute;
+  right: 40px;
+  bottom: -50px;
 }
 
+.phone-style {
+  display: none;
+}
 
 /* Media Querry */
-@media (max-width:768px) {
-    .size-food {
-        display: flex;
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-    .mealsfood{
-        display: none; 
-    }
-    .main-box{
-        display: none;
-    }
-    .phone-style{
-   
-        display: block;
-        position: absolute;
-        top: 100%;
-        left:0px;
-        z-index: 999;
-        width: 100%;
-        background-color: #009E60;
-        text-align: center;
-    }
+@media (max-width: 768px) {
+  .size-food {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .mealsfood {
+    display: none;
+  }
+  .main-box {
+    display: none;
+  }
+  .phone-style {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    background-color: #009e60;
+    text-align: center;
+  }
 
-    .phone-style > select{
-        background-color: #009E60;
-        color: white;
-        display: block;
-        width: 100%;
-        text-align: center;
-        }
+  .phone-style > select {
+    background-color: #009e60;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 
-        .meals-line-img{
-            display: none;
-        }
+  .meals-line-img {
+    display: none;
+  }
+}
+.line-menu {
+  width: 84%;
+  margin-left: 6%;
+}
+.valueMeals {
+  margin-top: 60px !important;
+  margin-bottom: 70px !important;
 }
