@@ -1,0 +1,136 @@
+.orderconfirm {
+  position: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.3);  */
+  z-index: 99;
+}
+.main-containerr {
+  min-height: 400px;
+  text-align: center;
+  width: 450px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 0.5rem 2rem 1rem;
+  margin: 0% auto;
+}
+.form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "poppins";
+}
+.inputs {
+  width: 80%;
+  padding: 8px 8px;
+  border: 2px solid;
+  border-radius: 30px;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.inputs::placeholder,
+.inputs[type="text"] {
+  font-size: 16px;
+  font-family: "poppins";
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-inline-start: 40px;
+  font-family: "poppins";
+}
+.checkbox label{
+    padding: 0px 10px;
+}
+.checkbox input[type="checkbox"] {
+  width: 20px; 
+  height: 20px;
+}
+input[type=checkbox] {
+    accent-color: #009e60 ;
+  }
+.btn-button {
+  background-color: #009e60;
+  color: #fff;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+  font-family: "poppins";
+  font-weight: 600;
+  padding: 10px 10px;
+  border: 2px solid;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 15px; 
+}
+
+/* Media Screen */
+
+@media (max-width: 400px) {
+  .orderconfirm {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-top: 30px;
+  }
+  .main-containerr {
+    min-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+    margin: 0;
+  }
+  .form-title {
+    white-space: nowrap;
+  }
+  .inputs {
+    width: 100%;
+    padding: 8px 8px;
+  }
+  .inputs::placeholder,
+  .inputs[type="text"] {
+    font-size: 14px;
+    font-family: "poppins";
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-inline-start: 5px;
+    font-family: "poppins";
+  }
+  .checkbox label{
+      padding: 0px 10px;
+      white-space: nowrap;
+      font-size: 14px;
+  }
+  .checkbox input[type="checkbox"] {
+    width: 15px; 
+    height: 15px;
+  }
+  input[type=checkbox] {
+      accent-color: #009e60 ;
+    }
+  .btn-button {
+    background-color: #009e60;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    margin-top: 15px;
+  }
+}
