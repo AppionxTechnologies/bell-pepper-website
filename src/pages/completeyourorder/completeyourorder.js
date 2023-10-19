@@ -48,13 +48,13 @@ export default function CompleteYourOrder() {
                 <span className="fw-bold">Coolock</span>
               </div>
               <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>XXXXX</span>
+                <span>north street</span>
               </div>
               <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>YYYYYYY</span>
+                <span>erode</span>
               </div>
               <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>ZZZZZZZZZZ</span>
+                <span>tamil nadu</span>
               </div>
             </div>
           </div>

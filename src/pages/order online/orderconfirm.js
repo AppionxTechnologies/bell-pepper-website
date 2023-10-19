@@ -14,7 +14,7 @@ export default function OrderConfirm() {
               className="inputs"
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3"> 
             <input
               type="text"
               placeholder="Apartment number or suit"

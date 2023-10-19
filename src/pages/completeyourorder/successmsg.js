@@ -16,6 +16,6 @@ export default function SuccessMsg() {
             </form>
           </div>
         </div>
-      );
+      ); 
     }
     

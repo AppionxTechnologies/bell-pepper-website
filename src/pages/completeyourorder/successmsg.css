@@ -29,9 +29,9 @@
     margin-bottom: 20px;
     margin-inline-start: 220px;
   }
-.message {
+.message  {
   font-weight: 700;
-  white-space: nowrap;
+  white-space: nowrap; 
 }
 .textcontent {
   font-size: 20px;

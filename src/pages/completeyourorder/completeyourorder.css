@@ -106,9 +106,9 @@
     align-items: center;
   }
   
-  .arrow {
+  .arrow  {
     width: 40px;
-    height: 40px;
+    height: 40px; 
   }
   
   .yourorder {
