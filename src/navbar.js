@@ -12,7 +12,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import SignIn from "./signin/signin";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
-import Cart from "./cart";
+import Cart from "./pages/mycart/mycart"
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
     setPopOpenHead(false)
   }
 
-const handleCartPop = () =>{
+const ToggleSidebar= () =>{
   setCartPop(true)
 }
  
@@ -67,7 +67,7 @@ const handleCartPop = () =>{
           <p>LOCATIONS</p>
        <div>
         <p>ABOUT US</p>
-           <MdKeyboardArrowDown className="arrow-down"/>
+           <MdKeyboardArrowDown className="arrow-down"/> 
        </div>
           <p>CATERING</p>
         </div>}
@@ -106,7 +106,7 @@ const handleCartPop = () =>{
 
           <div className="h-header-icon">
         
-            <img src={cart} className="img" alt="" onClick={handleCartPop}/>
+            <img src={cart} className="img" alt="" onClick={ToggleSidebar}/>
             <p>17.98 </p>
           </div>
         </div>
