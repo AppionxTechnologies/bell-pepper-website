@@ -16,7 +16,7 @@ export default function kitchen() {
                                 <h1 className='kit-h1 '>Your kitchenaway from home</h1>
                                 <p className='kit-p1'>We’re in the business of feedingpeople, and we’re out tochange what that means.</p>
                             </div>
-                        </div>
+                        </div> 
                         <div className='col-lg-6 '>
                             <img
                                 src={img1}

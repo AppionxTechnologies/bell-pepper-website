@@ -23,7 +23,7 @@ const NewAboutUs = () => {
                             <img src={logo} alt="" className="about-img" />
                             <h2 className="img-text">REWARDS</h2>
                             </Link>
-                        </div>
+                        </div> 
                 </div>
                 <div className="About-us-Text">
                     <a href="/catering"><span className="span-text"> CATERING</span></a>

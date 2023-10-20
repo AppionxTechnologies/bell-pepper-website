@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 export default function Allergen() {
 
 
-    return (
+    return ( 
         <div>
             <div className='body'>
                 <div className='col-lg-12 text-center'>

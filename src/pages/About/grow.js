@@ -9,7 +9,7 @@ import iconimg3  from "../../assets/Ongoing support-06.svg";
 const Grow = () => {
   return (
     <>
-      <div className="Make_Order">
+      <div className="Make_Order"> 
         <div className="order-left">
           <div className="order-h">
             <h1 className="grow-h1">Grow your success</h1>
