@@ -24,7 +24,7 @@ import CancelMsg from "./pages/completeyourorder/cancelmsg";
 
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
 
-function App() {
+function App() { 
   return (
     <>
       <BrowserRouter>

@@ -18,7 +18,7 @@ const NewAboutUs = () => {
                             <h2 className="text-sec">GROW WITH US</h2></Link>
                         </div>
                     
-                        <div className="About-us-Img">
+                        <div className="About-us-Img"> 
                         <Link to="/makeorder">
                             <img src={logo} alt="" className="about-img" />
                             <h2 className="img-text">REWARDS</h2>

@@ -18,7 +18,7 @@ const Makeorder = () => {
           <div className="order-h">
             <h1>MAKE ORDER</h1>
             <h1>MORE EXCITING</h1>
-            <h1> THAN EVER </h1> 
+            <h1> THAN EVER </h1>  
           </div>
 
           <div className="order-para">
