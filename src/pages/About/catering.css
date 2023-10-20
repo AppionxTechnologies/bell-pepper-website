@@ -1,0 +1,40 @@
+.cat-h1{
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.cat-btn{
+    border:none;
+    font-size: small;
+    font-weight: bold;
+    padding: 14px 25px;
+    border-radius: 30px;
+    background-color: #009E60;
+    color: white;
+    margin-top: 3%;
+    margin-left: 40%;
+    width: 300px;
+}
+.cateering-img{
+    margin-left: 15%;
+    height: 600px;
+}
+.cat-h6{
+    font-size: small;
+    color: #009E60;
+    font-weight: bold;
+}
+.cat-p2{
+    font-size: small;
+}
+.col-div{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.sec-body{
+    background-image: url(../../assets/catering.jpg);
+}
+.cat-img{
+    height: 100px;
+    margin-right: 20%;
+}

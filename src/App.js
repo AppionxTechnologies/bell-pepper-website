@@ -6,16 +6,20 @@ import Menu from "./pages/Menu/lunchbox";
 import Menu_Detail from "./pages/Menu/menu_detail";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import Allergen from "./pages/cms/allergen";
-import Kitchen from "./pages/cms/kitchen";
-import Makeorder1 from "./pages/cms/makeorde1";
-import Catering from "./pages/cms/catering";
+
+import Allergen from "./pages/About/allergen";
+import Kitchen from "./pages/About/kitchen";
+import Makeorder from "./pages/About/makeorder";
+import Catering from "./pages/About/catering";
+import Grow from "./pages/About/grow";
+
 import Catering_Menu from "./pages/catering/lunchbox";
 import Orderonline from "./pages/order online/orderonline";
 import OrderConfirm from "./pages/order online/orderconfirm";
 import CompleteYourOrder from "./pages/completeyourorder/completeyourorder";
 import SuccessMsg from "./pages/completeyourorder/successmsg";
 import CancelMsg from "./pages/completeyourorder/cancelmsg";
+
 
 
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
@@ -33,16 +37,19 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/menu-detail" element={<Menu_Detail />} />
             {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
-            <Route path="/allergen" element={<Allergen />} />
-            <Route path="/kitchen" element={<Kitchen />} />
-            <Route path="/grow-success" element={<Makeorder1 />} />
-            <Route path="/catering" element={<Catering />} />
+
             <Route path="/catering-menu" element={<Catering_Menu />} />
             <Route path="/completeorder" element={<CompleteYourOrder />} />
             <Route path="/success" element={<SuccessMsg />} />
             <Route path="/cancel" element={<CancelMsg />} />
             <Route path="/orderonline" element={<Orderonline />} />
             <Route path="/order" element={<OrderConfirm />} />
+            <Route path="/allergen" element={<Allergen />} />
+            <Route path="/kitchen" element={<Kitchen />} />
+            <Route path="/makeorder" element={<Makeorder />} />
+            <Route path="/catering" element={<Catering />} />
+            <Route path="/grow" element={<Grow />} />
+
           </Routes>
           <Footer />
         </div>
