@@ -122,15 +122,15 @@ export default function CompleteYourOrder() {
             <div className="col-12">
               <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
                 <span>Subtotal</span>
-                <span>17.98</span>
+                <span>&#8364;17.98</span>
               </div>
               <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
                 <span>Tax</span>
-                <span>00.00</span>
+                <span>&#8364;00.00</span>
               </div>
               <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
                 <span className="fw-bold">Total</span>
-                <span className="fw-bold">17.98</span>
+                <span className="fw-bold">&#8364;17.98</span>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function CompleteYourOrder() {
           <hr className="hr" />
           <Link to="/success" className="link">
             <button className="pay" type="button">
-              PLACE ORDER- 17.98
+              PLACE ORDER- &#8364;17.98
             </button>
           </Link>
         </form>

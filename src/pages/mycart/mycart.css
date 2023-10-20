@@ -1,0 +1,236 @@
+.mycart{
+    height: 145vh;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+}
+.bar{
+    width: 60%;
+}
+.hidden {
+    display: none;
+  }
+.sidebar{
+    width: 40%;
+    background-color: white;
+}
+.title{
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carttopic{
+    margin-inline-start: 240px;
+}
+.crossicon{
+    width: 30px;
+    height: auto;
+    margin-inline-end: 20px;
+}
+.pickup{
+    height: 40px;
+    background-color: lightgray;
+}
+.pickup span{
+    font-size: 14px;
+}
+.changes{
+    color:#009e60;
+}
+.amount{
+    display: flex;
+  flex-direction: column;
+  margin-inline-start: 10px;
+  margin-top: -100px;
+}
+.imgcontent {
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mealimg {
+    display: flex;
+    align-items: center;
+  }
+
+.mealimg img{
+    width: 90px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.contents {
+    display: flex;
+    flex-direction: column;
+  }
+.contents h6{
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: 24px;
+}
+.contents p{
+    font-size: 11px;
+    white-space: nowrap;
+    color: #009e60;
+}
+/* .viewallergen img{
+    width: 30px;
+    height: 30px;
+} */
+.viewallergen{
+    max-width: 100px;
+    background: none !important;
+    color: black !important;
+    font-size: 10px !important;
+    border: 1px solid gray !important;
+    border-radius: 50px !important;
+    text-decoration: underline !important;
+    margin-inline-start: 24px;
+    padding: 3px;
+  }
+  .calcbutton{
+    max-width: 100px;
+    background: none !important;
+    color: black !important;
+    padding: 4px;
+    font-size: 12px !important;
+    border: 1px solid gray !important;
+    border-radius: 50px !important;
+    margin-inline-start: 24px;
+    margin-top: 15px;
+  }
+  .completemeal{
+    background-color: lightgray;
+    height: 40px;
+  }
+  .completemeal span{
+    font-size: 14px;
+  }
+  .splins{
+    background-color: lightgray;
+    height: 40px;
+  }
+  .splins span{
+    font-size: 14px;
+  }
+  .yrorder{
+    background-color: lightgray;
+    height: 40px;
+  }
+  .yrorder span{
+    font-size: 14px;
+  }
+  .boxes{
+    padding: 0px -100px;
+  }
+  .card{
+    width: 5rem;
+    height: 120px;
+  }
+  .card-body p{
+    font-size: 10px;
+    white-space: nowrap;
+    margin-inline-start: -35px;
+  }
+  .leftarrow{
+    position: absolute;
+    right: 394px;
+    top: 400px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  .leftarrow img{
+    width: 35px;
+    height: auto;
+  }
+  .rightarrow{
+    position: absolute;
+    right: 93px;
+    top: 400px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  .rightarrow img{
+    width: 35px;
+    height: auto;
+  }
+.hrline{
+    border: 1px solid;
+}
+.backmenubtn {
+    background-color: white;
+    color:black;
+    border: none;
+    width: 30%;
+    font-size: 14px;
+    font-family: "poppins";
+    font-weight: bold;
+    padding: 8px 10px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin-top: 15px; 
+    white-space: nowrap;
+    margin-inline-start: 20px;
+    }
+.checkoutbtn {
+    background-color: #009e60;
+    color: #fff;
+    border: none;
+    width: 40%;
+    font-size: 14px;
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 8px 10px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin-top: 15px; 
+    margin-inline-end: 20px;
+    }
+
+
+  
+
+  @media  (max-width:700px) {
+    .mycart{
+        height: 190vh;
+        width: 100%;
+        position: absolute;
+    }
+    .sidebar{
+        width: 100%;
+        background-color: white;
+    }
+    .mealimg img{
+        width: 50px;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .contents h5{
+        font-size: 14px;
+    }
+    .contents p{
+        white-space: nowrap;
+    }
+    .carttopic{
+        margin-inline-start: 180px;
+    }
+    .leftarrow{
+        right: 310px;
+        top: 400px;
+      }
+      .rightarrow{
+        right: 63px;
+        top: 400px;
+      }
+  }
