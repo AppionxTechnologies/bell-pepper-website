@@ -74,7 +74,7 @@ const ToggleSidebar= () =>{
 
                <div className="navbar-left">
                             <nav>
-                                <a href="menu">OUR MENU</a>
+                                <a href="/menu">OUR MENU</a>
                                 <a href="#loaction"> LOCATIONS <MdKeyboardArrowDown/></a>
                                 <a href="#" onClick={() => setAboutUs((prev) => !prev)}> ABOUT US <MdKeyboardArrowDown/> 
                                  { aboutUs &&  <div className="about-us" >

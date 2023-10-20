@@ -5,7 +5,7 @@
 
   }
   .heading{
-    font-weight: 800;
+    font-weight: 700;
     padding:0px;
     line-height: 5px;
   }
@@ -15,7 +15,8 @@
     color: red;
   }
   .content{
-    font-size: 10px;
+    margin-top: 20px;
+    font-size: 12px;
   }
   .tablist{
     border: #009E60;
