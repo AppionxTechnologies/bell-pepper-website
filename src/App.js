@@ -19,6 +19,8 @@ import OrderConfirm from "./pages/order online/orderconfirm";
 import CompleteYourOrder from "./pages/completeyourorder/completeyourorder";
 import SuccessMsg from "./pages/completeyourorder/successmsg";
 import CancelMsg from "./pages/completeyourorder/cancelmsg";
+import Map from "./pages/map/map"
+import StoreLocation from "./pages/map/storelocation";
 
 
 
@@ -49,6 +51,10 @@ function App() {
             <Route path="/makeorder" element={<Makeorder />} />
             <Route path="/catering" element={<Catering />} />
             <Route path="/grow" element={<Grow />} />
+            <Route path="/location" element={<Map />} />
+            <Route path="/storelocation" element={<StoreLocation />} />
+
+
 
           </Routes>
           <Footer />
