@@ -2,6 +2,7 @@ import React from "react";
 import "./map.css";
 import locationpage from "../../assets/Location-Page.jpg";
 import iconLocation from "../../assets/icon-location.png";
+import { Link } from "react-router-dom";
 
 export default function map() {
   return (
@@ -27,9 +28,9 @@ export default function map() {
                 <p>Eircode - D05 FF08</p>
               </div>
               <div className="px-5">
-                <button type="button" className="view-store-btn">
+                <Link to='/storelocation'> <button type="button" className="view-store-btn">
                   VIEW STORE
-                </button>
+                </button></Link>
               </div>
               <hr className="divider" />
               <p className="sub-heading fw-bold">

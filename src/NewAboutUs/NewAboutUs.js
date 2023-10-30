@@ -1,26 +1,31 @@
 import "./NewAboutUs.css"
-import logo from "../assets/food-3.jpg"
+import thirdimg from "../assets/aboutus-thirdimg.jpg";
+import firstimg from '../assets/aboutus-firstimg.jpg'
+import secondimg from '../assets/aboutus-secondimg.jpg'
 import { Link } from "react-router-dom"
-const NewAboutUs = () => {
+import React from 'react'
+
+export default function NewAboutUs() {
+  
     return (
         <>
             <div className="About-us-container">
                 <div className="About-us-Images">
                     <div className="About-us-Img">
                     <Link to="/kitchen"> 
-                      <img src={logo} alt="" className="about-img" />
+                      <img src={firstimg} alt="" className="about-img" />
                         <h2 className="img-text">OUR STORY</h2></Link>
                     </div>
                    
                         <div className="About-us-Img">
                         <Link to="/grow">
-                            <img src={logo} alt="" className="about-img" />
+                            <img src={secondimg} alt="" className="about-img" />
                             <h2 className="text-sec">GROW WITH US</h2></Link>
                         </div>
                     
                         <div className="About-us-Img"> 
                         <Link to="/makeorder">
-                            <img src={logo} alt="" className="about-img" />
+                            <img src={thirdimg} alt="" className="about-img" />
                             <h2 className="img-text">REWARDS</h2>
                             </Link>
                         </div> 
@@ -31,6 +36,8 @@ const NewAboutUs = () => {
                 </div>
             </div>
         </>
+
+
+        
     )
 }
-export default NewAboutUs

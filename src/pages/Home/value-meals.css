@@ -58,6 +58,18 @@
   top: 35%;
   left: 10%;
 }
+.letsgo-button{
+  outline: none;
+  border: none;
+  background-color: #009e60;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 60%;
+  margin-left: 40px;
+}
 
 /* icons Arrow */
 .icons {
@@ -89,6 +101,7 @@
     justify-content: center;
     margin-left: 0px;
     margin-top: 0px;
+    white-space: nowrap;
   }
   .mealsfood {
     display: none;

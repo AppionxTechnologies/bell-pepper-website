@@ -39,6 +39,9 @@ export default function Meals() {
                     <p className="size  ">SPECIAL</p>
                     <p className="size ">&</p>
                     <p className="size ">VALUE MEALS</p>
+                    <div>
+                      <button type="button" className="letsgo-button">LET'S GO</button>
+                    </div>
                   </div>
             </div>
 

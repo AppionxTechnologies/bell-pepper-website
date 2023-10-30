@@ -14,26 +14,24 @@ export default function footer() {
           <div className="row">
             <div className="col-lg-2 text-center">
               <h5 className="footer-color">Know Us</h5>
-              <h6>Our Menu</h6>
-              <h6>Locations</h6>
-              <h6>About</h6>
-              <h6>Catering</h6>
+              <h6 className="footer-list">Our Menu</h6>
+              <h6 className="footer-list">Locations</h6>
+              <h6 className="footer-list">About</h6>
+              <h6 className="footer-list">Catering</h6>
             </div>
             <div className="col-lg-2 text-center">
               <h5 className="footer-color">Information</h5>
-              <h6>Our Story</h6>
-              <h6>Our Food</h6>
-              <h6>Rewards</h6>
-              <h6>Gift Vouchers</h6>
-              <h6>Allergens</h6>
-              <h6>Franchising</h6>
+              <h6 className="footer-list">Our Story</h6>
+              <h6 className="footer-list">Rewards</h6>
+              <h6 className="footer-list">Allergens</h6>
+              <h6 className="footer-list">Grow with us</h6>
             </div>
             <div className="col-lg-4 text-center">
               <img className="logo" src={Image1} alt="" />
-              <h6>Unit 3, Central Park, Coolock Village.</h6>
-              <h6>Dublin5</h6>
-              <h6>info@bellpepper.je</h6>
-              <h6>018770088</h6>
+              <h6  className="footer-address">Unit 3, Central Park, Coolock Village.</h6>
+              <h6  className="footer-address">Dublin5</h6>
+              <h6  className="footer-address">info@bellpepper.ie</h6>
+              <h6  className="footer-address">018770088</h6>
               <h5 className="footer-color">Follow Us</h5>
               <div className="footer-icons">
               <FaFacebook className="f-icon" />
@@ -47,16 +45,17 @@ export default function footer() {
             </div>
             <div className="col-lg-4 text-center ">
                 <h5 className="footer-color">Sign Up</h5>
-                <input type="text " className="input-box py-2" placeholder="Your Email Here"/><BsArrowRightCircleFill/>
-            
-                <h6 className="py-1">Subscribe Our News Latter <br/>Get Our Lattest News & Offers</h6>
-                
+                <input type="text " className="input-box py-1" placeholder="Your Email Here"/><BsArrowRightCircleFill/>
+                <div className="py-3">
+                  <p className="footer-para">Subscribe Our News Latter</p>
+                  <p className="footer-para">Get Our Lattest News & Offers</p>
+                </div>
                 <h6 className="footer-color py-1">Get The Bell Pepper App!</h6>
-                <img className="logo" src={Image2} alt="" />
+                <img className="logo-2" src={Image2} alt="" />
                 
              
             </div>
-            <hr className="line-color"></hr>
+            <hr className="line-color mt-2"></hr>
             <p className="text-center copy"><FaCopyright/> 2023 bell Pepper</p>
           </div>
        

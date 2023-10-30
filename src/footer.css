@@ -7,9 +7,12 @@
 .logo{
     height: 100px;
 }
-
+.logo-2{
+    width: 50%;
+    margin-top: -30px;
+}
 .f-icon{
-   
+    font-size: 25px;
     color: #009E60;
 }
 .footer-icons{
@@ -20,12 +23,21 @@
 .footer-color{
     color: orange;
 }
+.footer-list{
+    line-height: 30px;
+}
+.footer-address{
+    line-height: 20px;
+}
+.footer-para{
+    line-height: 10px;
+}
 .input-box{
     outline: none;
     border:none;
     background-color:#282828; ;
     border-bottom: 1.5px solid white;
-    width: 250px;
+    width: 300px;
     color: azure;
 }
 .footer1 h6{
@@ -33,6 +45,7 @@
 }
 .line-color{
     color: white;
+    border: 1px solid azure;
 }
 .copy{
     font-size: xx-small;
