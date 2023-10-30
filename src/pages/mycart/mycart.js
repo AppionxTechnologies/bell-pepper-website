@@ -9,7 +9,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import TextField from "@mui/material/TextField";
 import cocola from "../../assets/cocola.jpg";
 import sevenup from "../../assets/sevenup.jpg";
-import fanta from "../../assets/fanta.jpg";
+import fanta from "../../assets/fanta.png";
 import crossicon from "../../assets/crossicon.png";
 import rightarrow from "../../assets/arrow.png";
 import leftarrow from "../../assets/arrowleft.png"

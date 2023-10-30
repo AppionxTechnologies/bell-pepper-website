@@ -21,6 +21,7 @@ import SuccessMsg from "./pages/completeyourorder/successmsg";
 import CancelMsg from "./pages/completeyourorder/cancelmsg";
 import Map from "./pages/map/map"
 import StoreLocation from "./pages/map/storelocation";
+import NewAboutUs from "./NewAboutUs/NewAboutUs";
 
 
 
@@ -39,6 +40,8 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/menu-detail" element={<Menu_Detail />} />
             {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
+            
+            <Route path="/aboutus" element={<NewAboutUs />} />
 
             <Route path="/catering-menu" element={<Catering_Menu />} />
             <Route path="/completeorder" element={<CompleteYourOrder />} />

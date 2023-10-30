@@ -147,25 +147,41 @@ display: none;
 .phone-style{
   text-align: left;
   color: #009E60;
-  padding: 0 10px;
+  padding: 10px 20px;
   background-color: white;
 }
-
+.phone-style a{
+  text-decoration: none;
+  color: #009E60;
+  font-weight: 600;
+}
 .phone-style > select 
 {
   text-align: left;
   border: none;
-  font-weight: bold;
 }
 .phone-style > div
 {
-  position: relative;
+  position:relative;
 } 
 .phone-style > div > .arrow-down{
   position: absolute;
-  left: 30%;
+  left: 28%;
   font-size: 1.5rem;
   top: 0;
+}
+.navbar-media-icons{
+  color: #009E60;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 23px;
+  margin-top: 20px;
+
+}
+.google-apple{
+  height: 90px;
+  margin-inline-start: -20px;
 }
 
 .pop-all-itmes{
@@ -262,11 +278,11 @@ display: none;
 /* About us  */
 .about-us
 {
-  height: 50vh;
+  height: 100vh;
   position: absolute;
   top: 8.8vh;
   left: -250px;
   width: 100vw;
   z-index: 99;
-  background-color: white;
+  background-color: rgba(0,0,0,0.3);
 }

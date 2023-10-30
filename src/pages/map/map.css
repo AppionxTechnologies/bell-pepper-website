@@ -1,5 +1,5 @@
 .location-banner{
-    height: auto;
+    height: 500px;
 }
 .common-heading{
     white-space: nowrap;
@@ -28,6 +28,7 @@
     padding: 5px 10px;
     font-weight: bold;
     width: 40%;
+    white-space: nowrap;
 
 }
 .email-input{
@@ -52,7 +53,9 @@
 }
 
 @media (max-width:780px) {
-
+    .location-banner{
+        height: auto;
+    }
     .divider{
         width: 80%;
         margin-inline-start: 30px;
