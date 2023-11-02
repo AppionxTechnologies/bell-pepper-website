@@ -1,0 +1,78 @@
+.crispyimg1{
+    width: 25%;
+    height: auto;
+    background-color:#FFE6D7;
+}
+.imagerow1 p{
+    line-height: 10px;
+    font-size: 14px;
+}
+.imagerow1-button{
+    font-size: 13px;
+    outline: none;
+    border: none;
+    background-color: #009E60;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+.imagerow1-btn{
+    display: flex;
+    gap: 20px;
+}
+.imagerow1-button-top{
+    font-size: 13px;
+    outline: none;
+    border: none;
+    background-color: #009E60;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 25px;
+}
+.orderhistory-hrline{
+    border: 1px solid #646464;
+    width: 95%;
+    margin-bottom: 40px;
+}
+.order-number{
+    margin-left: 30%;
+    font-size: 14px;
+}
+.ordernow-content a{
+    color: #009E60;
+    font-size: 16px;
+}
+.ordernow-content{
+    align-items: center;
+}
+.amount-content{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .amount-content{
+        display: flex;
+    }
+    .crispyimg1{
+        display: none;
+    }
+    /* .row1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    } */
+    .sidebutton{
+        padding-left: 200px;
+    }
+    .imagerow1-button-top{
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+    .imagerow1-button{
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+    .orderhistory-hrline{
+        display: none;
+    }
+}

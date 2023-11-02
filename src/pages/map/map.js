@@ -75,7 +75,7 @@ export default function map() {
           </div>
           <div className="col-lg-8">
             <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222793.5254080175!2d-6.558296076915533!3d53.32347952595702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670dcef6be048d%3A0xc0847e6b6317b67a!2sBell%20Pepper%20Kimmage!5e0!3m2!1sen!2sin!4v1698397185935!5m2!1sen!2sin"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222793.5254080175!2d-6.558296076915533!3d53.32347952595702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670dcef6be048d%3A0xc0847e6b6317b67a!2sBell%20Pepper%20Kimmage!5e0!3m2!1sen!2sin!4v1698397185935!5m2!1sen!2sin" title="Map for our location"/>
             </div>
           </div>
         </div>

@@ -23,6 +23,11 @@ import Map from "./pages/map/map"
 import StoreLocation from "./pages/map/storelocation";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 
+import AccountDetails from "./pages/My profile/accountdetails";
+import OrderHistory from "./pages/My profile/orderhistory";
+import VerticalNavbar from "./pages/My profile/vertical-navbar";
+import Myaddress from "./pages/My profile/myaddress";
+
 
 
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
@@ -39,7 +44,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/menu-detail" element={<Menu_Detail />} />
-            {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
             
             <Route path="/aboutus" element={<NewAboutUs />} />
 
@@ -56,6 +60,12 @@ function App() {
             <Route path="/grow" element={<Grow />} />
             <Route path="/location" element={<Map />} />
             <Route path="/storelocation" element={<StoreLocation />} />
+
+            <Route path="/verticalnavbar" element={<VerticalNavbar />} />
+            <Route path="/accountdetails" element={<AccountDetails />} />
+            <Route path="/orderhistory" element={<OrderHistory />} />
+            <Route path="/myaddress" element={<Myaddress/>}/>
+
 
 
 

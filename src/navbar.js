@@ -8,24 +8,36 @@ import { FaBars } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineClose, AiOutlineHeart } from "react-icons/ai";
-import { FaFacebook,FaInstagram ,FaTwitter,FaPinterest,FaTiktok} from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaPinterest,
+  FaTiktok,
+} from "react-icons/fa6";
 import { IoBagHandleOutline } from "react-icons/io5";
 import "./Navbar.css";
 import { useState } from "react";
-import SignIn from "./signin/signin";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import Cart from "./pages/mycart/mycart";
+import { Link } from "react-router-dom";
+import SignIn from "./pages/forms/signin/signin";
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {
   const [popOpen, setPopOpen] = useState(false);
   const [popOpenHead, setPopOpenHead] = useState(false);
   const [icons, setIcons] = useState(false);
-
-  const [signIn, setSignIn] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
-
   const [cartPop, setCartPop] = useState(false);
+  const [showSignin, setShowSignin] = useState(false);
+
+  const openSignin = () => {
+    setShowSignin(true);
+  };
+  const closeSignin = () => {
+    setShowSignin(false);
+  };
 
   const handlePopMenu = () => {
     setPopOpen(true);
@@ -66,23 +78,31 @@ const Navbar = () => {
         {!icons && <FaBars className="bar-icons" onClick={handlePopMenu} />}
         {popOpen && (
           <div className=" phone-style">
-            <div className="mt-2"><a href="/menu">OURMENU</a></div>
-            <div className="mt-2"><a href="/location">LOCATIONS</a></div>
+            <div className="mt-2">
+              <a href="/menu">OURMENU</a>
+            </div>
+            <div className="mt-2">
+              <a href="/location">LOCATIONS</a>
+            </div>
             <div className="mt-2">
               <a>ABOUT US</a>
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
-            <div className="mt-2"><a>CATERING</a></div>
-
-            <div className="navbar-media-icons">
-            <FaFacebook className="n-icon" />
-            <FaInstagram className="n-icon"/>
-            <FaTwitter className="n-icon"/>
-            <FaPinterest className="n-icon"/>
-            <FaTiktok className="n-icon"/>
+            <div className="mt-2">
+              <a>CATERING</a>
             </div>
 
-            <div><img className="google-apple" src={googleapple} alt="" /></div>
+            <div className="navbar-media-icons">
+              <FaFacebook className="n-icon" />
+              <FaInstagram className="n-icon" />
+              <FaTwitter className="n-icon" />
+              <FaPinterest className="n-icon" />
+              <FaTiktok className="n-icon" />
+            </div>
+
+            <div>
+              <img className="google-apple" src={googleapple} alt="" />
+            </div>
           </div>
         )}
 
@@ -114,10 +134,7 @@ const Navbar = () => {
         </div>
 
         <div className="third-div">
-          <div
-            className="h-header-icon"
-            onClick={() => setSignIn((prev) => !prev)}
-          >
+          <div onClick={openSignin} className="h-header-icon">
             <img src={login} className="img " alt="" />
             <p>
               Login or <br /> Register{" "}
@@ -138,7 +155,7 @@ const Navbar = () => {
         {!popOpen && (
           <CiUser
             className="img logo-icons"
-            onClick={() => setSignIn((prev) => !prev)}
+            // onClick={() => setSignIn((prev) => !prev)}
           />
         )}
         {popOpen && (
@@ -150,11 +167,9 @@ const Navbar = () => {
 
       <div className="Line"></div>
 
-      {/* signInPop */}
-      {signIn && <SignIn />}
-      {/* signInPop */}
-
       {cartPop && <Cart />}
+
+      {showSignin && <SignIn onClose={closeSignin} />}
     </>
   );
 };

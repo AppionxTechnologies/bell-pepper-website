@@ -1,0 +1,30 @@
+
+.vertical-navbar-left{
+    width: 260px;
+    height: 100vh;
+    background-color:white;
+    border-right: 2px solid #DBDBDB;
+}
+.vertical-content{
+    color: #838181;
+    padding: 0px 30px;
+    position: relative;
+    margin-top: 10px;
+}
+.bar-links {
+    text-decoration: none;
+    width: 100%;
+}
+.bar-links p:hover{
+    color: #009E60;
+    border-right: 3px solid #009E60 ;
+}
+.bar-links p:focus{
+    color: #009E60;
+    border-right: 3px solid #009E60 ;
+}
+
+
+@media (max-width: 768px) {
+
+}

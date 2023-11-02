@@ -35,7 +35,7 @@ export default function CompleteYourOrder() {
 
   return (
     <div className="completeorder position-relative d-flex justify-content-center align-items-center">
-      <div className="main-container text-center">
+      <div className="mainn-container text-center">
         <form>
           <p className="heading">COMPLETE YOUR ORDER</p>
           <div className="pickupfromcoolock d-flex align-items-center">
