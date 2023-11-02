@@ -18,21 +18,29 @@ import {
 import { IoBagHandleOutline } from "react-icons/io5";
 import "./Navbar.css";
 import { useState } from "react";
-import SignIn from "./signin/signin";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import Cart from "./pages/mycart/mycart";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+=======
+import SignIn from "./pages/forms/signin/signin";
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {
   const [popOpen, setPopOpen] = useState(false);
   const [popOpenHead, setPopOpenHead] = useState(false);
   const [icons, setIcons] = useState(false);
-
-  const [signIn, setSignIn] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
-
   const [cartPop, setCartPop] = useState(false);
+  const [showSignin, setShowSignin] = useState(false);
+
+  const openSignin = () => {
+    setShowSignin(true);
+  };
+  const closeSignin = () => {
+    setShowSignin(false);
+  };
 
   const handlePopMenu = () => {
     setPopOpen(true);
@@ -72,7 +80,11 @@ const Navbar = () => {
         {popOpen && (
           <div className=" phone-style">
             <div className="mt-2">
+<<<<<<< HEAD
               <Link to="/menu"> OURMENU </Link>
+=======
+              <a href="/menu">OURMENU</a>
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             </div>
             <div className="mt-2">
               <a href="/location">LOCATIONS</a>
@@ -82,7 +94,11 @@ const Navbar = () => {
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">
+<<<<<<< HEAD
             <Link to="/catering"> CATERING </Link> 
+=======
+              <a>CATERING</a>
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             </div>
 
             <div className="navbar-media-icons">
@@ -92,6 +108,10 @@ const Navbar = () => {
               <FaPinterest className="n-icon" />
               <FaTiktok className="n-icon" />
             </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             <div>
               <img className="google-apple" src={googleapple} alt="" />
             </div>
@@ -126,10 +146,7 @@ const Navbar = () => {
         </div>
 
         <div className="third-div">
-          <div
-            className="h-header-icon"
-            onClick={() => setSignIn((prev) => !prev)}
-          >
+          <div onClick={openSignin} className="h-header-icon">
             <img src={login} className="img " alt="" />
             <p>
               Login or <br /> Register{" "}
@@ -150,7 +167,7 @@ const Navbar = () => {
         {!popOpen && (
           <CiUser
             className="img logo-icons"
-            onClick={() => setSignIn((prev) => !prev)}
+            // onClick={() => setSignIn((prev) => !prev)}
           />
         )}
         {popOpen && (
@@ -162,11 +179,9 @@ const Navbar = () => {
 
       <div className="Line"></div>
 
-      {/* signInPop */}
-      {signIn && <SignIn />}
-      {/* signInPop */}
-
       {cartPop && <Cart />}
+
+      {showSignin && <SignIn onClose={closeSignin} />}
     </>
   );
 };

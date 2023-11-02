@@ -1,16 +1,25 @@
 .orderconfirm {
-  position: flex;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  top: 13.5%;
   height: 100vh;
   width: 100%;
-  /* background: rgba(0, 0, 0, 0.3);  */
   z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translate(0%, 0%);
+  display: flex;
+  justify-content: center;
 }
-.main-containerr {
-  min-height: 400px;
+.hidden {
+  display: none;
+}
+.cross-icon6 {
+  width: 5%;
+  height: auto;
+  position: relative;
+  left: 390px;
+}
+.addressform-containerr {
+  height: 60%;
   text-align: center;
   width: 450px;
   background-color: white;
@@ -18,23 +27,21 @@
   padding: 0.5rem 2rem 1rem;
   margin: 0% auto;
 }
-.form-title {
+.heading-addressform{
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
   font-family: "poppins";
 }
-.inputs {
-  width: 80%;
+.addressform-inputs{
+  width: 90%;
   padding: 8px 8px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 30px;
   outline: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
-.inputs::placeholder,
-.inputs[type="text"] {
+.addressform-inputs::placeholder,
+.addressform-inputs[type="text"] {
   font-size: 16px;
   font-family: "poppins";
 }
@@ -56,15 +63,16 @@
 input[type=checkbox] {
     accent-color: #009e60 ;
   }
-.btn-button {
+.addressform-button {
   background-color: #009e60;
   color: #fff;
+  outline: none;
   border: none;
   width: 80%;
   font-size: 16px;
   font-family: "poppins";
   font-weight: 600;
-  padding: 10px 10px;
+  padding: 7px 10px;
   border: 2px solid;
   border-radius: 30px;
   margin-bottom: 50px;
@@ -80,22 +88,22 @@ input[type=checkbox] {
     z-index: 1;
     margin-top: 30px;
   }
-  .main-containerr {
+  .addressform-containerr {
     min-width: 100%;
     width: 100%;
     font-size: 14px;
     border-radius: 0px;
     margin: 0;
   }
-  .form-title {
+  .heading-addressform {
     white-space: nowrap;
   }
-  .inputs {
+  .addressform-inputs {
     width: 100%;
     padding: 8px 8px;
   }
-  .inputs::placeholder,
-  .inputs[type="text"] {
+  .addressforms-inputs::placeholder,
+  .addressform-inputs[type="text"] {
     font-size: 14px;
     font-family: "poppins";
   }
@@ -118,19 +126,8 @@ input[type=checkbox] {
   }
   input[type=checkbox] {
       accent-color: #009e60 ;
-    }
-  .btn-button {
-    background-color: #009e60;
-    color: #fff;
-    border: none;
-    width: 100%;
-    font-size: 16px;
-    font-family: "poppins";
-    font-weight: 600;
-    padding: 5px 10px;
-    border: 2px solid;
-    border-radius: 30px;
-    margin-bottom: 60px;
-    margin-top: 15px;
+   }
+   .cross-icon6 {
+    left: 320px;
   }
 }

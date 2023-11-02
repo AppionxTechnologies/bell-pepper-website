@@ -54,7 +54,7 @@ export default function StoreLocation() {
                     </div>
                 </div>
                 <div className='map-img px-5'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.89189979591322!2d-6.201366387579915!3d53.38719888465029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fc408aca893%3A0xbc3e59290625252c!2sBell%20Pepper!5e0!3m2!1sen!2sin!4v1698591494611!5m2!1sen!2sin"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.89189979591322!2d-6.201366387579915!3d53.38719888465029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fc408aca893%3A0xbc3e59290625252c!2sBell%20Pepper!5e0!3m2!1sen!2sin!4v1698591494611!5m2!1sen!2sin" title="Map for our store"/>
                 </div>
             </div>
     </>

@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import "./mycart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import picklocation from "../../assets/pickup location-06.svg";
 import Meal from "../../assets/order-mealdeals.jpg";
 import InputAdornment from "@mui/material/InputAdornment";
 import TextField from "@mui/material/TextField";
@@ -13,7 +12,6 @@ import fanta from "../../assets/fanta.png";
 import crossicon from "../../assets/crossicon.png";
 import rightarrow from "../../assets/arrow.png";
 import leftarrow from "../../assets/arrowleft.png"
-import allergenimg from "../../assets/View Allergens-06.svg"
 import { IconButton } from "@mui/material";
 
 export default function Cart() {
@@ -34,6 +32,7 @@ export default function Cart() {
               className="crossicon d-flex"
               src={crossicon}
               onClick={closeForm}
+              alt=""
             />
           </div>
           <div className="row pickup g-0">
