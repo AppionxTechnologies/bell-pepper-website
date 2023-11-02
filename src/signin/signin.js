@@ -19,7 +19,6 @@ export default function SignIn({ onForgotPasswordClick }) {
     setShowSignUp(true);
     e.preventDefault();
   };
-
   const handleCloseSignUp = () => {
     setShowSignUp(false);
   };

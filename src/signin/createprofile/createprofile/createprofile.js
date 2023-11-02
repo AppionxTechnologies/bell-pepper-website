@@ -37,7 +37,6 @@ export default function CreateProfile() {
             
             <a onClick={handleSignInClick}   href="/signup">Sign in </a></p>
            
-             
               <hr className="hr" />
             <div className="mb-2">
               <input

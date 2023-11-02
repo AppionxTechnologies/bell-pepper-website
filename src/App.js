@@ -25,10 +25,7 @@ import TakeOutMenu from "./pages/NewMenuListItemPages/TakeOutMenu";
 import FootItem from "./pages/NewMenuListItemPages/FootItem";
 // import { NewMenuListItem } from "./pages/NewMenuListItem/NewMenuListItem";
 
-
-
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
-
 function App() { 
   return (
     <>

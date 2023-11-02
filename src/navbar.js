@@ -65,7 +65,6 @@ const Navbar = () => {
       )}
 
       {/* oreder */}
-
       <div className="navbar">
         {icons && (
           <AiOutlineClose className="bar-icons" onClick={handlePopMenuClose} />

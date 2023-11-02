@@ -10,7 +10,6 @@ export default function ResetPassword() {
   const [visible, setVisible] = useState(true);
   const [visiblee, setVisiblee] = useState(true);
 
-
   return (
     <div className="forgot-password template d-flex justify-content-center align-items-center vh-100">
       <div className=" p-5 rounded c-width ">

@@ -6,7 +6,6 @@ import { config } from '../../config/config';
 const apiUrl = config.strapi.url;
 
 
-
 export default function Kitchen1() {
 
     const [data, setData] = useState([]);

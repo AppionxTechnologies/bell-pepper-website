@@ -15,9 +15,7 @@ import Brown from "../../assets/brownrice.jpg";
 import wheat from "../../assets/wheat.png";
 import soya from "../../assets/soya.png";
 import cashew from "../../assets/cashew.png";
-
 import ourStory from "../../assets/Our Story.png";
-
 import { AiOutlineMinus } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineDelete } from "react-icons/ai";

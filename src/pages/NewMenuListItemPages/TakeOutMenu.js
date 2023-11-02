@@ -15,7 +15,6 @@ function TakeOutMenu() {
   const [firstC, setFirstC] = useState(false);
   const [firstD, setFirstD] = useState(false);
   const [firstE, setFirstE] = useState(false);
-
   return (
     <div className="TakeOutMenu-container">
     <div className="p-2">

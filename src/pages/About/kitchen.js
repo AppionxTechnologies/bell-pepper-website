@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import img1 from '../../assets/Our Story (Your kitchen away from home)-15.png';
 import img2 from '../../assets/Grow with us-15.png';
 import img3 from '../../assets/Our Story (inside the kitchen)-15.png';
-
 export default function kitchen() {
     return (
         <div className='body'>

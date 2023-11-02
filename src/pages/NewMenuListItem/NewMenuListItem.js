@@ -20,8 +20,7 @@ const NewMenuListItem = () => {
   }
   return (
     <div>
-
-         
+  
 <div className="NewMenuListItem">
           <div className="NewMenuListItem-left">
                             <nav>

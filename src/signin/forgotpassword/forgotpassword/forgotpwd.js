@@ -22,7 +22,6 @@ export default function ForgotPassword() {
   const handleOtpSubmit = (e) => {
     e.preventDefault();
   };
-
   return (
     <div className="signin ">
       <div className="main-container ">

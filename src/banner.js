@@ -4,7 +4,6 @@ import Image2 from "./assets/super taste.svg";
 import Image3 from "./assets/fast delivery.svg";
 import "./banner.css";
 import "bootstrap/dist/css/bootstrap.css";
-
 export default function Banner() {
   return (
   

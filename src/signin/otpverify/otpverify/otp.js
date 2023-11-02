@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function OtpVerify() {
 
-
   return (
     <div className="forgot-password template d-flex justify-content-center align-items-center vh-100">
       <div className=" p-5 rounded c-width ">

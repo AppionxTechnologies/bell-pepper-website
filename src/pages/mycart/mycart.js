@@ -167,8 +167,7 @@ export default function Cart() {
               </div>
             </div>
           </div>
-
-          <hr className="hrline" />
+   <hr className="hrline" />
 
           <div className="d-flex align-items-center justify-content-between">
             <button className="backmenubtn">BACK TO MENU</button>

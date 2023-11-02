@@ -9,7 +9,6 @@ const apiUrl = config.strapi.url;
 export default function Kitchen2() {
     const [data, setData] = useState([]);
     const [datas, setDatas] = useState([]);
-
     const fetchData = async () => {
         try {
             const response = await axios.get(`${apiUrl}/api/kitchen-footer1s`, {
