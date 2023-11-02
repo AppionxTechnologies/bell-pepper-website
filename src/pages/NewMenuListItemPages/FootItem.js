@@ -111,7 +111,7 @@ function FootItem() {
             <IoChevronBackCircleOutline className="back-icon" />
             BACK TO MENU
           </h6>
-        </Link>
+        </Link> 
       </div>
       <div className="main">
         <div className="col-lg-12 bac-bar">
@@ -131,27 +131,26 @@ function FootItem() {
                   View Allergens
                 </button>
                 {firstl && (
-                   <div className="small-box">
-                   <div className="min-boxs">
-                     <div className="box1">
-                       <img src={wheat} />
-                     </div>
-                     <h6 className="small-size">Gulten-Wheat</h6>
-                   </div>
-                   <div className="min-boxs">
-                     <div className="box1">
-                       <img src={soya} />
-                     </div>
-                     <h6 className="small-size">Soya</h6>
-                   </div>
-                   <div className="min-boxs">
-                     <div className="box1">
-                       <img src={cashew} />
-                     </div>
-                     <h6 className="small-size">Cashew nut</h6>
-                   </div>
-                   
-                 </div>
+                  <div className="small-box">
+                    <div className="min-boxs">
+                      <div className="box1">
+                        <img src={wheat} />
+                      </div>
+                      <h6 className="small-size">Gulten-Wheat</h6>
+                    </div>
+                    <div className="min-boxs">
+                      <div className="box1">
+                        <img src={soya} />
+                      </div>
+                      <h6 className="small-size">Soya</h6>
+                    </div>
+                    <div className="min-boxs">
+                      <div className="box1">
+                        <img src={cashew} />
+                      </div>
+                      <h6 className="small-size">Cashew nut</h6>
+                    </div>
+                  </div>
                 )}
               </div>
               <div className=" bac-bar header mt-2">
@@ -486,13 +485,16 @@ function FootItem() {
                     Please note, Modifications to your order: spicy, no onion,
                     more cheese, etc.
                   </p>
-                  
                 </div>
                 <div className="d-flex justify-content-center">
-                    <button className="last-button1"><AiOutlineMinus className="icon-zero"/></button>
-                    <h5 className="number-zero">0</h5>
-                    <button className="last-button2"><AiOutlinePlus className="icon-zero"/></button>
-                  </div>
+                  <button className="last-button1">
+                    <AiOutlineMinus className="icon-zero" />
+                  </button>
+                  <h5 className="number-zero">0</h5>
+                  <button className="last-button2">
+                    <AiOutlinePlus className="icon-zero" />
+                  </button>
+                </div>
               </div>
               <hr></hr>
               <div className="d-flex justify-content-between mb-3">

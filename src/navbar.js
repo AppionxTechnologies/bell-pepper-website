@@ -80,11 +80,7 @@ const Navbar = () => {
         {popOpen && (
           <div className=" phone-style">
             <div className="mt-2">
-<<<<<<< HEAD
-              <Link to="/menu"> OURMENU </Link>
-=======
               <a href="/menu">OURMENU</a>
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             </div>
             <div className="mt-2">
               <a href="/location">LOCATIONS</a>
@@ -94,11 +90,7 @@ const Navbar = () => {
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">
-<<<<<<< HEAD
             <Link to="/catering"> CATERING </Link> 
-=======
-              <a>CATERING</a>
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             </div>
 
             <div className="navbar-media-icons">
@@ -108,10 +100,6 @@ const Navbar = () => {
               <FaPinterest className="n-icon" />
               <FaTiktok className="n-icon" />
             </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
             <div>
               <img className="google-apple" src={googleapple} alt="" />
             </div>

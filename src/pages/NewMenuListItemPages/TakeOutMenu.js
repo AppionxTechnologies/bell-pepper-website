@@ -24,7 +24,7 @@ function TakeOutMenu() {
         from 4 p.m.
       </h6>
       </div>
-      
+       
       <div className="p-2">
         <button className="takeOut-btn active">STARTERS</button>
         <button className="takeOut-btn">SOUP & SALAD</button>
