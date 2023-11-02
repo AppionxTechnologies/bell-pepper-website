@@ -1,0 +1,29 @@
+.home-address{
+    /* border: 2px solid black; */
+    box-shadow: 3px 3px 4px rgb(0 0 0 / 15%);
+}
+.home-icon-myaddress{
+    width: 5%;
+    height: auto;
+}
+.homeicon-address{
+    font-size: 14px;
+    line-height: 5px;
+    color: #8a8888;
+}
+.myaddress-button{
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    color: #009E60;
+    padding: 5px 10px;
+}
+.myaddress-btn{
+    display: flex;
+    gap: 20px;
+    padding-left: 36px;
+}
+.add-address-content a{
+    color: #009E60;
+    cursor: pointer;
+}

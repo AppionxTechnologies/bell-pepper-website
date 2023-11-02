@@ -1,0 +1,213 @@
+.signin {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  top: 13.5%;
+  transform: translate(0%, 0%);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  width: 35%;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  height: 75%;
+}
+.hidden {
+  display: none;
+}
+/* .cross-icon {
+  font-size:large;
+  font-weight: bold;
+  position: relative;
+  left: 320px;
+  right: 200px;
+} */
+.cross-icon {
+  width: 5%;
+  height: auto;
+  position: relative;
+  left: 420px;
+}
+.signin-logoimg {
+  margin-top: 10px;
+  width: 25%;
+  height: auto;
+}
+.signin form {
+  width: 100%;
+}
+form .para1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+form .para1:nth-of-type(2) {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+form .para1:nth-of-type(2) a {
+  color: #009e60;
+  text-decoration: underline;
+}
+.hr1 {
+  border: 1px solid;
+  width: 80%;
+  margin-left: 46px;
+}
+::-webkit-input-placeholder{
+  font-size: 14px !important;
+} 
+.input1 {
+  width: 80%;
+  padding: 5px 9px;
+  border: 1px solid;
+  border-radius: 30px;
+  outline: none;
+}
+
+.input-par {
+  position: relative;
+}
+.forgot-password {
+  padding-left: 220px;
+  
+}
+
+.forgot-password P {
+  color: #009e60;
+  text-decoration: underline;
+}
+/* .eye-icon{
+  position: absolute;
+  right: -190px;
+  transform: translateY(-100%);
+} */
+
+.signin-btn {
+  background-color: #009e60;
+  color: #fff;
+  border: none;
+  width: 83%;
+  padding: 5px 10px;
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    height: 90%;
+    border-radius: 0px;
+  }
+  .cross-icon{
+    left: 370px;
+  }
+  .forgot-password {
+    padding-left: 180px;
+    
+  }
+
+}
+
+/* @media (min-width: 320px){
+  .cross-icon {
+    left: 280px;
+  }
+  form .para1 a{
+    color: #009e60;
+  }
+  .forgot-password {
+    padding-left: 100px;
+  }
+  .main-container {
+    width: 100%;
+    height: 80%;
+  }
+} */
+/* @media (min-width: 360px){
+  .main-container {
+    width: 100%;
+    height: 70%;
+  }
+  .cross-icon {
+    left: 310px;
+  }
+} */
+/* @media (min-width: 411px){
+  .main-container {
+    width: 100%;
+    height: 65%;
+  }
+  .cross-icon {
+    left: 360px;
+  }
+  .forgot-password {
+    padding-left: 170px;
+  }
+} */
+/* @media (min-width: 400px){
+  .main-container {
+    width: 100%;
+    height: 60%;
+  }
+  .cross-icon {
+    left: 360px;
+  }
+  .forgot-password {
+    padding-left: 170px;
+  }
+} */
+/* @media (min-width: 350px){
+  .main-container {
+    width: 100%;
+    height: 65%;
+  }
+  .cross-icon {
+    left: 360px;
+  }
+  .forgot-password {
+    padding-left: 130px;
+  }
+}
+@media (min-width: 375px){
+  .main-container {
+    width: 100%;
+    height: 55%;
+  }
+  .cross-icon {
+    left: 325px;
+  }
+}
+@media (min-width: 500px){
+  .main-container {
+    width: 100%;
+    height: 75%;
+  }
+  .cross-icon {
+    left: 480px;
+  }
+  .forgot-password {
+    padding-left: 270px;
+  }
+}
+@media (min-width: 280px){
+  .main-container {
+    width: 100%;
+    height: 70%;
+  }
+  .cross-icon {
+    left: 240px;
+  }
+  .forgot-password {
+    padding-left: 50px;
+  }
+} */
+
+
+
+

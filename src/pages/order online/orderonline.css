@@ -1,46 +1,55 @@
 
 .orderonline {
-    position: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    top: 13.5%;
     height: 100vh;
     width: 100%;
     z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(0%, 0%);
+    display: flex;
+    justify-content: center;
   }
   
-  .mainn-container {
-    min-height: 400px;
+  .orderonline-container {
     text-align: center;
-    width: 500px;
+    width: 450px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 15px;
     padding: 0.5rem 2rem 1rem;
     margin: 0% auto;
+    height: 85%;
   }
-  
-  .computerr-img {
+  .hidden {
+    display: none;
+  }
+  .cross-icon5 {
+    width: 5%;
+    height: auto;
+    position: relative;
+    left: 380px;
+    top: 5px;
+  }
+  .orderonline-logoimg {
     height: 20%;
     width: 20%;
     margin-top: 20px;
     margin-bottom: 0px;
   }
   
-  .topic {
+  .heading-orderonline {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 15px;
     font-family: "poppins";
   }
   
-  form .para {
+  .orderonline-content {
     font-weight: bold;
     margin: 12px;
-    font-family: "poppins";
   }
   
-  .hr {
+  .hr6 {
     border: 1px solid black;
     width: 93%;
     margin-left: 10px;
@@ -50,7 +59,7 @@
     position: relative;
   }
   
-  .location-icon {
+  .orderonline-location-icon {
     margin-top: 5px;
     position: absolute;
     right: -40px;
@@ -70,19 +79,18 @@
     height: auto;
   }
   
-  .input {
+  .orderonline-input {
     width: 100%;
     padding: 8px 8px;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 30px;
     outline: none;
     margin-top: 5px;
   }
   
-  .input::placeholder,
-  .input[type="text"] {
+  .orderonline-input::placeholder,
+  .orderonline-input[type="text"] {
     font-size: 16px;
-    font-family: "poppins";
   }
   
   .icons-container {
@@ -98,13 +106,13 @@
     align-items:center;
   }
   
-  .icon {
+  .icon-one {
     width: 100px;
     height: 60px;
     vertical-align: middle;
   }
   
-  p {
+  .icon-pickup{
     padding: 0px 25px;
     font-size: 14px;
     font-family: "poppins";
@@ -135,7 +143,7 @@
       margin-top: 30px;
     }
   
-    .mainn-container {
+    .orderonline-container {
       min-height: 100%;
       width: 100%;
       font-size: 14px;
@@ -143,31 +151,33 @@
       margin: 0;
       padding: 1rem; 
     }
-  
-    .computerr-img {
+    .cross-icon5 {
+      left: 370px;
+      top: 5px;
+    }
+    .orderonline-logoimg {
       height: auto;
       width: 30%;
       margin: 0.5rem;
     }
   
-    .topic {
+    .heading-orderonline {
       font-size: 22px;
     }
   
-    .input {
+    .orderonline-input {
       width: 90%;
       padding: 8px 8px;
       margin-bottom: 5px;
       margin-top: 0px;
     }
   
-    .input::placeholder,
-    .input[type="text"] {
+    .orderonline-input::placeholder,
+    .orderonline-input[type="text"] {
       font-size: 14px;
-      font-family: "poppins";
     }
   
-    .location-icon {
+    .orderonline-location-icon {
       margin-top: 0px;
       right: -30px;
       top: 50%;
@@ -177,31 +187,10 @@
       margin-top: 0px;
       right: 35px;
     }
-    .icons-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .icon-item {
-        text-align: center;
-        width: 30%;
-        height: 30%;
-        align-items:center;
-      }
-  
-    .orderonline-btn {
-      background-color: #009e60;
-      color: #fff;
-      border: none;
-      max-width: 100%;
+
+    .orderonlinebutton {
       width: 100%;
       padding: 8px;
-      border: 2px solid;
-      border-radius: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-bottom: 20px;
     }
   }
