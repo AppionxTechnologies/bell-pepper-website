@@ -1,0 +1,19 @@
+.catering-container{
+    padding-left: 30px;
+}
+.img-length{
+    object-fit:cover;
+    height: 400px;
+    width: 99.99%;
+    background-repeat: no-repeat;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:900;
+    font-size:50px;
+    color:white;
+  }

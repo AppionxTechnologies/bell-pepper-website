@@ -23,6 +23,8 @@ import NewMenuListItem from "./pages/NewMenuListItem/NewMenuListItem";
 import LunchMenu from "./pages/NewMenuListItemPages/LunchMenu";
 import TakeOutMenu from "./pages/NewMenuListItemPages/TakeOutMenu";
 import FootItem from "./pages/NewMenuListItemPages/FootItem";
+import CateringTray from "./pages/cattering/cattering-tray";
+import Tray from "./pages/cattering/tray";
 // import { NewMenuListItem } from "./pages/NewMenuListItem/NewMenuListItem";
 
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
@@ -40,6 +42,7 @@ function App() {
             {/* <Route path='/lunch' element={<LunchMenu/>} />
             <Route path='/takeout' element={<TakeOutMenu/>} /> */}
             <Route path='/orderNow' element={<FootItem/>} />
+            <Route path='/orderNow1' element={<Tray/>} />
             {/* <Route path="/menu-detail" element={<Menu_Detail />} /> */}
             {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
             
@@ -54,7 +57,7 @@ function App() {
             <Route path="/allergen" element={<Allergen />} />
             <Route path="/kitchen" element={<Kitchen />} />
             <Route path="/makeorder" element={<Makeorder />} />
-            <Route path="/catering" element={<Catering />} />
+            <Route path="/catering" element={<CateringTray/>} />
             <Route path="/grow" element={<Grow />} />
             <Route path="/location" element={<Map />} />
             <Route path="/storelocation" element={<StoreLocation />} />

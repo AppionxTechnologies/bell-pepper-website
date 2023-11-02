@@ -40,11 +40,11 @@ export default function Orderonline() {
           <div className="icons-container">
             <div className="icon-item">
               <img className="icon" src={pickupicon} alt="" />
-              <p>Pickup</p>
+              <p className="icon-pickup">Pickup</p>
             </div>
             <div className="icon-item">
               <img className="icon" src={deliveryicon} alt="" />
-              <p>Delivery</p>
+              <p className="icon-pickup">Delivery</p>
             </div>
           </div>
           <button className="orderonlinebutton fs-7" type="submit">

@@ -24,7 +24,7 @@
 height: 3px;
   width: 90px;
   position: absolute;
-  top: 133px;
+  top: 135px;
   left: 100px;
   background-color:green;
   transition: all 0.5s ease 0.3s;
@@ -40,7 +40,7 @@ height: 3px;
 .NewMenuListItem-left nav  p:nth-child(2):hover~.animation
 {
   width: 100px;
-  left: 28%;
+  left: 30%;
 }
 
 
@@ -48,7 +48,7 @@ height: 3px;
 .NewMenuListItem-left nav  p:nth-child(3):hover~.animation
 {
   width: 100px;
-  left: 50%;
+  left: 51%;
 }
 
 

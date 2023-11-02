@@ -82,7 +82,7 @@ const Navbar = () => {
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">
-              <a>CATERING</a>
+            <Link to="/catering"> CATERING </Link> 
             </div>
 
             <div className="navbar-media-icons">
@@ -114,7 +114,7 @@ const Navbar = () => {
                 </div>
               )}
             </a>
-            <a href="#">
+            <a href="/catering">
               {" "}
               CATERING <MdKeyboardArrowDown />
             </a>
