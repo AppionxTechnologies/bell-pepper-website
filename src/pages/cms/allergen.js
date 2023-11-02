@@ -18,7 +18,6 @@ export default function Allergen() {
             console.error('Error fetching data:', error);
         }
     };
-
     useEffect(() => {
         fetchData();
     }, []);

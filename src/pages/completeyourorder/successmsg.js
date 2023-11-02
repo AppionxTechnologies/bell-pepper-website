@@ -1,7 +1,6 @@
 import React from 'react'
 import './successmsg.css'
 import tick from '../../assets/tick.png'
-
 export default function SuccessMsg() {
     return (
         <div className="successmsg ">

@@ -45,11 +45,19 @@ export default function Orderonline() {
           <p className="orderonline-content">Select your order type</p>
           <div className="icons-container">
             <div className="icon-item">
+<<<<<<< HEAD
+              <img className="icon" src={pickupicon} alt="" />
+              <p className="icon-pickup">Pickup</p>
+            </div>
+            <div className="icon-item">
+              <img className="icon" src={deliveryicon} alt="" />
+=======
               <img className="icon-one" src={pickupicon} alt="" />
               <p className="icon-pickup">Pickup</p>
             </div>
             <div className="icon-item">
               <img className="icon-one" src={deliveryicon} alt="" />
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
               <p className="icon-pickup">Delivery</p>
             </div>
           </div>

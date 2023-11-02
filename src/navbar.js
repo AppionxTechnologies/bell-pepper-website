@@ -21,7 +21,10 @@ import { useState } from "react";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import Cart from "./pages/mycart/mycart";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+=======
 import SignIn from "./pages/forms/signin/signin";
+>>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -68,9 +71,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
       {/* oreder */}
-
       <div className="navbar">
         {icons && (
           <AiOutlineClose className="bar-icons" onClick={handlePopMenuClose} />
@@ -89,7 +90,7 @@ const Navbar = () => {
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">
-              <a>CATERING</a>
+            <Link to="/catering"> CATERING </Link> 
             </div>
 
             <div className="navbar-media-icons">
@@ -99,7 +100,6 @@ const Navbar = () => {
               <FaPinterest className="n-icon" />
               <FaTiktok className="n-icon" />
             </div>
-
             <div>
               <img className="google-apple" src={googleapple} alt="" />
             </div>
@@ -122,11 +122,11 @@ const Navbar = () => {
                 </div>
               )}
             </a>
-            <a href="#">
+            <a href="/catering">
               {" "}
               CATERING <MdKeyboardArrowDown />
             </a>
-            <div className="animation "></div>
+            {/* <div className="animation "></div> */}
           </nav>
         </div>
         <div className="sec-div">

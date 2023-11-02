@@ -13,7 +13,6 @@ export default function Makeorder() {
     const [datas1, setDatas1] = useState([]);
     const [datas2, setDatas2] = useState([]);
 
-
     const fetchData = async () => {
         try {
             const response = await axios.get(`${apiUrl}/api/makeorder-pages`, {

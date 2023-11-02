@@ -8,7 +8,6 @@ import Kitchen1 from './kitchen1';
 import Kitchen2 from './kitchen2';
 
 const apiUrl = config.strapi.url;
-
 export default function Kitchen() {
     const [data, setData] = useState([]);
 

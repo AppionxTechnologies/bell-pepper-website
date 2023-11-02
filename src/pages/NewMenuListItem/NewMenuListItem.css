@@ -1,0 +1,98 @@
+.hrline{
+    border: 0.4px solid gray;
+}
+
+.NewMenuListItem
+{
+    min-height: 150vh;
+}
+.NewMenuListItem-left nav
+{
+    display: flex;   
+    padding: 10px;
+}
+.NewMenuListItem-left nav p{
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+  position: relative;
+  padding:0 6rem; 
+  cursor: context-menu;
+}
+ 
+.animation{
+height: 3px;
+  width: 90px;
+  position: absolute;
+  top: 135px;
+  left: 100px;
+  background-color:green;
+  transition: all 0.5s ease 0.3s;
+}
+
+
+.NewMenuListItem-left nav  p:nth-child(1):hover~.animation
+{
+  width: 90px;
+  left: 100px;
+}
+
+.NewMenuListItem-left nav  p:nth-child(2):hover~.animation
+{
+  width: 100px;
+  left: 30%;
+}
+
+
+
+.NewMenuListItem-left nav  p:nth-child(3):hover~.animation
+{
+  width: 100px;
+  left: 51%;
+}
+
+
+.NewMenuListItem-left nav  p:nth-child(4):hover~.animation
+{
+  width: 160px;
+  left: 73%;
+}
+
+
+@media (max-width:550px) {
+  .animation{
+      left: 10px;
+      width: 80px;
+      top: 123px;
+    }
+  .NewMenuListItem-left nav p{
+    color: black;
+     padding:0 13px; 
+     font-size: 14px;
+     cursor: pointer;
+  }
+  .hidden
+  {
+    display: none;
+  }
+  .NewMenuListItem-left nav  p:nth-child(1):hover~.animation
+  {
+    width: 80px;
+    left: 12px;
+  }
+  .NewMenuListItem-left nav  a:nth-child(2):hover~.animation
+{
+  width: 80px;
+  left: 30%;
+}
+
+.NewMenuListItem-left nav  a:nth-child(3):hover~.animation
+{
+  width: 80px;
+  left: 55%;
+}
+}
+
+.text-none{
+  text-decoration: none;
+}

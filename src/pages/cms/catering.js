@@ -6,7 +6,6 @@ import { config } from '../../config/config';
 import './caterring.css'
 const apiUrl = config.strapi.url;
 
-
 export default function Catering() {
 
     const [data, setData] = useState([]);

@@ -6,7 +6,6 @@ import fresh from "../../assets/FRESH-06.svg";
 import flexible from "../../assets/FLEXIBLE-06.svg";
 import convenient from "../../assets/CONVENIENT-06.svg";
 
- 
 export default function Catering() { 
     return (
         <div>

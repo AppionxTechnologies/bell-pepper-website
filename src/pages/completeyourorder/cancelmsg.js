@@ -1,7 +1,6 @@
 import React from 'react'
 import './cancelmsg.css'
 import close from '../../assets/close.png'
-
 export default function CancelMsg() {
     return (
         <div className="cancelmsg ">

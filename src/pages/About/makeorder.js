@@ -9,7 +9,6 @@ import foodimg from "../../assets/EARN.svg";
 import foodimg1 from "../../assets/QUICK REORDERING-06.svg";
 import foodimg2 from "../../assets/PERSONALIZED RECOMMENDATIONS-06.svg";
 
-
 const Makeorder = () => {
   return (
     <>

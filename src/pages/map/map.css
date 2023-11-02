@@ -51,7 +51,6 @@
     position: relative;
     
 }
-
 @media (max-width:780px) {
     .location-banner{
         height: auto;

@@ -22,7 +22,6 @@ export default function CompleteYourOrder() {
   ];
   const [currentFirstButtonIndex, setCurrentFirstButtonIndex] = useState(0);
   const [currentSecondButtonIndex, setCurrentSecondButtonIndex] = useState(0);
-
   const handleArrowClick = () => {
     // Increment the current button index for both sets of buttons
     setCurrentFirstButtonIndex(

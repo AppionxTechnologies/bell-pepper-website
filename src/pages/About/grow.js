@@ -19,7 +19,6 @@ const Grow = () => {
             <h1 className="grow-h2">Own the next</h1>
             <h1 className="grow-h2">Asian kitchen.</h1>
           </div>
-
           <div className="order-para">
             <p>
               At Bell Pepper, we empower people to fuel the lives they want to

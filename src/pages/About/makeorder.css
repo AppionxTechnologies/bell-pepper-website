@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .Make_Order{
  display: flex;
  justify-content: space-between;

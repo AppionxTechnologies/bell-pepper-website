@@ -31,7 +31,6 @@ export default function Meals() {
           <div className="row">
             <div className="col-lg-6 meals-line d-flex">
               
-
             <div className=" col-lg-3">
             <img className="meals-line-img" src={ImageLine } alt="Quality Food" />
 
