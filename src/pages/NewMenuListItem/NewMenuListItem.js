@@ -9,7 +9,6 @@ const NewMenuListItem = () => {
 
   const [lunchMenu,setLunchMenu] = useState(true)
   const [takeOutClickPop,setTakeOutClickPop] = useState(false)
-
   const LunchMemuClick = () =>{
     setLunchMenu(true)
     setTakeOutClickPop(false)

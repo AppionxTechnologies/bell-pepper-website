@@ -92,7 +92,6 @@ const Navbar = () => {
               <FaPinterest className="n-icon" />
               <FaTiktok className="n-icon" />
             </div>
-
             <div>
               <img className="google-apple" src={googleapple} alt="" />
             </div>

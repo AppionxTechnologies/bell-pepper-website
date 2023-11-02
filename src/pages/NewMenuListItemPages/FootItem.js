@@ -25,7 +25,6 @@ import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { RiMoneyEuroCircleLine } from "react-icons/ri";
 function FootItem() {
   const [firstl, setFirstl] = useState(false);
-
   const [count, setCount] = useState(0);
   const handleClick = () => {
     setCount(count + 1);

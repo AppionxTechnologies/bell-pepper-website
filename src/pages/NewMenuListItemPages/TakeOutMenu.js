@@ -6,7 +6,6 @@ import soya from "../../assets/soya.png";
 import cashew from "../../assets/cashew.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
 function TakeOutMenu() {
   const [first, setFirst] = useState(false);
   const [firstA, setFirstA] = useState(false);
