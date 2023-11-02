@@ -7,7 +7,6 @@ import cashew from "../../assets/cashew.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import { RiMoneyEuroCircleLine } from "react-icons/ri";
 function TakeOutMenu() {
   const [first, setFirst] = useState(false);
   const [firstA, setFirstA] = useState(false);

@@ -23,8 +23,6 @@ import { BsPlus } from "react-icons/bs";
 import { useState } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { RiMoneyEuroCircleLine } from "react-icons/ri";
-import { brown } from "@mui/material/colors";
-
 function FootItem() {
   const [firstl, setFirstl] = useState(false);
 

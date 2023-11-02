@@ -5,7 +5,6 @@ import Image1 from "./assets/bell pepper logo.svg";
 import Image2 from "./assets/playstore and apple store icon-05.svg";
 import { FaFacebook,FaInstagram ,FaTwitter,FaPinterest,FaTiktok,FaCopyright} from "react-icons/fa6";
 import { BsArrowRightCircleFill} from "react-icons/bs";
-
 export default function footer() {
   return (
     <>

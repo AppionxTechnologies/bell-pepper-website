@@ -63,7 +63,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
       {/* oreder */}
       <div className="navbar">
         {icons && (
