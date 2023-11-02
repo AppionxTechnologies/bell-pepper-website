@@ -1,0 +1,215 @@
+.main {
+    overflow-x: hidden;
+}
+
+.nav-color {
+    background-color: #009E60;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.FootItem-footer {
+    width: 66%;
+    min-height: 150%;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.FootItem-footer>img {
+    max-height: 100%;
+    width: 100%;
+  object-fit: cover;
+}
+
+.btn-protien {
+    border-radius: 50px;
+}
+
+.bac-bar {
+    background-color: #DBDBDB;
+}
+
+.header {
+    width: 103%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.FootItembtn {
+    border-radius: 20px;
+    width: 30%;
+    background-color: white;
+}
+
+.FootItem-image1 {
+    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.FootItem-image1>img {
+    height: 100%;
+    width: 100%;
+    object-fit:none;
+    border-radius: 50%;
+}
+
+.FootItem-input[type="radio"] {
+    border: 2px solid;
+    color: #009E60;
+}
+.last-button1{
+    background-color: white;
+    height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin-right: 10px;
+}
+.last-button2{
+    background-color: white;
+    height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid grey;
+ margin-left: 10px;
+}
+.number-zero{
+    padding-top: 15px;
+}
+.icon-zero{
+    color: grey;
+}
+
+@media (max-width:985px) {
+    .FootItem-footer {
+        width: 100%;
+        order: -1;
+    }
+
+    .FootItembtn {
+        margin-right: 5%;
+        width: 50%;
+    }
+}
+
+.icon-border {
+    border-radius: 20px;
+    width: 28%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.icon-color {
+    color: #009E60;
+    margin: 10px;
+}
+
+.footer {
+    border: 1px solid gray;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+ 
+}
+
+.footer-conten {
+    font-size: 13px;
+    padding: 10px 0 0;
+}
+
+.span {
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    padding: 0 10px;
+}
+
+.allergen-btn {
+    border-radius: 20px;
+    text-decoration: underline;
+    background-color: white;
+    border: 1px solid gray;
+    text-align: center;
+    font-size:xx-small;
+    font-weight:500px;
+    position: relative;
+
+}
+.head-bold{
+    font-size:medium;
+    font-weight:bold;
+}
+.back-menu{
+    font-size:smaller;
+    font-weight:bold;
+}
+.back-icon{
+    color: white;
+    font-size:x-large;
+    font-weight:bold;
+
+}
+.free{
+    color: #009E60;
+    font-size: x-small;
+}
+.ingridiants{
+    color: #009E60;
+    font-size:small;
+    font-weight:bolder;
+}
+.parent {
+    position: relative;
+  }
+  
+  .small-box {
+    width: 40%;
+    border-radius: 5px;
+    top: -70px;
+    left: 3%;
+    background-color: white;
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+  }
+.add-cart{
+    background-color: #009E60;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 100px;
+    font-size: x-small;
+    font-weight: bold;
+    
+}
+.number-color{
+    color: #009E60;
+    padding-left: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+.heading-bar{
+    font-size: small;
+    font-weight: bold;
+}
+
+@media (max-width:600px) {
+    .small-box{
+        width: 50%;
+
+    }
+}
