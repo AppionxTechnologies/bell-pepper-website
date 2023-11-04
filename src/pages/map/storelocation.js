@@ -68,6 +68,6 @@ export default function StoreLocation() {
                 </div>
             </div>
             {showOrderonline && <Orderonline onClose={closeOrderonline} />}
-    </>
+    </> 
   )
 }

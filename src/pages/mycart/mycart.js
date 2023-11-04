@@ -10,7 +10,7 @@ import fanta from "../../assets/fanta.png";
 import crossicon from "../../assets/crossicon.png";
 import rightarrow from "../../assets/arrow.png";
 import leftarrow from "../../assets/arrowleft.png";
-import { IconButton } from "@mui/material";
+import { IconButton } from "@mui/material"; 
 
 export default function Cart() {
   const [scrollPosition, setScrollPosition] = useState(0);

@@ -8,7 +8,7 @@
     background-color: #DBDBDB;
 }
 .text-input{
-    outline: none;
+    outline: none; 
     border: none;
     border-bottom: 2px solid black;
     width: 35%;

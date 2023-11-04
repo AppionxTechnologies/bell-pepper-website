@@ -57,7 +57,7 @@ export default function Orderonline() {
           </div>
           <button className="orderonlinebutton fs-7" type="button">
             BROWSE MENU
-          </button> 
+          </button>  
         </form>
       </div>
     </div>

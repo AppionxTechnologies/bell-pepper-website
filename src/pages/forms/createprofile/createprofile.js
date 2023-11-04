@@ -25,7 +25,7 @@ export default function CreateProfile({ onClose }) {
           />
           <div className="div">
             <img className="signup-logoimg" src={computer} alt="" />
-          </div>
+          </div> 
 
           <p className="fs-4 fw-bold">CREATE YOUR PROFILE</p>
           <p className="fw-semibold account">
