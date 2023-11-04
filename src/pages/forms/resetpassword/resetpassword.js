@@ -76,4 +76,3 @@ export default function ResetPassword() {
     </div>
   );
 }
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c:src/pages/forms/resetpassword/resetpassword.js
