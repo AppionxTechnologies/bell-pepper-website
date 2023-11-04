@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+.rightSide-details {
+  padding: 0 rem;
+  margin-left: 30%;
+
+}
+
+.rightSide-details h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.rightSide-details h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  margin-top:-8px;
+}
+
+.rightSide-details h6 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin-top:-8px;
+}
+
+.bar2 hr {
+  width: 100vm;
+  border-top: 2px solid #0b0b0b;
+  margin: 0 auto;
+}
+
+.but-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.but-2 {
+  display: flex;
+  gap: 20px;
+}
+
+.ch-1 h6 {
+  display: flex;
+  gap: 600px;
+}
+
+.ch-2 h6 {
+  display: flex;
+  gap: 600px;
+}
+
+.lb-1 {
+  font-weight: bold;
+
+}
+
+.lb-2 {
+  font-weight: bold;
+  color: green;
+
+}
+
+.bt-1 {
+  border-radius: 30px;
+ }
+
+.ff-1{
+  display:flex;
+  /* border:2px solid; */
+}
+.adj-1{
+  display: flex;
+  gap:450px;
+}
+
+.ff-2{
+  display:flex;
+  /* border:2px solid; */
+}
+.adj-2{
+  display: flex;
+  gap:445px;
+}

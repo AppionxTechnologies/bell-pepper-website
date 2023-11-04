@@ -23,6 +23,11 @@ import Map from "./pages/map/map"
 import StoreLocation from "./pages/map/storelocation";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 
+import App1 from './pages/Myprofile/accountdetails';
+import App2 from './pages/Myprofile/orderhistory';
+import App3 from './pages/Myprofile/myaddresses';
+
+
 
 
 // import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
@@ -56,9 +61,10 @@ function App() {
             <Route path="/grow" element={<Grow />} />
             <Route path="/location" element={<Map />} />
             <Route path="/storelocation" element={<StoreLocation />} />
-
-
-
+            <Route path="/accountdetails" element={<App1 />} />
+            <Route path="/orderhistory" element={<App2 />} />
+            <Route path="/myaddresses" element={<App3 />} />
+          
           </Routes>
           <Footer />
         </div>
