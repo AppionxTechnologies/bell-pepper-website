@@ -1,6 +1,9 @@
 .store-location{
     position: relative;
 }
+.store-location p{
+    padding: 0px 25px;
+}
 .first-row{
     background-color: #DBDBDB;
 }
@@ -64,6 +67,9 @@
     }
     .subtopics p{
         font-size: 11px;
+    }
+    .restaurant-top{
+        order: -1;
     }
     .restaurant-img{
         width: 100%;

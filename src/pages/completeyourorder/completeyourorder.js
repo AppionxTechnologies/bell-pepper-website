@@ -1,12 +1,12 @@
 import { React, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import pickuplocation from "../../assets/pickup location-06.svg";
-import arroww from "../../assets/arrow.png";
+import arrowmove from "../../assets/arrow.png";
 import arrowsortdown from "../../assets/arrowsortdown.png";
-// import applepay from '../../assets/applepay.png';
 import "./completeyourorder.css";
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
+import { IoLocationSharp } from "react-icons/io5";
+import { DiApple } from "react-icons/di";
 
 export default function CompleteYourOrder() {
   const firstButtons = ["TUE Aug 29", "WED Aug 30", "THU Aug 31", "FRI Sep 1"];
@@ -31,41 +31,37 @@ export default function CompleteYourOrder() {
       (currentSecondButtonIndex + 1) % secondButtons.length
     );
   };
-
   return (
-    <div className="completeorder position-relative d-flex justify-content-center align-items-center">
-      <div className="mainn-container text-center">
-        <form>
-          <p className="heading">COMPLETE YOUR ORDER</p>
-          <div className="pickupfromcoolock d-flex align-items-center">
-            <img className="locationicon" src={pickuplocation} alt="" />
-            <p>Pickup from Coolock</p>
+    <div className="col-lg-12 complete-order mt-5 ">
+      <div className="row ">
+        <div className="col-lg-4"></div>
+        <div className="col-lg-4 ">
+          <div className="mb-4">
+            <h4 className="text-center fw-bold">COMPLETE YOUR ORDER</h4>
           </div>
-          <div className="row mt-3">
-            <div className="col-12 coolock">
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span className="fw-bold">Coolock</span>
-              </div>
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>north street</span>
-              </div>
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>erode</span>
-              </div>
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span>tamil nadu</span>
-              </div>
+          {/* <div className=" pickup-content  align-items-center px-3">
+            <span><IoLocationSharp className="pickuplocation-icon"/><p className=" fw-semibold px-3">Pickup from coolock</p></span>
+          </div> */}
+          <div className="pickup-content d-flex px-3">
+            <div className="py-2">
+              <IoLocationSharp className="pickuplocation-icon" />
+            </div>
+            <div className="py-2">
+              <p className="pickup-coolock fw-semibold px-3">
+                Pickup from coolock
+              </p>
             </div>
           </div>
-          <hr className="hr" />
-          <div className="row mt-3">
-            <div className="col-12">
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span className="fw-bold">Select Date</span>
-              </div>
-            </div>
+
+          <div className="pickup-address mt-3">
+            <p className="fw-semibold">Coolock</p>
+            <p>North street</p>
+            <p>Malahide Road</p>
+            <p>Dublin</p>
           </div>
-          <div className="first-buttons">
+          <hr className="completeorder-hrline" />
+          <p className="selectdate fw-semibold">Select Date</p>
+          <div className="firstrow-buttons mb-3">
             {firstButtons.map((button, index) => (
               <button
                 key={index}
@@ -78,14 +74,8 @@ export default function CompleteYourOrder() {
               </button>
             ))}
           </div>
-          <div className="row mt-3">
-            <div className="col-12">
-              <div className="d-flex px-3 flex-row align-items-start justify-content-between">
-                <span className="fw-bold">Select Time</span>
-              </div>
-            </div>
-          </div>
-          <div className="sec-buttons">
+          <p className="selectdate fw-semibold">Select Time</p>
+          <div className="secondrow-buttons mb-4">
             {secondButtons.map((button, index) => (
               <button
                 key={index}
@@ -100,60 +90,62 @@ export default function CompleteYourOrder() {
           </div>
           <span className="arrow-container">
             <IconButton onClick={handleArrowClick}>
-              <img className="arrow" src={arroww} alt="" />
+              <img className="arrow" src={arrowmove} alt="" />
             </IconButton>
           </span>
-          <div className="yourorder d-flex align-items-center">
-            <p>YOUR ORDER</p>
+          {/* <div className="yourorder-content d-flex align-items-center px-3"> */}
+          <p className="yourorder-content fw-semibold">YOUR ORDER</p>
+          {/* </div> */}
+          <div className="d-flex align-items-center justify-content-between mt-2">
+            <span className="fw-bold">5 items</span>
+            <span className="arrowsortdown">
+              <IconButton>
+                <img src={arrowsortdown} alt="" />
+              </IconButton>
+            </span>
           </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="px-3 py-1 mt-3 d-flex flex-row align-items-start justify-content-between">
-                <span className="fw-bold mt-2">5 items</span>
-                <span className="arrowsortdown">
-                  <IconButton><img src={arrowsortdown} alt="" /></IconButton>
-                </span>
-              </div>
-            </div>
+          <hr className="completeorder-hrline" />
+          <div className="d-flex justify-content-between px-2">
+            <p>Subtotal</p>
+            <p>&#8364;17.98</p>
           </div>
-          <hr className="hr" />
-          <div className="row subtotal">
-            <div className="col-12">
-              <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
-                <span>Subtotal</span>
-                <span>&#8364;17.98</span>
-              </div>
-              <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
-                <span>Tax</span>
-                <span>&#8364;00.00</span>
-              </div>
-              <div className="px-3 py-1 d-flex flex-row align-items-start justify-content-between">
-                <span className="fw-bold">Total</span>
-                <span className="fw-bold">&#8364;17.98</span>
-              </div>
-            </div>
+          <div className="d-flex justify-content-between px-2">
+            <p>Tax</p>
+            <p>&#8364;00.00</p>
           </div>
-          <div className="payment d-flex align-items-center justify-content-between">
+          <div className="d-flex justify-content-between fw-semibold px-2">
+            <p>Total</p>
+            <p>&#8364;17.98</p>
+          </div>
+          <div className="payment fw-semibold d-flex align-items-center justify-content-between mb-4 px-3">
             <p>PAYMENT METHOD</p>
             <button type="button" class="badge">
               REQUIRED
             </button>
           </div>
-          <button className="paybutton" type="button">
-            PAY WITH CARD
-          </button>
-          <button type="button" className="applepay">PAY
-            {/* <img src={applepay} alt=""/> */}
-          </button>
-          <hr className="hr" />
-          <Link to="/success" className="link">
-            <button className="pay" type="button">
-              PLACE ORDER- &#8364;17.98
+          <div className="mb-3">
+            <button className="paybutton fw-semibold" type="button">
+              PAY WITH CARD
             </button>
-          </Link>
-        </form>
+          </div>
+          <div>
+            <button type="button" className="applepay fw-semibold">
+              <DiApple className="apple-icon" />
+              PAY
+            </button>
+          </div>
+          <hr className="completeorder-hrline" />
+          <div className="mt-3">
+            <Link to="/success" className="link">
+              <button className="pay fw-semibold" type="button">
+                PLACE ORDER- &#8364;17.98
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="col-lg-4"></div>
       </div>
     </div>
   );
 }
-

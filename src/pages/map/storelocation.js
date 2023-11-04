@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './storelocation.css'
 import restaurantimg from '../../assets/bellepepper-restaurantimg.jpg'
 import SearchIcon from '@mui/icons-material/Search';
+import Orderonline from '../order online/orderonline';
 
 export default function StoreLocation() {
+    const [showOrderonline,SetShowOrderonline] = useState(false);
+
+    const openOrderonline = () =>{
+        SetShowOrderonline(true)
+    }
+    const closeOrderonline = () =>{
+        SetShowOrderonline(false)
+    }
+
   return (
     <>
             <div className='col-lg-12 store-location'>
@@ -14,7 +24,7 @@ export default function StoreLocation() {
                         <div className='px-4'><input className='text-input mt-3 ' type='text' placeholder='Enter your area, country or town'/><button className="search-button" type='button'><SearchIcon  sx={{ fontSize: "16px" }}/></button></div>
                     </div>
                     <div className='col-lg-2'>
-                        <div className='px-3'><button className='btnbtn-order' type='button'>Order Online</button></div>
+                        <div className='px-3'><button onClick={openOrderonline} className='btnbtn-order' type='button'>Order Online</button></div>
                     </div>
                 </div>
                 <div className='row'>
@@ -49,7 +59,7 @@ export default function StoreLocation() {
                             <p>Ayrfield, Grange Abbey, The Coast, Red Arches & Baldoyle</p>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="restaurant-top col-lg-6">
                         <img className='restaurant-img' src={restaurantimg} alt=''/>
                     </div>
                 </div>
@@ -57,6 +67,7 @@ export default function StoreLocation() {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.89189979591322!2d-6.201366387579915!3d53.38719888465029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fc408aca893%3A0xbc3e59290625252c!2sBell%20Pepper!5e0!3m2!1sen!2sin!4v1698591494611!5m2!1sen!2sin" title="Map for our store"/>
                 </div>
             </div>
+            {showOrderonline && <Orderonline onClose={closeOrderonline} />}
     </>
   )
 }

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import "./mycart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,10 +9,35 @@ import sevenup from "../../assets/sevenup.jpg";
 import fanta from "../../assets/fanta.png";
 import crossicon from "../../assets/crossicon.png";
 import rightarrow from "../../assets/arrow.png";
-import leftarrow from "../../assets/arrowleft.png"
+import leftarrow from "../../assets/arrowleft.png";
 import { IconButton } from "@mui/material";
 
 export default function Cart() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const cardWidth = 100;
+  const cardGap = 20;
+  const numCards = 1;
+ 
+  const cards = [
+    { image: fanta, title: "Coke (330ml)", price: "€1.90" },
+    { image: cocola, title: "Coke (330ml)", price: "€1.90" },
+    { image: sevenup, title: "Coke (330ml)", price: "€1.90" },
+    { image: fanta, title: "Coke (330ml)", price: "€1.90" },
+    { image: cocola, title: "Coke (330ml)", price: "€1.90" },
+  ];
+  
+  const handleLeftArrowClick = () => {
+    if (scrollPosition > -cardWidth * (cards.length + numCards)) {
+      setScrollPosition(scrollPosition + cardWidth);
+    }
+  };
+
+  const handleRightArrowClick = () => {
+    if (scrollPosition > -cardWidth * (cards.length - numCards)) {
+      setScrollPosition(scrollPosition - cardWidth);
+    }
+  };
+  
   const [isFormOpen, setIsFormOpen] = useState(true);
   const closeForm = () => {
     setIsFormOpen(false);
@@ -60,7 +83,6 @@ export default function Cart() {
                 <br /> Thai seasoning sauce
               </p>
               <button className="viewallergen" type="button">
-              {/* <img className="allergenimg" src={allergenimg} alt="" /> */}
                 View Allergen
               </button>
               <button className="calcbutton" type="button">
@@ -79,8 +101,43 @@ export default function Cart() {
               </div>
             </div>
           </div>
-
-          <div className="boxes d-flex flex-row align-items-center justify-content-between">
+          
+          <div className="card-navigation" style={{ overflow: "hidden", marginTop:"20px" }}>
+            <div className="leftarrow">
+              <IconButton onClick={handleLeftArrowClick}>
+                <img src={leftarrow} alt="" />
+              </IconButton>
+            </div>
+            <div
+              className="card-container"
+              style={{
+                display: "flex",
+                transform: `translateX(${scrollPosition}px)`,
+                transition: "transform 0.3s ease-in-out",
+                gap: `${cardGap}px`,
+              }}
+            >
+              {cards.map((card, index) => (
+                <div
+                  key={index}
+                  className="card"
+                  style={{ width: `${cardWidth}px`}}
+                >
+                  <img className="card-img-top" src={card.image} alt="" />
+                  <div className="card-body">
+                    <p className="card-title fw-bold">{card.title}</p>
+                    <p className="fw-bold mt-3">{card.price}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="rightarrow">
+              <IconButton onClick={handleRightArrowClick}>
+                <img src={rightarrow} alt="" />
+              </IconButton>
+            </div>
+          </div>
+          {/* <div className="boxes d-flex flex-row align-items-center justify-content-between">
             <div class="card mt-4">
               <img class="card-img-top" src={fanta} alt="" />
               <div class="card-body">
@@ -118,7 +175,7 @@ export default function Cart() {
                     <p className="fw-bold mt-3">&#8364;1.90</p>
                 </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="splins mt-4">
             <div className="col-12">
@@ -166,7 +223,7 @@ export default function Cart() {
               </div>
             </div>
           </div>
-   <hr className="hrline" />
+          <hr className="hrline" />
 
           <div className="d-flex align-items-center justify-content-between">
             <button className="backmenubtn">BACK TO MENU</button>

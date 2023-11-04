@@ -1,298 +1,155 @@
 
-   .completeorder {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 220vh;
-    width: 100%;
-    z-index: 99;
-  }
-<<<<<<< HEAD
-  .main-container {
-=======
-  
-  .mainn-container {
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
-    width: 40%;
-    height: 100%;
-    background-color: white;
-  }
-  
-  .heading {
-    font-size: 25px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-  }
-  
-  .pickupfromcoolock {
-    background-color: lightgray;
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .pickupfromcoolock p {
-    margin-top: 10px;
-    font-weight: 700;
-    margin-inline-start: -80px;
+.pickup-content{
+  background-color: #DBDBDB;
 }
-  .locationicon {
-    width: 30%;
-    height: auto;
-    margin-inline-start: -50px;
-  }
-  
-  .hr {
-    border: 1px solid;
-    width: 98%;
-  }
-  
-  .first-buttons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-  }
-  
-  .firstbutton {
-    background-color: white;
-    color: #000000;
-    font-weight: bold;
-    font-size: 14px;
-    max-width: 20%;
-    font-family: "poppins";
-    padding: 20px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    overflow-x: hidden;
-  }
-  
-  .sec-buttons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-  }
-  
-  .secbutton {
-    background-color: white;
-    color: #000000;
-    max-width: 20%;
-    font-size: 14px;
-    font-family: "poppins";
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .firstbutton.hovered,
+.pickuplocation-icon{
+  font-size: 20px;
+  color: #009e60;
+  background-color: yellow;
+  border-radius: 15px;
+  padding-top: 5px;
+}
+.pickup-coolock {
+  padding: 5px 0px 0px 0px;
+}
+.pickup-address p{
+  line-height: 8px;
+  font-size: 14px;
+}
+.completeorder-hrline{
+  border: 1px solid #616060;
+}
+.selectdate{
+  font-size: 14px;
+}
+.firstrow-buttons,.secondrow-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.firstbutton {
+  background-color: white;
+  color: #000000;
+  font-size: 13px;
+  max-width: 22%;
+  padding: 20px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.secbutton{
+  background-color: white;
+  color: #000000;
+  max-width: 22%;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.firstbutton.hovered,
   .secbutton.hovered {
     background-color: #009e60;
     border: none;
     color: white;
   }
-  
+.arrow-container {
+  position: absolute;
+  right: 445px;
+  top: 465px;
+  display: flex;
+}
+.arrow  {
+  width: 35px;
+  height: auto; 
+}
+.yourorder-content{
+  background-color: #DBDBDB;
+  justify-content: center;
+  padding: 10px 0px 10px 10px;
+
+}
+.arrowsortdown img{
+  width: 20px;
+  height: 20px; 
+}
+.arrow-container {
+  position: absolute;
+  right: 440px;
+  top: 525px;
+  display: flex;
+  align-items: center;
+}
+
+.subtotal p{
+  line-height: 15px;
+  font-size: 14px;
+}
+.payment {
+  background-color: lightgray;
+  height: 50px;
+}
+
+.badge {
+  margin-right: 10px;
+  padding: 7px;
+  color: white;
+  border: none;
+  background-color: #ff6d24;
+}
+.paybutton {
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.applepay {
+  background-color: #080808;
+  color: white;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.apple-icon{
+  font-size: 25px;
+}
+.pay {
+  background-color: #009e60;
+  color: white;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media (max-width:786px) {
   .arrow-container {
-    position: absolute;
-    right: 420px;
-    top: 470px;
+    right: -10px;
+    top: 515px;
     display: flex;
-    align-items: center;
   }
-  
   .arrow  {
-    width: 40px;
-    height: 40px; 
+    width: 30px;
+    height: auto; 
   }
-  
-  .yourorder {
-    margin-top: 40px;
-    background-color: lightgray;
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
-  .arrowsortdown img{
-    width: 20px;
-    height: 20px; 
- }
-  .yourorder p {
-    margin-top: 15px;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: "poppins";
-  }
-  
-  .payment {
-    margin-top: 10px;
-    background-color: lightgray;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .payment p {
-    margin-top: 15px;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: "poppins";
-  }
-  
-  .badge {
-    margin-right: 10px;
-    padding: 10px;
-    color: white;
-    border: none;
-    font-family: "poppins";
-    background-color: #ff6d24;
-  }
-  
-  .paybutton {
-    background-color: white;
-    color: black;
-    border: none;
-    width: 100%;
-    font-family: "poppins";
-    font-weight: 800;
-    margin-top: 25px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .applepay {
-    background-color: #080808;
-    color: white;
-    border: none;
-    width: 100%;
-    font-family: "poppins";
-    font-weight: 600;
-    margin-top: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .pay {
-    background-color: #009e60;
-    color: white;
-    border: none;
-    width: 100%;
-    font-family: "poppins";
-    font-weight: 600;
-    margin-top: 25px;
-    padding: 10px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .link {
-    text-decoration: none;
-  }
-  
-  @media (max-width: 1200px) {
-    .main-container {
-      width: 100%;
-    }
-  
-    .heading {
-      font-size: 23px;
-      margin-top: 50px;
-      white-space: nowrap;
-    }
-  
-    .pickupfromcoolock p {
-      margin-top: 10px;
-      font-weight: 700;
-      margin-inline-start: -70px;
-    }
-  
-    .locationicon {
-      width: 30%;
-      height: auto;
-      margin-inline-start: -40px;
-    }
-  
-    .hr {
-      border: 1px solid;
-      width: 97%;
-    }
-  
-    .firstbutton {
-      padding: 20px 20px;
-      font-size: 10px;
-      max-width: 20%;
-    }
-  
-    .secbutton {
-      padding: 10px 20px;
-      font-size: 10px;
-      max-width: 20%;
-    }
-  
-    .payment p {
-      white-space: nowrap;
-      font-size: 14px;
-    }
-  
-    .yourorder p {
-      white-space: nowrap;
-      font-size: 14px;
-    }
-  
-    .arrow-container {
-      position: absolute;
-      right: -10px;
-      top: 455px;
-      display: flex;
-      align-items: center;
-    }
-  
-    .arrow {
-      width: 30px;
-      height: 30px;
-    }
-    .paybutton {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px auto;
-      }
-      
-      .applepay {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px auto;
-      }
-      
-      .pay {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px auto;
-      }
-      
-  }
-  
+}
+

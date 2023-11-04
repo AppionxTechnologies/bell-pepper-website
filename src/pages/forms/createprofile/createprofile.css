@@ -45,6 +45,10 @@
 }
 .account a {
   color: #009e60;
+  font-size: 14px;
+}
+.account{
+  font-size: 14px;
 }
 
 .hr2 {

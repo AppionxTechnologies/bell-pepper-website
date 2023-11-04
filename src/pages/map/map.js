@@ -10,7 +10,7 @@ export default function map() {
       <div>
         <img src={locationpage} alt="" className="location-banner w-100" />
       </div>
-      <div className="col-lg-12">
+      <div className="col-lg-12 locationpage">
         <div className="row">
           <div className="col-lg-4">
             <p className="fw-bold fs-2 common-heading mt-4">
