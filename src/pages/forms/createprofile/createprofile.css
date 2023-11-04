@@ -41,10 +41,14 @@
   height: auto;
 }
 .signup form {
-  width: 100%;
+  width: 100%; 
 }
 .account a {
   color: #009e60;
+  font-size: 14px;
+}
+.account{
+  font-size: 14px;
 }
 
 .hr2 {

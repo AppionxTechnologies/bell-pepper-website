@@ -128,17 +128,17 @@
     padding: 0px -100px;
   }
   .card{
-    width: 5rem;
-    height: 120px;
+    width: 90px;
+    height: 120px; 
   }
   .card-body p{
     font-size: 10px;
     white-space: nowrap;
-    margin-inline-start: -35px;
+    margin-inline-start: -10px;
   }
   .leftarrow{
     position: absolute;
-    right: 394px;
+    right: 402px;
     top: 400px;
     z-index: 1;
     display: flex;
@@ -150,7 +150,7 @@
   }
   .rightarrow{
     position: absolute;
-    right: 93px;
+    right: 90px;
     top: 400px;
     z-index: 1;
     display: flex;
@@ -196,7 +196,7 @@
 
   
 
-  @media  (max-width:700px) {
+  @media  (max-width:600px) {
     .mycart{
         height: 190vh;
         width: 100%;
