@@ -21,10 +21,7 @@ import { useState } from "react";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import Cart from "./pages/mycart/mycart";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
 import SignIn from "./pages/forms/signin/signin";
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
 
 // import { Link } from "react-router-dom";
 const Navbar = () => {

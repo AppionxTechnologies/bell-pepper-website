@@ -8,7 +8,7 @@ import Footer from "./footer";
 import Allergen from "./pages/About/allergen";
 import Kitchen from "./pages/About/kitchen";
 import Makeorder from "./pages/About/makeorder";
-import Catering from "./pages/About/catering";
+
 import Grow from "./pages/About/grow";
 
 import Orderonline from "./pages/order online/orderonline";
@@ -20,8 +20,7 @@ import Map from "./pages/map/map"
 import StoreLocation from "./pages/map/storelocation";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import NewMenuListItem from "./pages/NewMenuListItem/NewMenuListItem";
-import LunchMenu from "./pages/NewMenuListItemPages/LunchMenu";
-import TakeOutMenu from "./pages/NewMenuListItemPages/TakeOutMenu";
+
 import FootItem from "./pages/NewMenuListItemPages/FootItem";
 import CateringTray from "./pages/cattering/cattering-tray";
 import Tray from "./pages/cattering/tray";
@@ -52,8 +51,8 @@ function App() {
             <Route path='/orderNow1' element={<Tray/>} />
             {/* <Route path="/menu-detail" element={<Menu_Detail />} /> */}
             {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/menu-detail" element={<Menu_Detail />} />
+   
+            
             
             <Route path="/aboutus" element={<NewAboutUs />} />
 
