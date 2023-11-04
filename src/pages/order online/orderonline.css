@@ -112,11 +112,8 @@
     vertical-align: middle;
   }
   
-<<<<<<< HEAD
+
   .icon-pickup {
-=======
-  .icon-pickup{
->>>>>>> c5d5e93836118272ca5197d236291d55283cf54c
     padding: 0px 25px;
     font-size: 14px;
     font-family: "poppins";
@@ -128,7 +125,7 @@
   border: none;
   width: 80%;
   font-size: 16px;
-  font-family: "poppins";
+  font-family: "poppins"; 
   font-weight: 600;
   padding: 10px 10px;
   border: 2px solid;

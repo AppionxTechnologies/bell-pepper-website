@@ -53,11 +53,11 @@ export default function SignIn({onClose}) {
     setShowForgot(false);
   };
 
-  return (
+  return ( 
     <>
     {showSignIn && (
     <div className={`signin ${isFormOpen ? "" : "hidden"}`}>
-      <div className="main-container bg-white p-3 ">
+      <div className="signin-container bg-white p-3 ">
           <form action="" onSubmit={handleSubmit}>
             <img className="cross-icon d-flex" src={crossicon} alt="" onClick={closeForm} />
             <div className="div">

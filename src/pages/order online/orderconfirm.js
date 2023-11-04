@@ -16,7 +16,7 @@ export default function OrderConfirm() {
           <p className="heading-addressform">ADD DELIVERY ADDRESS</p>
           <div className="mb-3">
             <input
-              type="text"
+              type="text" 
               placeholder="Enter your address"
               className="addressform-inputs"
             />

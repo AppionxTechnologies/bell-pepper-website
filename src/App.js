@@ -11,8 +11,6 @@ import Makeorder from "./pages/About/makeorder";
 import Catering from "./pages/About/catering";
 import Grow from "./pages/About/grow";
 
-import Orderonline from "./pages/order online/orderonline";
-import OrderConfirm from "./pages/order online/orderconfirm";
 import CompleteYourOrder from "./pages/completeyourorder/completeyourorder";
 import SuccessMsg from "./pages/completeyourorder/successmsg";
 import CancelMsg from "./pages/completeyourorder/cancelmsg";
@@ -31,10 +29,10 @@ import AccountDetails from "./pages/My profile/accountdetails";
 import OrderHistory from "./pages/My profile/orderhistory";
 import VerticalNavbar from "./pages/My profile/vertical-navbar";
 import Myaddress from "./pages/My profile/myaddress";
+import OrdernowInvoice from "./pages/order online/ordernowInvoice";
 
 
 
-// import ForgotPassword from './signin/forgotpassword/forgotpassword/forgotpwd';
 function App() { 
   return (
     <>
@@ -51,9 +49,6 @@ function App() {
             <Route path='/orderNow' element={<FootItem/>} />
             <Route path='/orderNow1' element={<Tray/>} />
             {/* <Route path="/menu-detail" element={<Menu_Detail />} /> */}
-            {/* <Route path="/fotgetpassword" element={<ForgotPassword />} /> */}
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/menu-detail" element={<Menu_Detail />} />
             
             <Route path="/aboutus" element={<NewAboutUs />} />
 
@@ -61,8 +56,6 @@ function App() {
             <Route path="/completeorder" element={<CompleteYourOrder />} />
             <Route path="/success" element={<SuccessMsg />} />
             <Route path="/cancel" element={<CancelMsg />} />
-            <Route path="/orderonline" element={<Orderonline />} />
-            <Route path="/order" element={<OrderConfirm />} />
             <Route path="/allergen" element={<Allergen />} />
             <Route path="/kitchen" element={<Kitchen />} />
             <Route path="/makeorder" element={<Makeorder />} />
@@ -75,6 +68,8 @@ function App() {
             <Route path="/accountdetails" element={<AccountDetails />} />
             <Route path="/orderhistory" element={<OrderHistory />} />
             <Route path="/myaddress" element={<Myaddress/>}/>
+            <Route path="/invoice" element={<OrdernowInvoice/>}/>
+
 
 
 
