@@ -9,7 +9,7 @@
 .NewMenuListItem
 {
     min-height: 150vh;
-      
+
 }
 .NewMenuListItem-left nav
 {
@@ -127,6 +127,7 @@ height: 3px;
   left: 55%;
 }
 }
+
 
 .text-none{
   text-decoration: none;
