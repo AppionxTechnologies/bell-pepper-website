@@ -1,15 +1,50 @@
 .hrline{
     border: 0.4px solid gray;
 }
-
+.lunch-banner{
+  width: 100%;
+  height:370px;
+  object-fit: cover;
+}
 .NewMenuListItem
 {
     min-height: 150vh;
+      
 }
 .NewMenuListItem-left nav
 {
     display: flex;   
-    padding: 10px;
+ 
+}
+.lunch-text1{
+  
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align:start;
+
+}
+.lunch-text2{
+  position: absolute;
+  top:260px;
+  left: 30px;
+  color: white;
+  font-size:15px;
+  font-weight:bold;
+  text-align: start;
+}
+.lunch-text3{
+  position: absolute;
+  top:290px;
+  left: 30px;
+  color: white;
+  font-size:10px;
+  font-weight:bold;
+  text-align: start;
+  
 }
 .NewMenuListItem-left nav p{
   color: black;
@@ -24,7 +59,7 @@
 height: 3px;
   width: 90px;
   position: absolute;
-  top: 135px;
+  top: 500px;
   left: 100px;
   background-color:green;
   transition: all 0.5s ease 0.3s;

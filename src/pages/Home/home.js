@@ -35,7 +35,22 @@ export default function Home() {
         >
           <div>
             <img src={Image1} alt="Image 1" className=" img1" />
+            <div class="corousel-text1"><h1>Bellpepper</h1>
+            <h1> Feel Good</h1>
+            <h1>Thai Restaurant</h1>
+            <h1>& Takeaway</h1>
+            <div className="corousel-text2">
+            <p>at right Love yourself bell pepper is all about fresh ,</p>
+            <p>nutritious tasty food cooked to order</p>
+           </div>
+           <div>
+            <button className="corousel-button">Order Online</button>
+           </div>
+           </div>
           </div>
+        
+          
+        
           <div>
             <img src={Image2} alt="Image 2" className=" img1" />
           </div>

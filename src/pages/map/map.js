@@ -9,6 +9,18 @@ export default function map() {
     <> 
       <div>
         <img src={locationpage} alt="" className="location-banner w-100" />
+        <div className="location-text1">
+          <h1>Bell Pepper Locations</h1>
+          <h1>Thai Restaurant</h1>
+          <h1>Dublin, Waterford</h1>
+          <div className="location-text2">
+            <p>At bell pepper amazing Thai food is not where</p>
+            <p>our work ends. The idea behind Bell Pepper is simple.</p>
+            <p>We take the name seriously (and literally!).</p>
+            <p>It’s all about fresh, tasty Thai food cooked to</p>
+            <p>order in minutes.</p>
+          </div>
+        </div>
       </div>
       <div className="col-lg-12 locationpage">
         <div className="row">
