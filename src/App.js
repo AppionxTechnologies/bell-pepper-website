@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Navbar from "./navbar";
 import Footer from "./footer";
-
 import Allergen from "./pages/About/allergen";
 import Kitchen from "./pages/About/kitchen";
 import Makeorder from "./pages/About/makeorder";

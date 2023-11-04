@@ -18,9 +18,10 @@ const NewMenuListItem = () => {
     setTakeOutClickPop(true);
     setLunchMenu(false);
   };
+  
   return (
 
-    
+
     <div>
       <div>
         <img src={lunchimg} alt="" className="lunch-banner"/>

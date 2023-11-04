@@ -13,6 +13,7 @@ function TakeOutMenu() {
   const [firstC, setFirstC] = useState(false);
   const [firstD, setFirstD] = useState(false);
   const [firstE, setFirstE] = useState(false);
+
   return (
     <div className="TakeOutMenu-container">
     <div className="p-2">
@@ -106,6 +107,7 @@ function TakeOutMenu() {
                     in our zesty sweet chilli sauce.Lightly battered pieces of
                     chicken.
                   </h6>
+
 
                   <div className="d-flex justify-content-between parent">
                     <div className="d-flex align-items-center">

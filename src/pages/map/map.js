@@ -5,9 +5,10 @@ import iconLocation from "../../assets/icon-location.png";
 import { Link } from "react-router-dom";
 
 export default function map() {
+  
   return (
     <> 
-    
+
       <div>
         <img src={locationpage} alt="" className="location-banner w-100" />
         <div className="location-text1">
