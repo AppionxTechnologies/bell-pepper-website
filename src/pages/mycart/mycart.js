@@ -75,14 +75,18 @@ export default function Cart() {
           <div className="row pickup-mycart g-0">
             <div className="col-12 mt-2 px-3">
               <div className="d-flex align-items-center justify-content-between">
-                <span className="fw-bold">Pickup from coolock</span>
-                <span>
+                <p className="fw-bold pickup-coolock-text">Pickup from coolock</p>
+                <p className="fw-bold pine-street">Pickup from pine street</p>
+                <div className="mb-3">
                   <a href="#" className="changes">
                     Change
                   </a>
-                </span>
+                </div>
               </div>
             </div>
+          </div>
+          <div className="mt-3 d-flex justify-content-center ordering-crew-btn">
+            <button className="ordering-crew" type="button">Ordering for the whole crew?</button>
           </div>
           <div className="imgcontent g-0">
             <div className="mealimg">
@@ -190,46 +194,7 @@ export default function Cart() {
               </IconButton>
             </div>
           </div>
-          {/* <div className="boxes d-flex flex-row align-items-center justify-content-between">
-            <div class="card mt-4">
-              <img class="card-img-top" src={fanta} alt="" />
-              <div class="card-body">
-                <p class="card-title fw-bold">Coke (330ml)</p>
-                <p className="fw-bold mt-3">&#8364;1.90</p>
-              </div>
-            </div>
-            <div className="leftarrow"><IconButton><img src={leftarrow} alt=""/></IconButton></div>
-            <div class="card mt-4">
-              <img class="card-img-top" src={cocola} alt="" />
-              <div class="card-body">
-                <p class="card-title fw-bold">Coke (330ml)</p>
-                <p className="fw-bold mt-3">&#8364;1.90</p>
-              </div>
-            </div>
-            <div class="card mt-4">
-              <img class="card-img-top" src={sevenup} alt="" />
-              <div class="card-body">
-                <p class="card-title fw-bold">Coke (330ml)</p>
-                <p className="fw-bold mt-3">&#8364;1.90</p>
-              </div>
-            </div>
-            <div class="card mt-4">
-              <img class="card-img-top" src={fanta} alt="" />
-              <div class="card-body">
-                <p class="card-title fw-bold">Coke (330ml)</p>
-                <p className="fw-bold mt-3">&#8364;1.90</p>
-              </div>
-            </div>
-            <div className="rightarrow"><IconButton><img src={rightarrow} alt=""/></IconButton></div>
-            <div class="card mt-4">
-                <img class="card-img-top" src={cocola} alt=""/>
-                <div class="card-body">
-                    <p class="card-title fw-bold">Coke (330ml)</p>
-                    <p className="fw-bold mt-3">&#8364;1.90</p>
-                </div>
-            </div>
-          </div> */}
-
+          
           <div className="splins mt-4">
             <div className="col-12">
               <div className="d-flex px-3flex-row align-items-start justify-content-between">

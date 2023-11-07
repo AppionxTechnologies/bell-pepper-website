@@ -39,12 +39,12 @@ export default function NewAboutUs() {
           </div>
         </div>
         <div className="About-us-Text">
-          <p href="/catering-aboutus">
+          <a href="/catering-aboutus">
             <span className="span-text"> CATERING</span>
-          </p>
-          <p href="/allergen">
+          </a>
+          <a href="/allergen">
             <span className="span-text">ALLERGENS</span>
-          </p>
+          </a>
         </div>
       </div>
     </>
