@@ -19,7 +19,7 @@
   left: 390px;
 }
 .addressform-containerr {
-  height: 60%;
+  height: 65%;
   text-align: center;
   width: 450px;
   background-color: white;
@@ -89,7 +89,6 @@ input[type=checkbox] {
     margin-top: 30px;
   }
   .addressform-containerr {
-    min-width: 100%;
     width: 100%;
     font-size: 14px;
     border-radius: 0px;

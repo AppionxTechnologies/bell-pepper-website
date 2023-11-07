@@ -28,3 +28,18 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (max-width:786px) {
+    .homeicon-address{
+       font-size: 13px; 
+    }
+    .home-with-icon{
+        margin-left: 30px;
+    }
+    .my-profile-content{
+        display: none;
+    }
+    .myaddress-heading{
+        margin-left: 25px;
+    }
+}

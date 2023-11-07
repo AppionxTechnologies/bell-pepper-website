@@ -4,13 +4,11 @@
 }
 .input-field1 {
   position: relative;
-  width: 500px;
   margin-top: 10px;
 }
-
 .input-field1 input {
   border: 2px solid #009e60;
-  width: 90%;
+  width: 50%;
   padding: 7px 10px;
   border-radius: 30px;
   outline: none;
@@ -40,4 +38,10 @@
   .input-field1 input {
     width: 100%;
   }
+  .my-profile-content{
+    display: none;
+}
+.myaccountdetails-heading{
+  margin-left: 25px;
+}
 }

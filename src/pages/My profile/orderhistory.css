@@ -7,6 +7,9 @@
     line-height: 10px;
     font-size: 14px;
 }
+.one-item{
+    display: none;
+}
 .imagerow1-button{
     font-size: 13px;
     outline: none;
@@ -58,14 +61,6 @@
     .crispyimg1{
         display: none;
     }
-    /* .row1 {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 30px;
-    } */
-    .sidebutton{
-        padding-left: 200px;
-    }
     .imagerow1-button-top{
         font-size: 12px;
         padding: 3px 10px;
@@ -76,5 +71,26 @@
     }
     .orderhistory-hrline{
         display: none;
+    }
+    .one-order{
+        display: none;
+    }
+    .one-item{
+        display: flex;
+    }
+    .row1-orderhistory{
+        margin-bottom: 50px;
+    }
+    .imagerow1{
+        box-shadow: 3px 3px 4px rgb(0 0 0 / 15%);
+    }
+    .my-profile-content{
+        display: none;
+    }
+    .row1-orderhistory{
+        margin-top: 20px;
+    }
+    .myorder-heading{
+        margin-left: 22px;
     }
 }
