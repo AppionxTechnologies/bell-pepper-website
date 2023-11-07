@@ -53,9 +53,33 @@ export default function Home() {
         
           <div>
             <img src={Image2} alt="Image 2" className=" img1" />
+            <div className="location-text1">
+          <h1>Bell Pepper Locations</h1>
+          <h1>Thai Restaurant</h1>
+          <h1>Dublin, Waterford</h1>
+          <div className="location-text2">
+            <p>At bell pepper amazing Thai food is not where</p>
+            <p>our work ends. The idea behind Bell Pepper is simple.</p>
+            <p>We take the name seriously (and literally!).</p>
+            <p>It’s all about fresh, tasty Thai food cooked to</p>
+            <p>order in minutes.</p>
+          </div>
+        </div>
           </div>
           <div>
             <img src={Image3} alt="Image 3" className=" img1" />
+            <div className="lunch-text1">
+          <h1>Bellpepper Authentic</h1>
+          <h1>Healthy Thai Restaurant</h1>
+          <h1>Dublin , Waterford</h1>
+        </div>
+        <div className="lunch-text2">
+          <p>Our Ingredients are locally sourced and 100% MSG Free</p>
+        </div>
+        <div className="lunch-text3">
+        <p>It's all about fresh , nutritious tasty food cooked in front</p>
+          <p>of your eyes and served to you in minutes.</p>
+        </div>
           </div>
          
         </Carousel>

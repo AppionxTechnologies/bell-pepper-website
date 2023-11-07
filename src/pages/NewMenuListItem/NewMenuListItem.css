@@ -19,7 +19,7 @@
 .lunch-text1{
   
   position: absolute;
-  top: 100px;
+  top: 105px;
   left: 30px;
   color: white;
   font-size: 30px;
@@ -59,7 +59,7 @@
 height: 3px;
   width: 90px;
   position: absolute;
-  top: 500px;
+  top: 507px;
   left: 100px;
   background-color:green;
   transition: all 0.5s ease 0.3s;
@@ -75,7 +75,7 @@ height: 3px;
 .NewMenuListItem-left nav  p:nth-child(2):hover~.animation
 {
   width: 100px;
-  left: 30%;
+  left: 25%;
 }
 
 
@@ -83,14 +83,14 @@ height: 3px;
 .NewMenuListItem-left nav  p:nth-child(3):hover~.animation
 {
   width: 100px;
-  left: 51%;
+  left: 45%;
 }
 
 
 .NewMenuListItem-left nav  p:nth-child(4):hover~.animation
 {
   width: 160px;
-  left: 73%;
+  left: 65%;
 }
 
 
@@ -98,7 +98,7 @@ height: 3px;
   .animation{
       left: 10px;
       width: 80px;
-      top: 123px;
+      top: 507px;
     }
   .NewMenuListItem-left nav p{
     color: black;

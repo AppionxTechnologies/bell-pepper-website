@@ -1,4 +1,4 @@
-import React, { Component }  from "react";
+import React, { Component, useState }  from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image1 from "../../assets/meals.png";
 import ourMenu from "../../assets/our-menu.png";
@@ -9,7 +9,10 @@ import Slider from "react-slick";
 import "./value-meals.css";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 
+
 export default function Meals() {
+
+  const [currentSlide,setCurrentSlide]=useState()
   const settings = {
     dots: true,
     infinite: true,
@@ -24,6 +27,14 @@ export default function Meals() {
       console.log("after change", currentSlide);
     }
   };
+
+const nextSlide = () => {
+  setCurrentSlide(currentSlide + 1);
+};
+
+const previousSlide = () => {
+  setCurrentSlide(currentSlide - 1);
+};
   return (
     <>
       <div className="valueMeals">
@@ -51,10 +62,10 @@ export default function Meals() {
 
             <div className="col-lg-6 main-box ">
               <div className="icons ">
-                <FaArrowCircleUp />
+                <FaArrowCircleUp onClick={previousSlide} />
               </div>
 
-              <div className="box1 mt-4 py-2">
+              <div className="box-1 mt-4 py-2">
                 <img className="meals" src={Image1} alt="Quality Food" />
                 <div className="">
                   <p className="fw-bold">Dish Name</p>
@@ -85,8 +96,10 @@ export default function Meals() {
                 </div>
               </div>
 
+              
+
               <div className="icons ">
-                <FaArrowCircleDown />
+               <FaArrowCircleDown onClick={nextSlide} />
               </div>
             </div>            
           </div>
@@ -96,3 +109,7 @@ export default function Meals() {
     </>
   );
 }
+
+
+
+
