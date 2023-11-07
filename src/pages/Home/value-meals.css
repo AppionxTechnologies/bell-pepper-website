@@ -1,25 +1,30 @@
 .meals1 {
   height: 100px;
+  object-fit: contain;
 }
 .meals {
-  height: 100px;
+  height: 70px;
+  object-fit: contain;
 }
 .meals2 {
-  height: 100px;
+  height: 70px; 
+  object-fit: contain;
 }
-.box1 {
-  margin-left: 50px;
+.box-1 {
+   margin-left: 50px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
   display: flex;
-  align-items: center;
+  align-items: center; 
+   
 }
 
 .box2 {
   background-color: #009e60;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
   display: flex;
   align-items: center;
 }
@@ -50,7 +55,8 @@
   width: 350px;
   position: absolute;
   top: 14%;
-  right: 0%;
+  left:50%;
+  object-fit: cover;
 }
 
 .size-food {

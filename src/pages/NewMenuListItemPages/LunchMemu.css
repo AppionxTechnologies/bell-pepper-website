@@ -9,6 +9,7 @@
     object-fit:contain;    
     
 } 
+
 .order-button {
     width: 320px;
     border-radius: 50px;
@@ -18,6 +19,7 @@
     outline: none;
     padding: 5px; 
 }
+
 
 .orange {
     color: orange;
