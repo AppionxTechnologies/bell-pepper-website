@@ -108,6 +108,7 @@ const previousSlide = () => {
       <hr className="line-menu"></hr>
     </>
   );
+  
 }
 
 
