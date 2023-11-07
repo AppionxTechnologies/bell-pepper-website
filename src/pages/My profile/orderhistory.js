@@ -1,9 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './orderhistory.css'
 import CrispyImg from "../../assets/crispyimg.png";
 import VerticalNavbar from './vertical-navbar'
+import OrdernowInvoice from '../order online/ordernowInvoice';
+
 
 export default function OrderHistory() {
+  const [ShowInvoice, setShowInvoice] = useState(false);
+
+    const openInvoice = () => {
+        setShowInvoice(true);
+    };
+    const closeInvoice = () => {
+        setShowInvoice(false);
+    };
+
   return (
     <>
       <div className='col-lg-12'>
@@ -60,12 +71,14 @@ export default function OrderHistory() {
             </div>
             <div className='row'>
               <div className='col-lg-12 py-3 mt-3 ordernow-content text-center'>
-                <a className='fw-semibold'>Order now</a>
+                <p className='fw-semibold' onClick={ShowInvoice ? closeInvoice : openInvoice}>Order now</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {ShowInvoice && <OrdernowInvoice onClose={closeInvoice} />}
+
     </>
   )
 }

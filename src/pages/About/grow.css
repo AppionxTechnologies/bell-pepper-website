@@ -21,15 +21,15 @@
     color: #282828;
 }
 .order-h > h1{
-    line-height: 3.8rem;
+    line-height: 2.5rem;
 }
 
 .order-h2 > h1{
     padding: 10px 0 0;
-    line-height: 2.8rem;
-    font-size: 3rem;
+    line-height: 1.8rem;
+    font-size: 40px;
     color: #282828;
-    font-weight: 500;
+    font-weight: 600;
 }
 .order-para{
     padding: 1rem 0;
@@ -163,6 +163,9 @@ justify-content: center;
     padding: 1rem;
   
 }
+.Success_footer h2{
+    color: #009E60;
+}
 .Success_footer-container-head{
     display: flex;
     justify-content: center;
@@ -181,10 +184,10 @@ align-items: center;
 .Success_footer-center > span
 {
     color: #009E60;
-    font-size: 2.3rem;
+    font-size: 30px;
     font-weight: bold;
 }
-.Success_footer-center > h3{
+.Success_footer-center > h4{
     border-bottom: 2px solid ;
     border-bottom-color: #009E60;
 }

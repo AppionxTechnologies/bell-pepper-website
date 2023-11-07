@@ -23,7 +23,8 @@
     gap: 20px;
     padding-left: 36px;
 }
-.add-address-content a{
+.add-address-content p{
     color: #009E60;
     cursor: pointer;
+    text-decoration: underline;
 }

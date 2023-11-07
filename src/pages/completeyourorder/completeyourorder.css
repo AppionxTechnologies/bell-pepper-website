@@ -82,8 +82,8 @@
 }
 .arrow-container {
   position: absolute;
-  right: 440px;
-  top: 525px;
+  right: 445px;
+  top: 535px;
   display: flex;
   align-items: center;
 }
@@ -144,7 +144,7 @@
 @media (max-width:786px) {
   .arrow-container {
     right: -10px;
-    top: 515px;
+    top: 525px;
     display: flex;
   }
   .arrow  {

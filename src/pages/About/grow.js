@@ -3,14 +3,14 @@ import React from "react";
 import "./grow.css";
 import growimg from "../../assets/Grow with us-15.png";
 import iconimg from "../../assets/Profitable brand-06.svg";
-import iconimg1  from "../../assets/Seamless start-06.svg";
+import iconimg1 from "../../assets/Seamless start-06.svg";
 import iconimg2 from "../../assets/Extensive training-06.svg";
-import iconimg3  from "../../assets/Ongoing support-06.svg";
+import iconimg3 from "../../assets/Ongoing support-06.svg";
 const Grow = () => {
   return (
     <>
-      <div className="Make_Order"> 
-        <div className="order-left"> 
+      <div className="Make_Order">
+        <div className="order-left">
           <div className="order-h">
             <h1 className="grow-h1">Grow your success</h1>
             <h1 className="grow-h1">with us</h1>
@@ -19,8 +19,8 @@ const Grow = () => {
             <h1 className="grow-h2">Own the next</h1>
             <h1 className="grow-h2">Asian kitchen.</h1>
           </div>
-          <div className="order-para">
-            <p>
+          <div className="order-para ">
+            <p className="fw-medium">
               At Bell Pepper, we empower people to fuel the lives they want to
               live—and that includes our franchisees. As a franchise owner, you
               have everything you need to reach your business goals while
@@ -28,7 +28,7 @@ const Grow = () => {
             </p>
           </div>
           <div className="order-para">
-            <p>
+            <p className="fw-medium">
               Bell Pepper is a simple and profitable fast-casual dining
               experience with a proven operational system and business model
               that works. Our primary offerings include completely customizable
@@ -40,7 +40,7 @@ const Grow = () => {
         </div>
         <div className="order-right">
           <div className="food-img">
-            <img src={growimg } alt="" />
+            <img src={growimg} alt="" />
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ const Grow = () => {
 
       <div className="Make_order_Success-center">
         <div className="Success-center-h">
-          <h1>why Bell Pepper</h1>
+          <h1 className="fw-semibold">why Bell Pepper</h1>
         </div>
 
         <div className="Success-center-main">
@@ -60,7 +60,7 @@ const Grow = () => {
 
             <h4 className="Success-center-title">Profitable brand</h4>
             <div className="Success-center-para">
-              <p>
+              <p className="fw-medium">
                 The Bell Pepper brand is well established and has proven to be
                 profitable for our franchisees across the nation.
               </p>
@@ -73,7 +73,7 @@ const Grow = () => {
 
             <h4 className="Success-center-title">Seamless start</h4>
             <div className="Success-center-para">
-              <p>
+              <p className="fw-medium">
                 Getting started, our home office team assists new Bell Pepper
                 franchise owners in site selection, design, and construction
               </p>
@@ -88,7 +88,7 @@ const Grow = () => {
 
             <h4 className="Success-center-title"> Extensive training </h4>
             <div className="Success-center-para">
-              <p>
+              <p className="fw-medium">
                 We provide thorough training to owners and employees to ensure
                 quality and consistency across every kitchen.
               </p>
@@ -101,7 +101,7 @@ const Grow = () => {
 
             <h4 className="Success-center-title">Ongoing support</h4>
             <div className="Success-center-para">
-              <p>
+              <p className="fw-medium">
                 Once established, ongoing support in operations, IT and
                 marketing enables the success of each franchise to thrive.
               </p>
@@ -114,9 +114,9 @@ const Grow = () => {
 
       {/* Success-center-content */}
       <div className="Success-center-content">
-        <h4 className="succ_h4">what makes a great owner</h4>
+        <h4 className="succ_h4 fw-semibold">what makes a great owner</h4>
         <div className="success-center-para">
-          <p>
+          <p className="fw-medium">
             We’re looking for business-minded individuals who are passionate
             about what we’re doing as a company—people who are ready to grow
             with us. If you’re active in your community, understand the market
@@ -131,61 +131,68 @@ const Grow = () => {
 
       {/* Success-footer */}
 
-      <div className="Success_footer">
-        <h1>Our franchising process</h1>
-        <div className="Success_footer-container-head">
-          <div className="Success_footer-container">
+      <div className="Success_footer px-5">
+        <h2 className="fw-bold ">Our franchising process</h2>
+        <div className="Success_footer-container-head ">
+          <div className="Success_footer-container mt-3">
             <div className="Success_footer-center">
               <span>1.</span>
-              <h3>Initial call with Bell Pepper</h3>
+              <h4 className="fw-semibold">Initial call with Bell Pepper</h4>
             </div>
 
             <div className="Success_footer_para">
-              <p>
-                We will discuss your interest, experience, and potential
-                marketplace as well as answer any questions you may have.
+              <p className="fw-medium">
+                We will discuss your interest, experience, and <br />
+                potential marketplace as well as answer any <br />
+                questions you may have.
               </p>
             </div>
           </div>
-          <div className="Success_footer-container">
+          <div className="Success_footer-container mt-3">
             <div className="Success_footer-center">
-              <span>3.</span>
-              <h3> Meeting with leadership </h3>
+              <span>2.</span>
+              <h4 className="fw-semibold"> Franchise application </h4>
             </div>
 
             <div className="Success_footer_para">
-              <p>
-                You’ll be invited to meet with the leadership team, where you’ll
-                learn more about our goals as a company.
+              <p className="fw-medium">
+                Once your application has been submitted,
+                <br />
+                you’ll review our Franchise Disclosure
+                <br />
+                Document detailing the offering.
               </p>
             </div>
           </div>
         </div>
         <div className="Success_footer-container-head">
-          <div className="Success_footer-container">
+          <div className="Success_footer-container mt-5">
             <div className="Success_footer-center">
-              <span>1.</span>
-              <h3>Initial call with Bell Pepper</h3>
+              <span>3.</span>
+              <h4 className="fw-semibold">Meeting with Leadership</h4>
             </div>
 
             <div className="Success_footer_para">
-              <p>
-                We will discuss your interest, experience, and potential
-                marketplace as well as answer any questions you may have.
+              <p className="fw-medium">
+                You’ll be invited to meet with the leadership
+                <br />
+                team, where you’ll learn more about our
+                <br />
+                goals as a company.
               </p>
             </div>
           </div>
-          <div className="Success_footer-container">
+          <div className="Success_footer-container mt-5">
             <div className="Success_footer-center">
               <span>4.</span>
-              <h3> Franchise approval</h3>
+              <h4 className="fw-semibold"> Franchise approval</h4>
             </div>
 
             <div className="Success_footer_para">
-              <p>
-                Once you're approved as a franchisee and sign the necessary
-                agreements, you'll officially be a member of the Bell Pepper
-                family.
+              <p className="fw-medium">
+                Once you're approved as a franchisee and <br />
+                sign the necessary agreements, you'll officially <br /> be a
+                member of the Bell Pepper family.
               </p>
             </div>
           </div>
@@ -196,4 +203,4 @@ const Grow = () => {
   );
 };
 
-export default Grow;
+export default Grow;

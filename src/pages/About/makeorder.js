@@ -8,20 +8,22 @@ import rewards from "../../assets/rewards-banner.png";
 import foodimg from "../../assets/EARN.svg";
 import foodimg1 from "../../assets/QUICK REORDERING-06.svg";
 import foodimg2 from "../../assets/PERSONALIZED RECOMMENDATIONS-06.svg";
+import Image2 from "../../assets/playstore and apple store icon-05.svg";
+
 
 const Makeorder = () => {
   return (
     <>
       <div className="Make_Order">
         <div className="order-left">
-          <div className="order-h">
-            <h1>MAKE ORDER</h1>
-            <h1>MORE EXCITING</h1>
-            <h1> THAN EVER </h1>  
+          <div className="order-h ">
+            <h1 className="fw-bold">MAKE ORDER</h1>
+            <h1 className="fw-bold">MORE EXCITING</h1>
+            <h1 className="fw-bold"> THAN EVER </h1>  
           </div>
 
           <div className="order-para">
-            <p>
+            <p className="fw-medium">
               Join Bell Pepper rewards and get the most out of your next meal as
               you earn progress on every order, check out menu recommendations
               tailored to your tastes, and discover delicious members-only
@@ -42,10 +44,10 @@ const Makeorder = () => {
 
       <div className="Make_order_center">
         <div className="center-h">
-          <h1>How rewards work</h1>
+          <h1 className="fw-bold">How rewards work</h1>
         </div>
         <div className="center-para">
-          <p>
+          <p className="fw-medium">
             {" "}
             Once you’ve registered, you’ll earn 30-point sign-up bonus and start
             receiving 1 point for every euro you spend with us. Every 100 points
@@ -67,7 +69,7 @@ const Makeorder = () => {
       {/* footer */}
       <div className="Make_order_footer">
         <h4 className="h4">EXCLUSIVE</h4>
-        <h2 className="h2">MEMBERS-ONLY PERKS</h2>
+        <h2 className="h2 fw-bold">MEMBERS-ONLY PERKS</h2>
 
         <div className="footer-boxs">
           <div className="footer-container">
@@ -103,9 +105,9 @@ const Makeorder = () => {
 
       {/* appstore-footer */}
       <div className="App_store_footer">
-        <h1>DOWNLOAD THE NEW BELL PEPPER APP</h1>
+        <h1 className="fw-bold">DOWNLOAD THE NEW BELL PEPPER APP</h1>
         <div className="store-para">
-          <p>
+          <p className="fw-medium">
             Make ordering online & earning rewards extra easy. The Bell Pepper
             app for iOS and Android is the #1 most convenient way to get fresh,
             craveable, feel-good food on demand. Download the app and order
@@ -114,12 +116,7 @@ const Makeorder = () => {
         </div>
 
         <div className="Store-images">
-            <div className="store-img">
-                <img src={foodimg} alt="applestore-image" />
-            </div>
-            <div className="store-img">
-                <img src={foodimg} alt="playstore-image" />
-            </div>
+         <img className="apple-playstore" src={Image2} alt="" />
         </div>
 
 

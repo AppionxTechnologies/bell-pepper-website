@@ -1,5 +1,5 @@
 .mycart{
-    height: 150vh;
+    height: 160vh;
     width: 100%;
     position:absolute;
     top:0;
@@ -19,7 +19,7 @@
     width: 40%;
     background-color: white;
 }
-.title{
+.title-mycart{
     font-size: 18px;
     height: 60px;
     display: flex;
@@ -29,27 +29,22 @@
 .carttopic{
     margin-inline-start: 240px;
 }
-.crossicon{
-    width: 30px;
+.crossicon-mycart{
+    width: 25px;
     height: auto;
     margin-inline-end: 20px;
 }
-.pickup{
+.pickup-mycart{
     height: 40px;
     background-color: lightgray;
 }
-.pickup span{
+.pickup-mycart span{
     font-size: 14px;
 }
 .changes{
     color:#009e60;
 }
-.amount{
-    display: flex;
-  flex-direction: column;
-  margin-inline-start: 10px;
-  margin-top: -100px;
-}
+
 .imgcontent {
     height: 200px;
     display: flex;
@@ -71,36 +66,66 @@
     display: flex;
     flex-direction: column;
   }
-.contents h6{
-    align-items: center;
-    justify-content: center;
-    margin-inline-start: 24px;
-}
+
 .contents p{
     font-size: 11px;
     white-space: nowrap;
     color: #009e60;
 }
 .viewallergen{
-    max-width: 100px;
+    max-width: 80px;
     background: none !important;
     color: black !important;
     font-size: 10px !important;
     border: 1px solid gray !important;
     border-radius: 50px !important;
     text-decoration: underline !important;
-    margin-inline-start: 24px;
-    padding: 3px;
+  }
+  .min-box {
+    width: 50%;
+    border-radius: 5px;
+    top: -70px;
+    right: -17%;
+    background-color: white;
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  
+  .box1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #009e60;
+  }
+  
+  .box1 > img {
+   height: 100%;
+    width: 80%;
+    object-fit:contain;
+    padding-left: 10px;
+  }
+  .small-size{
+    font-size: 6px;
+    padding-top: 3px;
+    text-align:center;
+    padding-left: 10px;
+  }
+
+  .count-color{
+    color: black;
   }
   .calcbutton{
     max-width: 100px;
     background: none !important;
-    color: black !important;
-    padding: 2px;
-    font-size: 12px !important;
+    color: #009e60 !important;
+    padding: 1px;
+    font-size: 13px !important;
     border: 1px solid gray !important;
     border-radius: 50px !important;
-    margin-inline-start: 24px;
     margin-top: 15px;
   }
   .completemeal{
@@ -129,7 +154,7 @@
   }
   .card{
     width: 90px;
-    height: 120px; 
+    height: 130px; 
   }
   .card-body p{
     font-size: 10px;
@@ -160,8 +185,33 @@
     width: 35px;
     height: auto;
   }
-.hrline{
+.hrline-mycart{
     border: 1px solid;
+}
+.mycart-inputfield {
+  position: relative;
+  /* width: 500px; */
+}
+
+.mycart-inputfield textarea {
+  border: 2px solid #DBDBDB;
+  width: 95%;
+  padding: 7px 10px;
+  border-radius: 10px;
+  outline: none;
+  height: 70px;
+  font-size: 12px;
+  color: #a3a1a1;
+}
+
+.mycart-inputfield label {
+  font-size: 14px;
+  background-color: white;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  color: #a3a1a1;
+  margin-top: -10px;
 }
 .backmenubtn {
     background-color: white;
@@ -229,4 +279,20 @@
         right: 63px;
         top: 400px;
       }
+      .mycart-inputfield textarea {
+       
+        width: 95%;
+        padding: 7px 10px;
+        font-size: 13px;
+        
+      }
+      .min-box {
+        width: 50%; 
+        right: 10%;
+        height: 65px;
+      }
+
   }
+
+ 
+  

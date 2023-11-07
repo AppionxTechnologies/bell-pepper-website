@@ -1,82 +1,76 @@
-.About-us-container
-{
-    background-color: white;
-    display: flex;
-    color: black;
-    padding:2rem 5rem;
+.About-us-container {
+  background-color: white;
+  display: flex;
+  padding: 1rem 5rem;
 }
-.About-us-Images
-{
-    flex: 3;
-    display: flex;
-    height: 200px;
-    gap: 50px;
-    align-items: center;
-    
+.About-us-Images {
+  flex: 3;
+  display: flex;
+  height: 200px;
+  gap: 50px;
+  align-items: center;
 }
 
-.About-us-Img
-{
-    height: 180px;
-    width: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid black;
+.About-us-Img {
+  height: 180px;
+  width: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid black;
 }
-.about-img
-{
-    height: 100%;
-    width: 100%;
-    z-index: 99;
+.about-img {
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: 0.8;
 }
-.img-text{
-    color: black;
-    position: absolute;
-    top: 10%;
-    transform: translateY(-50%) translateX(50%);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    white-space: nowrap;
+.about-img:hover {
+  opacity: 1.5;
 }
-.text-sec
-{
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 10%;
-    left: 10%;
-    white-space: nowrap;
+.img-text {
+  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
 }
-
-
-.About-us-Img::before
-{
-    position: absolute;
-    
-    height: 100%;
-    width: 100%;
-    background:rgb(240,248,255);
-    opacity: 0.7;
-    transition: all 0.7s linear;
+.text-sec {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  white-space: nowrap;
 }
-
-.About-us-Img:hover::before{
-   opacity: 0;
-}
-
-.About-us-Text
-{
+.About-us-Text{
     flex: 1;
+    margin-top: 30px;
 }
-.span-text
-{
-
-    display: block;
-    padding: 0 3rem;
-    color: #009E60;
+.span-text {
+  display: block;
+  padding: 0 3rem;
+  color: #009e60;
+  font-weight: bold;
 }
 
+@media (max-width: 600px) {
+  .About-us-container {
+    flex-direction: column;
+  }
+  .About-us-Images {
+    flex-direction: column;
+  }
+  .About-us-Text {
+    margin-top: 20px;
+    padding: 0px 40px ;
+  }
+  .span-text {
+    padding: 0.3rem 3rem;
+  }
+}

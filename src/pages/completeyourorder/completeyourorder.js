@@ -75,6 +75,7 @@ export default function CompleteYourOrder() {
             ))}
           </div>
           <p className="selectdate fw-semibold">Select Time</p>
+          
           <div className="secondrow-buttons mb-4">
             {secondButtons.map((button, index) => (
               <button
@@ -93,9 +94,9 @@ export default function CompleteYourOrder() {
               <img className="arrow" src={arrowmove} alt="" />
             </IconButton>
           </span>
-          {/* <div className="yourorder-content d-flex align-items-center px-3"> */}
+          
           <p className="yourorder-content fw-semibold">YOUR ORDER</p>
-          {/* </div> */}
+          
           <div className="d-flex align-items-center justify-content-between mt-2">
             <span className="fw-bold">5 items</span>
             <span className="arrowsortdown">
@@ -135,7 +136,7 @@ export default function CompleteYourOrder() {
             </button>
           </div>
           <hr className="completeorder-hrline" />
-          <div className="mt-3">
+          <div className="mt-3 mb-3">
             <Link to="/success" className="link">
               <button className="pay fw-semibold" type="button">
                 PLACE ORDER- &#8364;17.98

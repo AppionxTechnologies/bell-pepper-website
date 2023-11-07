@@ -12,8 +12,8 @@ export default function kitchen() {
                     <div className='row'>
                         <div className='col-lg-6 '>
                             <div className='left-cont mt-5'>
-                                <h1 className='kit-h1 '>Your kitchenaway from home</h1>
-                                <p className='kit-p1'>We’re in the business of feedingpeople, and we’re out tochange what that means.</p>
+                                <h1 className='kit-h1 '>Your kitchen away from home</h1>
+                                <p className='kit-p1'>We’re in the business of feedingpeople,<br/> and we’re out to <br/>change what that means.</p>
                             </div>
                         </div> 
                         <div className='col-lg-6 '> 
@@ -24,6 +24,7 @@ export default function kitchen() {
                     </div>
                 </div>
 
+                
                 <div className='col-lg-12'>
                     <div className='row'>
                         <div className='col-lg-6 img-div'>
@@ -35,7 +36,7 @@ export default function kitchen() {
                         </div>
 
                         <div className='col-lg-6'>
-                            <h1 className='kit-h1 '>Your kitchenaway from home</h1>
+                            <h1 className='kit-h1 '>Your kitchen away from home</h1>
                             <p className='kit-p1'>Since our humble beginnings in 2017, our guests have
                                 always been the most important ingredient at Bell Pepper.
                                 Your love and support have helped us grow from a single
@@ -55,9 +56,9 @@ export default function kitchen() {
                         <div className='col-lg-6'>
                             <div className='col-div1'>
                                 <h1 className='kit-h1 '> Inside the kitchen</h1>
-                                <p className='kit-p1'>With over 50 fresh & healthy menu choices, we
-                                    give you the freedom to customize your mains
-                                    the way you like so you can eat, feel and live the
+                                <p className='kit-p1'>With over 50 fresh & healthy menu choices, we<br/>
+                                    give you the freedom to customize your mains<br/>
+                                    the way you like so you can eat, feel and live the<br/>
                                     way you want.</p>
                                 <div className='inside-div'>
                                     <div >
@@ -89,7 +90,7 @@ export default function kitchen() {
                         </div>
                     </div>
                 </div>
-
+                
         </div>
 
     )

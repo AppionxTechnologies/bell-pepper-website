@@ -166,21 +166,12 @@ justify-content: center;
 .Store-images{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 1rem ;
+}
+.apple-playstore{
+    width: 28%;
+    height: auto;
 }
 
-.store-img{
-    height: 15vh;
-    width: 20vw;
-}
-
-.store-img > img{
-    height: 100%;
-    width: 100%;
-    object-fit: center;
-
-}
 
 /* =========================================================================== */
 
