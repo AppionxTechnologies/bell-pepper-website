@@ -39,7 +39,7 @@ export default function Myaddress() {
                 </div>
                 <div className='row'>
                     <div className='col-lg-12 mt-3 add-address-content text-center'>
-                        <a className='fw-semibold' onClick={openMyaddress}>ADD ADDRESS</a>
+                        <p className='fw-semibold' onClick={ShowMyaddress ? closeMyaddress : openMyaddress}>ADD ADDRESS</p>
                     </div>
                 </div>
               </div>

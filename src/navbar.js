@@ -64,7 +64,7 @@ const Navbar = () => {
           <button>order now</button>
           <div className="pop-items">
             <AiOutlineHeart className="pop-img " />
-            <IoBagHandleOutline className="pop-img" />
+            <IoBagHandleOutline className="pop-img" onClick={ToggleSidebar} />
           </div>
         </div>
       )}
@@ -83,7 +83,7 @@ const Navbar = () => {
               <a href="/location">LOCATIONS</a>
             </div>
             <div className="mt-2">
-              <a>ABOUT US</a>
+              <a href="/About-us">ABOUT US</a>
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">

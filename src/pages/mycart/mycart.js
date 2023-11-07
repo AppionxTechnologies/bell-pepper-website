@@ -2,22 +2,36 @@ import React, { useState } from "react";
 import "./mycart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Meal from "../../assets/order-mealdeals.jpg";
-import InputAdornment from "@mui/material/InputAdornment";
-import TextField from "@mui/material/TextField";
 import cocola from "../../assets/cocola.jpg";
 import sevenup from "../../assets/sevenup.jpg";
 import fanta from "../../assets/fanta.png";
 import crossicon from "../../assets/crossicon.png";
 import rightarrow from "../../assets/arrow.png";
 import leftarrow from "../../assets/arrowleft.png";
-import { IconButton } from "@mui/material"; 
+import wheat from "../../assets/wheat.png";
+import soya from "../../assets/soya.png";
+import cashew from "../../assets/cashew.png";
+import { IconButton } from "@mui/material";
 
 export default function Cart() {
+  const [first, setFirst] = useState(false);
+  const [count, setCount] = useState(2); 
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const cardWidth = 100;
   const cardGap = 20;
   const numCards = 1;
- 
+
   const cards = [
     { image: fanta, title: "Coke (330ml)", price: "€1.90" },
     { image: cocola, title: "Coke (330ml)", price: "€1.90" },
@@ -25,7 +39,7 @@ export default function Cart() {
     { image: fanta, title: "Coke (330ml)", price: "€1.90" },
     { image: cocola, title: "Coke (330ml)", price: "€1.90" },
   ];
-  
+
   const handleLeftArrowClick = () => {
     if (scrollPosition > -cardWidth * (cards.length + numCards)) {
       setScrollPosition(scrollPosition + cardWidth);
@@ -37,7 +51,7 @@ export default function Cart() {
       setScrollPosition(scrollPosition - cardWidth);
     }
   };
-  
+
   const [isFormOpen, setIsFormOpen] = useState(true);
   const closeForm = () => {
     setIsFormOpen(false);
@@ -47,23 +61,23 @@ export default function Cart() {
       <div className={`mycart ${isFormOpen ? "" : "hidden"}`}>
         <div className="bar"></div>
         <div className="sidebar">
-          <div className="title d-flex fw-bold align-items-center justify-content-between">
+          <div className="title-mycart d-flex fw-bold align-items-center justify-content-between">
             <div className="carttopic">
               <span>MY CART</span>
             </div>
             <img
-              className="crossicon d-flex"
+              className="crossicon-mycart d-flex"
               src={crossicon}
               onClick={closeForm}
               alt=""
             />
           </div>
-          <div className="row pickup g-0">
+          <div className="row pickup-mycart g-0">
             <div className="col-12 mt-2 px-3">
               <div className="d-flex align-items-center justify-content-between">
                 <span className="fw-bold">Pickup from coolock</span>
                 <span>
-                  <a href="/changes" className="changes">
+                  <a href="#" className="changes">
                     Change
                   </a>
                 </span>
@@ -74,24 +88,60 @@ export default function Cart() {
             <div className="mealimg">
               <img src={Meal} alt="" />
             </div>
-            <div className="contents">
-              <h6 className="fw-bold">Chilli & Cashew(L)</h6>
+            <div className="contents px-4">
+              <div className="d-flex fw-semibold justify-content-between flex-row">
+                <div>
+                  <h6>Chilli & Cashew(L)</h6>
+                </div>
+                <div>
+                  <h6>&#8364;17.98</h6>
+                </div>
+              </div>
               <p>
                 Best Seller. Cashews,scallions,broccoli,pepper and
                 <br />
                 onions with your protein selection in a homemade
                 <br /> Thai seasoning sauce
               </p>
-              <button className="viewallergen" type="button">
-                View Allergen
+              <button className=" viewallergen"  
+                onClick={() => setFirst((prev) => !prev)}
+                style={{ cursor: "pointer" }}>
+                View Allergens
               </button>
-              <button className="calcbutton" type="button">
-                {" "}
-                - 2 +
-              </button>
-            </div>
-            <div className="amount">
-              <p className="fw-bold">&#8364;17.98</p>
+              {first && (
+                      <div className="min-box">
+                        <div className="min-boxs">
+                          <div className="box1">
+                            <img src={wheat} alt="" />
+                          </div>
+                          <h6 className="small-size">Gulten-Wheat</h6>
+                        </div>
+                        <div className="min-boxs">
+                          <div className="box1">
+                            <img src={soya} alt=""/>
+                          </div>
+                          <h6 className="small-size">Soya</h6>
+                        </div>
+                        <div className="min-boxs">
+                          <div className="">
+                            <img src={cashew} alt="" />box1
+                          </div>
+                          <h6 className="small-size">Cashew nut</h6>
+                        </div>
+                        
+                      </div>
+                    )}
+                    
+
+              <div className="calcbutton d-flex justify-content-around">
+                <span type="button" onClick={handleDecrement}>
+                  -
+                </span>
+                <div className="count-color">{count}</div>
+                <span type="button" onClick={handleIncrement}>
+                  +
+                </span>
+              </div>
             </div>
           </div>
           <div className="completemeal mt-3">
@@ -101,8 +151,11 @@ export default function Cart() {
               </div>
             </div>
           </div>
-          
-          <div className="card-navigation" style={{ overflow: "hidden", marginTop:"20px" }}>
+
+          <div
+            className="card-navigation"
+            style={{ overflow: "hidden", marginTop: "20px" }}
+          >
             <div className="leftarrow">
               <IconButton onClick={handleLeftArrowClick}>
                 <img src={leftarrow} alt="" />
@@ -121,7 +174,7 @@ export default function Cart() {
                 <div
                   key={index}
                   className="card"
-                  style={{ width: `${cardWidth}px`}}
+                  style={{ width: `${cardWidth}px` }}
                 >
                   <img className="card-img-top" src={card.image} alt="" />
                   <div className="card-body">
@@ -184,23 +237,17 @@ export default function Cart() {
               </div>
             </div>
           </div>
-          <div>
-            <TextField
-              label="Delivery instructions"
-              id="outlined-start-adornment"
-              sx={{ m: 3, width: "45ch" }}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    Please note, baby sleeping, don't ring the bell,
-                    <br />
-                    alert for driver, Include cutlery, etc.
-                  </InputAdornment>
-                ),
-              }}
-            />
+          <div className="px-4 mt-3">
+            <div className="mycart-inputfield">
+              <label htmlFor="">Delivery Instructions</label>
+              <textarea
+                type="textarea"
+                defaultValue="Please note, baby sleeping, don't ring the bell,
+                alert for driver, Include cutlery, etc."
+              />
+            </div>
           </div>
-          <div className="yrorder mt-2">
+          <div className="yrorder mt-3">
             <div className="col-12">
               <div className="d-flex px-3flex-row align-items-start justify-content-between">
                 <span className="fw-bold mt-2 px-3">YOUR ORDER</span>
@@ -223,7 +270,7 @@ export default function Cart() {
               </div>
             </div>
           </div>
-          <hr className="hrline" />
+          <hr className="hrline-mycart" />
 
           <div className="d-flex align-items-center justify-content-between">
             <button className="backmenubtn">BACK TO MENU</button>
