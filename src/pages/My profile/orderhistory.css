@@ -38,9 +38,11 @@
     margin-left: 30%;
     font-size: 14px;
 }
-.ordernow-content a{
+.ordernow-content p{
     color: #009E60;
     font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .ordernow-content{
     align-items: center;

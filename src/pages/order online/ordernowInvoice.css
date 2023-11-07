@@ -1,20 +1,91 @@
 .invoice-ordernow {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100vh;
-    top: 13.5%;
-    transform: translate(0%, 0%);
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-  }
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 110vh;
+  top: 13.5%;
+  transform: translate(0%, 0%);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+.invoice-container {
+  width: 35%;
+  background-color: white;
+  border-radius: 15px;
+  height: 85%;
+}
+.hidden {
+  display: none;
+}
+.cross-icon-invoice {
+  width: 4%;
+  height: auto;
+  position: relative; 
+  left: 445px;
+}
+.ordernumber-heading{
+  font-size: 18px;
+} 
+.Delivery-content{
+  font-size: 14px;
+}
+.shop-icon{
+  font-size: 30px;
+}
+.shop-icon-content p{
+  line-height: 1px;
+  font-size: 12px;
+}
+.vertical-lineimg{
+  width: 40px;
+  height: auto;
+  padding-right: 10px;
+}
+.home-icon-content p{
+  line-height: 1px;
+  font-size: 12px;
+}
+.invoice-hrline{
+  border: 1px solid #505050;
+  width: 96%;
+}
+.hrdiv{
+  margin-inline-start: 16px;
+  margin-top: -10px;
+}
+.your-order-completed{
+  font-size: 13px;
+  color: #009E60;
+  margin-top: -10px;
+}
+.one-item-content {
+  font-size: 14px;
+}
+.number-of-items p{
+  font-size: 12px;
+  margin-top: -10px;
+}
+.invoice-subtotal{
+  font-size: 12px;
+  line-height: 8px;
+}
+.invoice-total{
+  margin-top: -10px;
+  font-size: 15px;
+}
+.hrdiv-total{
+  margin-inline-start: 16px;
+  margin-top: -25px;
+}
+
+@media (max-width:786px) {
   .invoice-container {
-    width: 35%;
-    background-color: white;
-    border-radius: 15px;
-    height: 80%;
-  }
-  .ordernumber-heading{
-    font-size: 18px;
-  } 
+      width: 100%;
+      border-radius: 0px;
+      height: 100%;
+    }
+    .cross-icon-invoice {
+      left: 435px;
+    }
+}

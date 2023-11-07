@@ -8,8 +8,8 @@ import Footer from "./footer";
 import Allergen from "./pages/About/allergen";
 import Kitchen from "./pages/About/kitchen";
 import Makeorder from "./pages/About/makeorder";
-
 import Grow from "./pages/About/grow";
+import Catering from "./pages/About/catering";
 
 import CompleteYourOrder from "./pages/completeyourorder/completeyourorder";
 import SuccessMsg from "./pages/completeyourorder/successmsg";
@@ -58,10 +58,13 @@ function App() {
             <Route path="/allergen" element={<Allergen />} />
             <Route path="/kitchen" element={<Kitchen />} />
             <Route path="/makeorder" element={<Makeorder />} />
+            <Route path="/catering-aboutus" element={<Catering/>} />
+
             <Route path="/catering" element={<CateringTray/>} />
             <Route path="/grow" element={<Grow />} />
             <Route path="/location" element={<Map />} />
             <Route path="/storelocation" element={<StoreLocation />} />
+            <Route path="/About-us" element={<NewAboutUs/>}/>
 
             <Route path="/verticalnavbar" element={<VerticalNavbar />} />
             <Route path="/accountdetails" element={<AccountDetails />} />
