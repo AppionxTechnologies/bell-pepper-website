@@ -48,8 +48,7 @@ export default function Home() {
            </div>
            </div>
           </div>
-        
-          
+               
         
           <div>
             <img src={Image2} alt="Image 2" className=" img1" />

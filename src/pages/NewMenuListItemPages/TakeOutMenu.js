@@ -17,6 +17,7 @@ function TakeOutMenu() {
     <div className="TakeOutMenu-container">
     <div className="p-2">
 
+
     <h1 className="bold">TAKEOUT</h1>
       <h6 className="orange">Time:12p.m - 4p.m</h6>
       <h6 className="light">
