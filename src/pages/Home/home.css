@@ -1,5 +1,6 @@
 .img1{
     height: 450px;
+    object-fit: cover;
 }
 .corousel-text1{
   
@@ -12,16 +13,64 @@
     text-align:start;
 
 }
-
-
 .corousel-text2{
   position: absolute;
   top:230px;
   color: white;
-  font-size:10px;
+  font-size:14px;
+  white-space: nowrap;
   font-weight:lighter;
   text-align: start;
+  line-height: 6px;
 }
+.location-text-banner1{
+  position: absolute;
+ top: 50px;
+ left: 30px;
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+ text-align:start;
+}
+.location-text-banner2{
+ line-height: 6px;
+ position: absolute;
+ top:180px;
+ color: white;
+ font-size:14px;
+ font-weight:lighter;
+ text-align: start;
+}
+.lunch-text-banner1{
+  position: absolute;
+ top: 70px;
+ left: 30px;
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+ text-align:start;
+}
+.lunch-text-banner2{
+  position: absolute;
+  top:250px;
+  color: white;
+  font-size:18px;
+  white-space: nowrap;
+  font-weight:500;
+  text-align: start;
+  line-height: 6px;
+  left: 30px;
+ }
+ .lunch-text-banner3{
+  line-height: 6px;
+  position: absolute;
+  top:290px;
+  color: white;
+  font-size:14px;
+  font-weight:500;
+  text-align: start;
+  left: 30px;
+ }
 
 .corousel-button{
   background-color:  #009e60;
@@ -30,9 +79,21 @@
   top: 300px;
   font-size: small;
   font-weight: 20px;
-  padding: 5px 7px 5px 7px;
+  padding: 8px 10px;
   border: none;
   border-radius: 50px;
+}
+.corousel-button-banner{
+  background-color:  #009e60;
+  color:white;
+  position: absolute;
+  top: 350px;
+  font-size: small;
+  font-weight: 20px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50px;
+  left: 30px;
 }
 .con-div{
 text-align: center;
@@ -204,6 +265,9 @@ background-color:orange;
     font-size: 10px;
     padding: 10px;
     font-weight: 600;
+  }
+  .location-text-banner2{
+    white-space: nowrap;
   }
  
 }

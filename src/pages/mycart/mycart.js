@@ -238,7 +238,7 @@ export default function Cart() {
           <hr className="hrline-mycart" />
 
           <div className="d-flex align-items-center justify-content-between">
-            <button className="backmenubtn">BACK TO MENU</button>
+            <a href="/menu"><button className="backmenubtn">BACK TO MENU</button></a>
             <button className="checkoutbtn">CHECKOUT- &#8364;17.98</button>
           </div>
         </div>

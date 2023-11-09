@@ -22,9 +22,7 @@
 .footer-color{
     color: orange;
 }
-.footer-list{
-    line-height: 30px;
-}
+
 .footer-address{
     line-height: 20px;
 }
@@ -39,8 +37,21 @@
     width: 300px;
     color: azure;
 }
-.footer1 h6{
-    font-size: small;
+.footer1-links p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer-links-address p{
+    font-size: 14px;
+    line-height: 10px;
+}
+.footer-subscribe{
+    font-size: 14px;
+    line-height: 10px;
+}
+.footer-list a{
+    text-decoration:none ;
+    color: azure;
 }
 .line-color{
     color: white;
@@ -48,4 +59,10 @@
 }
 .copy{
     font-size: xx-small;
+}
+
+@media (max-width:786px) {
+    .footer-signup{
+        margin-top: 30px;
+    }
 }
