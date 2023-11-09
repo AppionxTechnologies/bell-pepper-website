@@ -33,8 +33,11 @@ const NewMenuListItem = () => {
           <p>Our Ingredients are locally sourced and 100% MSG Free</p>
         </div>
         <div className="lunch-text3">
-        <p>It's all about fresh , nutritious tasty food cooked in front</p>
+          <p>It's all about fresh , nutritious tasty food cooked in front</p>
           <p>of your eyes and served to you in minutes.</p>
+        </div>
+        <div>
+            <button className="corousel-button-lunch">Order Online</button>
         </div>
       </div>
       <div className="NewMenuListItem">

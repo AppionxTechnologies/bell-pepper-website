@@ -91,11 +91,11 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-media-icons">
-              <FaFacebook className="n-icon" />
-              <FaInstagram className="n-icon" />
-              <FaTwitter className="n-icon" />
-              <FaPinterest className="n-icon" />
-              <FaTiktok className="n-icon" />
+            <a href="https://www.facebook.com/bellpepperkimmage/" target="_blank"><FaFacebook className="n-icon" /></a>
+              <a href="https://www.instagram.com/bellpepper.ie/?hl=en" target="_blank"><FaInstagram className="n-icon"/></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbellpepper_eire" target="_blank"><FaTwitter className="n-icon"/></a>
+              <a href="https://pin.it/4ZLngle" target="_blank"><FaPinterest className="n-icon"/></a>
+              <a href="https://www.tiktok.com/@bellpepper.ie" target="_blank"><FaTiktok className="n-icon"/></a>
             </div>
             <div>
               <img className="google-apple" src={googleapple} alt="" />

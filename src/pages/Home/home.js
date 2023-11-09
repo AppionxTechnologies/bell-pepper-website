@@ -1,5 +1,5 @@
-import React,{ useState, useEffect, useContext, useCallback} from "react";
-import Meals from './value-meals';
+import React, { useState, useEffect, useContext, useCallback } from "react";
+import Meals from "./value-meals";
 
 import Image1 from "../../assets/food-4.jpg";
 import Image2 from "../../assets/food-3.jpg";
@@ -15,10 +15,9 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Banner from '../../banner';
+import Banner from "../../banner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 
 export default function Home() {
   return (
@@ -35,52 +34,56 @@ export default function Home() {
         >
           <div>
             <img src={Image1} alt="Image 1" className=" img1" />
-            <div class="corousel-text1"><h1>Bellpepper</h1>
-            <h1> Feel Good</h1>
-            <h1>Thai Restaurant</h1>
-            <h1>& Takeaway</h1>
-            <div className="corousel-text2">
-            <p>at right Love yourself bell pepper is all about fresh ,</p>
-            <p>nutritious tasty food cooked to order</p>
-           </div>
-           <div>
-            <button className="corousel-button">Order Online</button>
-           </div>
-           </div>
+            <div class="corousel-text1">
+              <h1>Bellpepper</h1>
+              <h1> Feel Good</h1>
+              <h1>Thai Restaurant</h1>
+              <h1>& Takeaway</h1>
+              <div className="corousel-text2">
+                <p>at right Love yourself bell pepper is all about fresh ,</p>
+                <p>nutritious tasty food cooked to order</p>
+              </div>
+              <div>
+                <a href="/menu"><button className="corousel-button">Order Online</button></a>
+              </div>
+            </div>
           </div>
-               
-        
+
           <div>
             <img src={Image2} alt="Image 2" className=" img1" />
-            <div className="location-text1">
-          <h1>Bell Pepper Locations</h1>
-          <h1>Thai Restaurant</h1>
-          <h1>Dublin, Waterford</h1>
-          <div className="location-text2">
-            <p>At bell pepper amazing Thai food is not where</p>
-            <p>our work ends. The idea behind Bell Pepper is simple.</p>
-            <p>We take the name seriously (and literally!).</p>
-            <p>It’s all about fresh, tasty Thai food cooked to</p>
-            <p>order in minutes.</p>
-          </div>
-        </div>
+            <div className="location-text-banner1">
+              <h1>Bell Pepper Locations</h1>
+              <h1>Thai Restaurant</h1>
+              <h1>Dublin, Waterford</h1>
+              <div className="location-text-banner2">
+                <p>At bell pepper amazing Thai food is not where</p>
+                <p>our work ends. The idea behind Bell Pepper is simple.</p>
+                <p>We take the name seriously (and literally!).</p>
+                <p>It’s all about fresh, tasty Thai food cooked to</p>
+                <p>order in minutes.</p>
+              </div>
+            </div>
           </div>
           <div>
             <img src={Image3} alt="Image 3" className=" img1" />
-            <div className="lunch-text1">
-          <h1>Bellpepper Authentic</h1>
-          <h1>Healthy Thai Restaurant</h1>
-          <h1>Dublin , Waterford</h1>
-        </div>
-        <div className="lunch-text2">
-          <p>Our Ingredients are locally sourced and 100% MSG Free</p>
-        </div>
-        <div className="lunch-text3">
-        <p>It's all about fresh , nutritious tasty food cooked in front</p>
-          <p>of your eyes and served to you in minutes.</p>
-        </div>
+            <div className="lunch-text-banner1">
+              <h1>Bellpepper Authentic</h1>
+              <h1>Healthy Thai Restaurant</h1>
+              <h1>Dublin , Waterford</h1>
+            </div>
+            <div className="lunch-text-banner2">
+              <p>Our Ingredients are locally sourced and 100% MSG Free</p>
+            </div>
+            <div className="lunch-text-banner3">
+              <p>
+                It's all about fresh , nutritious tasty food cooked in front
+              </p>
+              <p>of your eyes and served to you in minutes.</p>
+            </div>
+            <div>
+            <a href="/menu"><button className="corousel-button-banner">Order Online</button></a>
+           </div>
           </div>
-         
         </Carousel>
       </div>
 
@@ -91,8 +94,8 @@ export default function Home() {
         </p>
       </div>
 
-       {/* explore menu section */}
-       <section className="our_menu">
+      {/* explore menu section */}
+      <section className="our_menu">
         <Container maxWidth="lg">
           <div className="common_title">
             <h2>EXPLORE OUR MENU</h2>
@@ -123,8 +126,11 @@ export default function Home() {
             </Grid>
             <Grid xs={12} sm={12} md={12} className="menu-btn-align">
               <Button className="menu-btn" variant="contained">
-              <a href="/menu" style={{textDecoration: 'none', color: '#fff'}}>
-                VIEW FULL MENU
+                <a
+                  href="/menu"
+                  style={{ textDecoration: "none", color: "#fff" }}
+                >
+                  VIEW FULL MENU
                 </a>
               </Button>
             </Grid>
@@ -133,9 +139,9 @@ export default function Home() {
         <hr className="line-menu"></hr>
       </section>
 
-      {<Meals/>}
-     {/* our loyalty section */}
-     <section className="our_menu">
+      {<Meals />}
+      {/* our loyalty section */}
+      <section className="our_menu">
         <Container maxWidth="lg">
           <div className="common_title">
             <h2>Our Loyalty & Rewards Program</h2>
@@ -146,7 +152,7 @@ export default function Home() {
             spacing={{ xs: 3, md: 6 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            <Grid item xs={12} sm={12} md={6} >
+            <Grid item xs={12} sm={12} md={6}>
               <h3 className="loyal-menu">Reward yourself with our new app</h3>
               <p>
                 Unlock a delicious new world of perks when you join our free
@@ -200,8 +206,8 @@ export default function Home() {
         </Container>
         <hr className="line-menu"></hr>
       </section>
-        {/* services section */}
-      <Banner/>
+      {/* services section */}
+      <Banner />
     </>
   );
 }
