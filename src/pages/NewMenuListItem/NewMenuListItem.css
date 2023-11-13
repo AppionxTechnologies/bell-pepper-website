@@ -57,8 +57,8 @@
  
 .animation{
 height: 3px;
-  width: 90px;
-  position: absolute;
+ width: 90px;
+  position:absolute;
   top: 507px;
   left: 100px;
   background-color:green;
@@ -88,7 +88,7 @@ height: 3px;
 
 .NewMenuListItem-left nav  p:nth-child(4):hover~.animation
 {
-  width: 160px;
+  width: 180px;
   left: 65%;
 }
 

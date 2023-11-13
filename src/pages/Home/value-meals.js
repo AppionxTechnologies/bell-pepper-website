@@ -1,107 +1,143 @@
-import React, { Component, useState }  from "react";
+import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image1 from "../../assets/meals.png";
 import ourMenu from "../../assets/our-menu.png";
 import ImageLine from "../../assets/special meals shapes 2.png";
-import "../../assets/css/slick.css";
-import "../../assets/css/slick-theme.css";
+
 import Slider from "react-slick";
 import "./value-meals.css";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 
-
 export default function Meals() {
+  const sliderRef = useRef(null);
 
-  const [currentSlide,setCurrentSlide]=useState()
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  const sliderSettings = {
     vertical: true,
     verticalSwiping: true,
-    beforeChange: function(currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function(currentSlide) {
-      console.log("after change", currentSlide);
+    infinite: true,
+    slidesToShow: 3, // Adjust the number of slides to show
+    slidesToScroll: 1, // Adjust the number of slides to scroll
+    autoplay: false,
+    arrows: false,
+    dots: false,
+  };
+
+  const handleSlideUp = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
     }
   };
 
-const nextSlide = () => {
-  setCurrentSlide(currentSlide + 1);
-};
+  const handleSlideDown = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext()
+    }
+  };
 
-const previousSlide = () => {
-  setCurrentSlide(currentSlide - 1);
-};
   return (
     <>
       <div className="valueMeals">
         <div className="col-lg-12">
           <div className="row">
             <div className="col-lg-6 meals-line d-flex">
-              
-            <div className=" col-lg-3">
-            <img className="meals-line-img" src={ImageLine } alt="Quality Food" />
-
-                  <div className="size-food ">
-                    <p className="size  ">SPECIAL</p>
-                    <p className="size ">&</p>
-                    <p className="size ">VALUE MEALS</p>
-                    <div>
-                      <button type="button" className="letsgo-button">LET'S GO</button>
-                    </div>
-                  </div>
-            </div>
-
               <div className="col-lg-3">
+                <img
+                  className="meals-line-img"
+                  src={ImageLine}
+                  alt="Quality Food"
+                />
+
+                <div className="size-food ">
+                  <p className="size  ">SPECIAL</p>
+                  <p className="size ">&</p>
+                  <p className="size ">VALUE MEALS</p>
+                  <div>
+                    <button type="button" className="letsgo-button">
+                      LET'S GO
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              
                 <img className="mealsfood" src={ourMenu} alt="Quality Food" />
               </div>
+            
+
+            <div className="col-lg-6 main-box">
+              <div className="icons" onClick={handleSlideUp}>
+                <FaArrowCircleUp />
+              </div>
+
+              <Slider ref={sliderRef} {...sliderSettings}>
+                <div className="box-1 mt-2">
+                  <img className="meals" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name1</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+                <div className="box-2 mt-2 ">
+                  <img className="meals1" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name2</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+                <div className="box-1 mt-2">
+                  <img className="meals2" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name3</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+                <div className="box-2 mt-2">
+                  <img className="meals2" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name4</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+                <div className="box-1 mt-2">
+                  <img className="meals2" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name5</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+                <div className="box-2 mt-2 ">
+                  <img className="meals2" src={Image1} alt="Quality Food" />
+                  <div className="">
+                    <p className="fw-bold">Dish Name6</p>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                </div>
+               
+
+              </Slider>
+
+              <div className="icons" onClick={handleSlideDown}>
+                <FaArrowCircleDown />
+              </div>
             </div>
-
-            <div className="col-lg-6 main-box ">
-              <div className="icons ">
-                <FaArrowCircleUp onClick={previousSlide} />
-              </div>
-
-              <div className="box-1 mt-4 py-2">
-                <img className="meals" src={Image1} alt="Quality Food" />
-                <div className="">
-                  <p className="fw-bold">Dish Name</p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-              <div className="box2 mt-4 py-2">
-                <img className="meals1" src={Image1} alt="Quality Food" />
-                <div className="">
-                  <p className="fw-bold">Dish Name</p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-              <div className="box3 mt-4 py-2">
-                <img className="meals2" src={Image1} alt="Quality Food" />
-                <div className="">
-                  <p className="fw-bold">Dish Name</p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-
-              
-
-              <div className="icons ">
-               <FaArrowCircleDown onClick={nextSlide} />
-              </div>
-            </div>            
           </div>
         </div>
       </div>
@@ -113,3 +149,140 @@ const previousSlide = () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useRef } from "react";
+// import "bootstrap/dist/css/bootstrap.css";
+// import Image1 from "../../assets/meals.png";
+// import ourMenu from "../../assets/our-menu.png";
+// import ImageLine from "../../assets/special meals shapes 2.png";
+// import "../../assets/css/slick.css";
+// import "../../assets/css/slick-theme.css";
+// import Slider from "react-slick";
+// import "./value-meals.css";
+// import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
+
+// export default function Meals() {
+//   const sliderRef = useRef(null);
+
+//   const sliderSettings = {
+//     vertical: true,
+//     verticalSwiping: true,
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     arrows: false,
+//     dots: false,
+//   };
+
+//   const handleSlideUp = () => {
+//     if (sliderRef.current) {
+//       sliderRef.current.slickPrev();
+//     }
+//   };
+
+//   const handleSlideDown = () => {
+//     if (sliderRef.current) {
+//       sliderRef.current.slickNext();
+//     }
+//   };
+//   return (
+//     <>
+//       <div className="valueMeals">
+//         <div className="col-lg-12">
+//           <div className="row">
+//             <div className="col-lg-6 meals-line d-flex">
+//               <div className="col-lg-3">
+//                 <img
+//                   className="meals-line-img"
+//                   src={ImageLine}
+//                   alt="Quality Food"
+//                 />
+
+//                 <div className="size-food ">
+//                   <p className="size  ">SPECIAL</p>
+//                   <p className="size ">&</p>
+//                   <p className="size ">VALUE MEALS</p>
+//                   <div>
+//                     <button type="button" className="letsgo-button">
+//                       LET'S GO
+//                     </button>
+//                   </div>
+//                 </div>
+//               </div>
+
+//               <div className="col-lg-3">
+//                 <img
+//                   className="mealsfood"
+//                   src={ourMenu}
+//                   alt="Quality Food"
+//                 />
+//               </div>
+//             </div>
+
+//             <div className="col-lg-6 main-box">
+//               <div className="icons" onClick={handleSlideUp}>
+//                 <FaArrowCircleUp />
+//               </div>
+//               <Slider {...sliderSettings}>
+//                 <div className="box-1 mt-4 py-2">
+//                   <img className="meals" src={Image1} alt="Quality Food" />
+//                   <div className="">
+
+//                     <p className="fw-bold">Dish Name</p>
+//                     <p>
+//                       Lorem Ipsum is simply dummy text of the printing and
+//                       typesetting industry.
+//                     </p>
+//                   </div>
+//                 </div>
+//                 <div className="box2 mt-4 py-2">
+//                   <img className="meals1" src={Image1} alt="Quality Food" />
+//                   <div className="">
+//                     <p className="fw-bold">Dish Name</p>
+//                     <p>
+//                       Lorem Ipsum is simply dummy text of the printing and
+//                       typesetting industry.
+//                     </p>
+//                   </div>
+//                 </div>
+
+//                 <div className="box3 mt-4 py-2">
+//                   <img className="meals2" src={Image1} alt="Quality Food" />
+//                   <div className="">
+//                     <p className="fw-bold">Dish Name</p>
+//                     <p>
+//                       Lorem Ipsum is simply dummy text of the printing and
+//                       typesetting industry.
+//                     </p>
+//                   </div>
+//                 </div>
+//               </Slider>
+
+//               <div className="icons" onClick={handleSlideDown}>
+//                 <FaArrowCircleDown />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <hr className="line-menu"></hr>
+//     </>
+//   );
+// }

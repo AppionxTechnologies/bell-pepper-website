@@ -97,8 +97,9 @@ const Navbar = () => {
               <FaPinterest className="n-icon" />
               <FaTiktok className="n-icon" />
             </div>
-            <div>
-              <img className="google-apple" src={googleapple} alt="" />
+            <div className="mt-5">
+            <a href="https://play.google.com/store/apps/details?id=com.conduit.app_764cb8c2aced424488a688c58374809c.app&pcampaignid=web_share" tabIndex="0"><img class="bn45" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="bn45"/></a>
+            <a href="https://apps.apple.com/tr/app/bell-pepper/id1471100725" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"alt="bn46"/></a>
             </div>
           </div>
         )}
