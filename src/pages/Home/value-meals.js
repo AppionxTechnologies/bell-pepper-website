@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef ,useState} from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image1 from "../../assets/meals.png";
 import ourMenu from "../../assets/our-menu.png";
@@ -22,15 +22,20 @@ export default function Meals() {
     dots: false,
   };
 
+  const [activeCenterCard, setActiveCenterCard] = useState(1);
   const handleSlideUp = () => {
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
+      setActiveCenterCard(activeCenterCard === 5 ? 0 : activeCenterCard - 1);
+
     }
   };
 
   const handleSlideDown = () => {
     if (sliderRef.current) {
       sliderRef.current.slickNext()
+      setActiveCenterCard(activeCenterCard === 5 ? 0 : activeCenterCard + 1);
+
     }
   };
 
@@ -69,70 +74,86 @@ export default function Meals() {
                 <FaArrowCircleUp />
               </div>
 
+              <div className="slider-valuemeals">
               <Slider ref={sliderRef} {...sliderSettings}>
-                <div className="box-1 mt-2">
+                {/* <div className="box-1 d-flex">
                   <img className="meals" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name1</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
                 </div>
-                <div className="box-2 mt-2 ">
+                <div className="box-2 d-flex">
                   <img className="meals1" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name2</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
                 </div>
-                <div className="box-1 mt-2">
+                <div className="box-1 d-flex">
                   <img className="meals2" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name3</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
                 </div>
-                <div className="box-2 mt-2">
+                <div className="box-2 d-flex">
                   <img className="meals2" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name4</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
                 </div>
-                <div className="box-1 mt-2">
+                <div className="box-1 d-flex">
                   <img className="meals2" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name5</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
                 </div>
-                <div className="box-2 mt-2 ">
+                <div className="box-2 d-flex">
                   <img className="meals2" src={Image1} alt="Quality Food" />
                   <div className="">
                     <p className="fw-bold">Dish Name6</p>
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     </h6>
                   </div>
-                </div>
-               
+                </div> */}
+
+
+                {Array.from({ length: 6 }).map((_, index) => {
+          const isCenter = index === activeCenterCard;
+          const classNames = `box-${index % 2 === 0 ? 1 : 2} d-flex ${isCenter ? "center-card-hover" : ""}`;
+
+          return (
+            <div className={classNames} key={index}>
+              <img className={`meals${index % 1 === 0 ? "" : index}`} src={Image1} alt="Quality Food" />
+              <div className="">
+                <p className="fw-bold">Dish Name{index + 1}</p>
+                <h6>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                </h6>
+              </div>
+            </div>
+          );
+        })}
+
+
+
 
               </Slider>
+              </div>
 
               <div className="icons" onClick={handleSlideDown}>
                 <FaArrowCircleDown />
