@@ -91,11 +91,11 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-media-icons">
-              <FaFacebook className="n-icon" />
-              <FaInstagram className="n-icon" />
-              <FaTwitter className="n-icon" />
-              <FaPinterest className="n-icon" />
-              <FaTiktok className="n-icon" />
+            <a href="https://www.facebook.com/bellpepperkimmage/" target="_blank"><FaFacebook className="n-icon" /></a>
+              <a href="https://www.instagram.com/bellpepper.ie/?hl=en" target="_blank"><FaInstagram className="n-icon"/></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbellpepper_eire" target="_blank"><FaTwitter className="n-icon"/></a>
+              <a href="https://pin.it/4ZLngle" target="_blank"><FaPinterest className="n-icon"/></a>
+              <a href="https://www.tiktok.com/@bellpepper.ie" target="_blank"><FaTiktok className="n-icon"/></a>
             </div>
             <div className="mt-5">
             <a href="https://play.google.com/store/apps/details?id=com.conduit.app_764cb8c2aced424488a688c58374809c.app&pcampaignid=web_share" tabIndex="0"><img class="bn45" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="bn45"/></a>

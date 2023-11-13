@@ -3,7 +3,7 @@
 }
 .lunch-banner{
   width: 100%;
-  height:370px;
+  height:450px;
   object-fit: cover;
 }
 .NewMenuListItem
@@ -17,9 +17,8 @@
  
 }
 .lunch-text1{
-  
   position: absolute;
-  top: 105px;
+  top: 140px;
   left: 30px;
   color: white;
   font-size: 30px;
@@ -29,22 +28,36 @@
 }
 .lunch-text2{
   position: absolute;
-  top:260px;
-  left: 30px;
+  top:320px;
   color: white;
-  font-size:15px;
-  font-weight:bold;
+  font-size:18px;
+  white-space: nowrap;
+  font-weight:500;
   text-align: start;
+  line-height: 6px;
+  left: 30px;
 }
 .lunch-text3{
+  line-height: 6px;
   position: absolute;
-  top:290px;
-  left: 30px;
+  top:360px;
   color: white;
-  font-size:10px;
-  font-weight:bold;
+  font-size:14px;
+  font-weight:500;
   text-align: start;
-  
+  left: 30px;
+}
+.corousel-button-lunch{
+  background-color:  #009e60;
+  color:white;
+  position: absolute;
+  top: 420px;
+  font-size: small;
+  font-weight: 20px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50px;
+  left: 30px;
 }
 .NewMenuListItem-left nav p{
   color: black;
@@ -57,9 +70,9 @@
  
 .animation{
 height: 3px;
- width: 90px;
-  position:absolute;
-  top: 507px;
+  width: 90px;
+  position: absolute;
+  top: 592px;
   left: 100px;
   background-color:green;
   transition: all 0.5s ease 0.3s;
@@ -97,7 +110,7 @@ height: 3px;
   .animation{
       left: 10px;
       width: 80px;
-      top: 507px;
+      top: 598px;
     }
   .NewMenuListItem-left nav p{
     color: black;
