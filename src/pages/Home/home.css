@@ -254,6 +254,14 @@ background-color:orange;
   font-weight: 700;
   text-align: center;
 }
+.common_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.loyal-menu{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 
 @media (max-width:768px) {
@@ -269,5 +277,20 @@ background-color:orange;
   .location-text-banner2{
     white-space: nowrap;
   }
- 
+  .common_title{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .reward-container{
+    display: flex;
+    align-items: center;
+  }
+  .loyal-menu{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .lunch-text-banner2{
+    font-size:14px;
+   
+   }
 }

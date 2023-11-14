@@ -34,7 +34,7 @@ function LunchMenu() {
         <div className="mt-5">
           <div className="col-lg-12">
             <div className="row">
-              <div className="col-lg-4 col-mx-5">
+              <div className="col-lg-4 col-mx-5 d-flex justify-content-center">
                 <div className="card align-card">
                   <img src={ourStory} className="card-img-top food-color" alt="..." />
 
@@ -86,7 +86,7 @@ function LunchMenu() {
                 </div>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex justify-content-center lunchmenu-card">
                 <div className="card align-card">
                   <img src={ourStory} className="card-img-top food-color" alt="..." />
                   <div className="card-body">
