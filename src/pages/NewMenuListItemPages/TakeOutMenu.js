@@ -51,8 +51,7 @@ function TakeOutMenu() {
       <div className="">
         <div className="col-lg-12">
           <div className="row ">
-            <div className="col-lg-4 mt-5 ">
-            {activeContent === 'starters'&& (
+            <div className="col-lg-4  mt-3">
               <div class="card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
 
@@ -108,8 +107,7 @@ function TakeOutMenu() {
             )}
             </div>
 
-            <div className="col-lg-4 mt-5">
-            {activeContent === 'starters'&& (
+            <div className="col-lg-4  mt-3">
               <div class="card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -166,8 +164,7 @@ function TakeOutMenu() {
             )}
             </div>
 
-            <div className="col-lg-4 mt-5">
-            {activeContent === 'starters'&& (
+            <div className="col-lg-4 mt-3">
               <div class=" card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -576,8 +573,7 @@ function TakeOutMenu() {
         </div>
         <div className="col-lg-12 mt-5">
           <div className="row">
-            <div className="col-lg-4 ">
-            {activeContent === 'soup&salad'&& (
+            <div className="col-lg-4 mt-5 ">
               <div class=" card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
 
@@ -633,8 +629,7 @@ function TakeOutMenu() {
             )}
             </div>
 
-            <div className="col-lg-4">
-            {activeContent === 'soup&salad'&& (
+            <div className="col-lg-4 mt-5">
               <div class="card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -689,8 +684,7 @@ function TakeOutMenu() {
             )}
             </div>
 
-            <div className="col-lg-4 ">
-            {activeContent === 'soup&salad'&& (
+            <div className="col-lg-4 mt-5 ">
               <div class="card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">

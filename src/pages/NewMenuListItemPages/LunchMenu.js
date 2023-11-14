@@ -39,10 +39,10 @@ function LunchMenu() {
         </div>
 
         <div className="mt-5">
-          <div className="row">
-            <div className="col-lg-4 col-mx-5">
-              {activeContent === 'stirFries'&& (
-                <div className="card align-card active-content">
+          <div className="col-lg-12">
+            <div className="row">
+              <div className="col-lg-4 col-mx-5">
+                <div className="card align-card">
                   <img src={ourStory} className="card-img-top food-color" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title title-size">Crispy Chicken (1)</h5>
@@ -91,9 +91,8 @@ function LunchMenu() {
               )}
             </div>
 
-            <div className="col-lg-4">
-            {activeContent === 'stirFries' && (
-                <div className="card align-card active-content">
+              <div className="col-lg-4">
+                <div className="card align-card">
                   <img src={ourStory} className="card-img-top food-color" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title title-size">Chilli & Cashew</h5>

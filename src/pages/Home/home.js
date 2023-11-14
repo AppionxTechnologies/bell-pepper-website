@@ -120,7 +120,7 @@ export default function Home() {
               <div>
                 <div>
                   <img className="menuimg" src={ourMenu} alt="Menu" />
-                  <h3 className="menu-text">Deal Deals</h3>
+                  <h3 className="menu-text">Meal Deals</h3>
                 </div>
               </div>
             </Grid>
@@ -144,16 +144,16 @@ export default function Home() {
       <section className="our_menu">
         <Container maxWidth="lg">
           <div className="common_title">
-            <h2>Our Loyalty & Rewards Program</h2>
+            <p>Our Loyalty & Rewards Program</p>
           </div>
           <Grid
-            className="loyal-section"
+            className="loyal-section jusity-content-center d-flex"
             container
             spacing={{ xs: 3, md: 6 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            <Grid item xs={12} sm={12} md={6}>
-              <h3 className="loyal-menu">Reward yourself with our new app</h3>
+            <Grid item xs={12} sm={12} md={6} className="reward-container flex-column">
+              <p className="loyal-menu">Reward yourself with our new app</p>
               <p>
                 Unlock a delicious new world of perks when you join our free
                 loyalty program and earn rewards, birthday gifts, menu

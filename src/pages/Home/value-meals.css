@@ -9,9 +9,9 @@
 }
 .box-1 {
   margin-left: 150px;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 2px 5px;
   display: flex;
   align-items:center;
   height: 110px;
@@ -20,10 +20,9 @@
 
 .box-2 {
   margin-left: 150px;
-  /* background-color: #009e60; */
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  box-shadow: rgba(1, 1, 1, 0.3) 0px 5px 15px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 2px 5px;
   display: flex;
   align-items: center;
   height: 110px;
@@ -53,7 +52,7 @@
   height: 350px;
   width: 350px;
   position: absolute;
-  top: 12%;
+  top: 15%;
   left:50%;
   object-fit: cover;
 }
@@ -97,6 +96,17 @@
 .phone-style {
   display: none;
 }
+.line-menu {
+  width: 84%;
+  margin-left: 6%;
+}
+.valueMeals {
+  margin-top: 60px !important;
+  margin-bottom: 70px !important;
+}
+.valuemeals-mobileview {
+  display: none;
+}
 
 /* Media Querry */
 @media (max-width: 768px) {
@@ -135,12 +145,43 @@
   .meals-line-img {
     display: none;
   }
+  .valueMeals {
+    display: none;
+  }
+  .valuemeals-mobileview {
+    display: flex;
+  }
+  .letsgo-buttonmobile{
+    outline: none;
+    border: none;
+    background-color: #009e60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 25%;
+  }
+  .card-valuemeals{
+    width: 75%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(1, 1, 1, 0.3) 0px 2px 5px;
+  }
+  .card-imgtop-valuemeals{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card-text-valuemeals{
+    font-size: 11px;
+  }
+  .arrows-valuemeals{
+    font-size: 25px;
+    color: #009e60;
+    position: relative;
+    top: 170px;
+  }
 }
-.line-menu {
-  width: 84%;
-  margin-left: 6%;
-}
-.valueMeals {
-  margin-top: 60px !important;
-  margin-bottom: 70px !important;
-}
+

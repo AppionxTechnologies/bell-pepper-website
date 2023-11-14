@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 100vh;
+  height: 150vh;
   top: 13.5%;
   transform: translate(0%, 0%);
   z-index: 99;
@@ -14,7 +14,7 @@
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  height: 75%;
+  height: 50%;
 }
 .hidden {
   display: none;
@@ -93,9 +93,9 @@ form .para1:nth-of-type(2) a {
 }
 
 @media (max-width: 600px) {
-  .main-container {
+  .signin-container {
     width: 100%;
-    height: 90%;
+    height: 60%;
     border-radius: 0px;
   }
   .cross-icon{
