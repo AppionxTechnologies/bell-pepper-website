@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 150vh;
+  height: 510vh;
   top: 13.5%;
   transform: translate(0%, 0%);
   z-index: 99;
@@ -23,7 +23,7 @@
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  height: 48%;
+  height: 14.5%;
 }
 .frgpwd-logoimg {
   margin-top: 30px;
@@ -60,9 +60,12 @@
 }
 
 @media (max-width: 600px) {
+  .frgpwd {
+    height: 1045vh;
+  }
   .frgpwd-container {
     width: 100%;
-    height: 55%;
+    height: 8.5%;
     border-radius: 0px;
   }
   .cross-icon2{

@@ -117,7 +117,7 @@ export default function Meals() {
                     const classNames = `box-${index % 2 === 0 ? 1 : 2} d-flex ${
                       isCenter ? "center-card-hover" : ""
                     }`;
-
+                    
                     return (
                       <div className={classNames} key={index}>
                         <img
