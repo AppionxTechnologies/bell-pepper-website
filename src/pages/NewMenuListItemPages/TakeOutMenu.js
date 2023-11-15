@@ -52,6 +52,7 @@ function TakeOutMenu() {
         <div className="col-lg-12">
           <div className="row ">
             <div className="col-lg-4  mt-3">
+            {activeContent === "starters" && (
               <div class="card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
 
@@ -108,6 +109,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4  mt-3">
+            {activeContent === "starters" && (
               <div class="card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -165,6 +167,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4 mt-3">
+            {activeContent === "starters" && (
               <div class=" card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -573,7 +576,8 @@ function TakeOutMenu() {
         </div>
         <div className="col-lg-12 mt-5">
           <div className="row">
-            <div className="col-lg-4 mt-5 ">
+            <div className="col-lg-4 ">
+            {activeContent === "soup&salad" && (
               <div class=" card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
 
@@ -630,6 +634,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4 mt-5">
+            {activeContent === "soup&salad" && (
               <div class="card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -685,6 +690,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4 mt-5 ">
+            {activeContent === "soup&salad" && (
               <div class="card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -2536,7 +2542,7 @@ function TakeOutMenu() {
         <div className="col-lg-12">
           <div className="row ">
             <div className="col-lg-4 ">
-            {activeContent === 'kidaMenu'&& (
+            {activeContent === 'kidsMenu'&& (
               <div class="card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
 
@@ -2593,7 +2599,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4 ">
-            {activeContent === 'kidaMenu'&& (
+            {activeContent === 'kidsMenu'&& (
               <div class="card align-card">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
@@ -2651,7 +2657,7 @@ function TakeOutMenu() {
             </div>
 
             <div className="col-lg-4">
-            {activeContent === 'kidaMenu'&& (
+            {activeContent === 'kidsMenu'&& (
               <div class=" card align-card ">
                 <img src={ourStory} class="card-img-top food-color" alt="..." />
                 <div class="card-body">
