@@ -71,7 +71,7 @@ function LunchMenu() {
                     />
                     <div className="card-body">
                       <h5 className="card-title title-size">
-                        Crispy Chicken (1)
+                        Crispy Chicken 
                       </h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
@@ -191,7 +191,7 @@ function LunchMenu() {
                     />
                     <div className="card-body">
                       <h5 className="card-title title-size">
-                        Crispy Chicken (2)
+                        Massaman Curry
                       </h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
@@ -249,7 +249,7 @@ function LunchMenu() {
                       alt="..."
                     />
                     <div className="card-body">
-                      <h5 className="card-title title-size">Chilli & Cashew</h5>
+                      <h5 className="card-title title-size">Yellow Curry</h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
                         vegetables in our zesty sweet chili sauce. Lightly
@@ -311,7 +311,7 @@ function LunchMenu() {
                     />
                     <div className="card-body">
                       <h5 className="card-title title-size">
-                        Crispy Chicken (3)
+                        Crispy Noodles
                       </h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
@@ -369,7 +369,7 @@ function LunchMenu() {
                       alt="..."
                     />
                     <div className="card-body">
-                      <h5 className="card-title title-size">Chilli & Cashew</h5>
+                      <h5 className="card-title title-size">Vegetables Noodles</h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
                         vegetables in our zesty sweet chili sauce. Lightly
@@ -431,7 +431,7 @@ function LunchMenu() {
                     />
                     <div className="card-body">
                       <h5 className="card-title title-size">
-                        Crispy Chicken (4)
+                        Chicken Rice
                       </h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
@@ -489,7 +489,7 @@ function LunchMenu() {
                       alt="..."
                     />
                     <div className="card-body">
-                      <h5 className="card-title title-size">Chilli & Cashew</h5>
+                      <h5 className="card-title title-size">Fresh Shrimp Fried Rice</h5>
                       <h6 className="card-text card-text-size">
                         Best Seller. Cashews, your protein selection with
                         vegetables in our zesty sweet chili sauce. Lightly

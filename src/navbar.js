@@ -51,9 +51,12 @@ const Navbar = () => {
     setPopOpenHead(false);
   };
 
-  const ToggleSidebar = () => {
+  const openSidebar = () => {
     setCartPop(true);
   };
+  const closeSidebar = () =>{
+    setCartPop(false);
+  }
 
   return (
     <>
@@ -64,7 +67,7 @@ const Navbar = () => {
           <button>order now</button>
           <div className="pop-items">
             <AiOutlineHeart className="pop-img " />
-            <IoBagHandleOutline className="pop-img" onClick={ToggleSidebar} />
+            <IoBagHandleOutline className="pop-img" onClick={cartPop ? closeSidebar : openSidebar} />
           </div>
         </div>
       )}
@@ -132,7 +135,7 @@ const Navbar = () => {
         </div>
 
         <div className="third-div">
-          <div onClick={openSignin} className="h-header-icon">
+          <div onClick={showSignin ? closeSignin : openSignin} className="h-header-icon">
             <img src={login} className="img " alt="" />
             <p>
               Login or <br /> Register{" "}
@@ -144,7 +147,7 @@ const Navbar = () => {
           </div>
 
           <div className="h-header-icon">
-            <img src={cart} className="img" alt="" onClick={ToggleSidebar} />
+            <img src={cart} className="img" alt="" onClick={cartPop ? closeSidebar : openSidebar} />
             <p>17.98 </p>
           </div>
         </div>
@@ -153,7 +156,7 @@ const Navbar = () => {
         {!popOpen && (
           <CiUser
             className="img logo-icons"
-            onClick={openSignin}
+            onClick={showSignin ? closeSignin : openSignin}
           />
         )}
         {popOpen && (
@@ -165,7 +168,7 @@ const Navbar = () => {
 
       <div className="Line"></div>
 
-      {cartPop && <Cart />}
+      {cartPop && <Cart onclose = { closeSidebar}/>}
 
       {showSignin && <SignIn onClose={closeSignin} />}
     </>

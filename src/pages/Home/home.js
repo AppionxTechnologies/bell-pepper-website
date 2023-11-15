@@ -18,6 +18,8 @@ import Button from "@mui/material/Button";
 import Banner from "../../banner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "react-router-dom";
+
 
 export default function Home() {
   return (
@@ -107,12 +109,12 @@ export default function Home() {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             <Grid item xs={4} sm={4} md={4}>
-              <img className="menuimg" src={ourMenu} alt="Menu" />
+            <Link to="/takeout"><img className="menuimg" src={ourMenu} alt="Menu" /></Link>
               <h3 className="menu-text">Takeout</h3>
             </Grid>
 
             <Grid item xs={4} sm={4} md={4}>
-              <img className="menuimg" src={ourMenu} alt="Menu" />
+            <Link to="/lunch"><img className="menuimg" src={ourMenu} alt="Menu" /></Link>
               <h3 className="menu-text">Lunch Box</h3>
             </Grid>
 

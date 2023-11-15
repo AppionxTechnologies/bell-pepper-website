@@ -17,6 +17,8 @@ import Map from "./pages/map/map"
 import StoreLocation from "./pages/map/storelocation";
 import NewAboutUs from "./NewAboutUs/NewAboutUs";
 import NewMenuListItem from "./pages/NewMenuListItem/NewMenuListItem";
+import LunchMenu from "./pages/NewMenuListItemPages/LunchMenu";
+import TakeOutMenu from "./pages/NewMenuListItemPages/TakeOutMenu";
 
 import FootItem from "./pages/NewMenuListItemPages/FootItem";
 import CateringTray from "./pages/cattering/cattering-tray";
@@ -31,6 +33,8 @@ import OrdernowInvoice from "./pages/order online/ordernowInvoice";
 
 
 
+
+
 function App() { 
   return (
     <>
@@ -40,10 +44,12 @@ function App() {
 
           <div className=""></div>
           <Routes>
+
+
             <Route path="/" element={<Home />} />
             <Route path="/menu"  element={<NewMenuListItem/>} />
-            {/* <Route path='/lunch' element={<LunchMenu/>} />
-            <Route path='/takeout' element={<TakeOutMenu/>} /> */}
+            <Route path='/lunch' element={<LunchMenu/>} />
+            <Route path='/takeout' element={<TakeOutMenu/>} />
             <Route path='/orderNow' element={<FootItem/>} />
             <Route path='/orderNow1' element={<Tray/>} />
             {/* <Route path="/menu-detail" element={<Menu_Detail />} /> */}
