@@ -187,12 +187,12 @@ export default function Home() {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             <Grid item xs={4} sm={4} md={4}>
-              <img className="orderimg" src={orderTakout} alt="Menu" />
+              <Link to="/menu"><img className="orderimg" src={orderTakout} alt="Menu" /></Link>
               <h3 className="order-text">TAKEOUT</h3>
             </Grid>
 
             <Grid item xs={4} sm={4} md={4}>
-              <img className="orderimg" src={orderCatering} alt="Menu" />
+              <Link to="/catering"><img className="orderimg" src={orderCatering} alt="Menu" /></Link>
               <h3 className="order-text">CATERING</h3>
             </Grid>
 

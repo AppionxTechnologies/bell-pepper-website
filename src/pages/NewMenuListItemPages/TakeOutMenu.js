@@ -33,7 +33,7 @@ function TakeOutMenu() {
       </div>
        
       <div className="p-2">
-      <button className={`takeOut-btn ${activeContent === 'starters' && 'active'}`} onClick={() => showContent('starters')}>Starters</button>
+      <button className={`takeOut-btn ${activeContent === 'starters' && 'active'}`} onClick={() => showContent('starters')}>STARTERS</button>
       <button className={`takeOut-btn ${activeContent === 'soup&salad' && 'active'}`} onClick={() => showContent('soup&salad')}>SOUP & SALAD</button>
       <button className={`takeOut-btn ${activeContent === 'stirFries' && 'active'}`} onClick={() => showContent('stirFries')}>STIR FRIES</button>
       <button className={`takeOut-btn ${activeContent === 'curries' && 'active'}`} onClick={() => showContent('curries')}>CURRIES</button>
@@ -49,8 +49,8 @@ function TakeOutMenu() {
       </div>
 
       <div className="">
-        <div className="col-lg-12 mt-5">
-          <div className="row ">
+        <div className="col-lg-12">
+        <div className={`row custom-margin-top ${activeContent === 'starters' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4">
             {activeContent === "starters" && (
               <div class="card align-card ">
@@ -225,10 +225,8 @@ function TakeOutMenu() {
           </div>
         </div>
 
-        
-
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'starters' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4"> 
             {activeContent === 'starters'&& (
               <div class=" card align-card">
@@ -398,12 +396,14 @@ function TakeOutMenu() {
             )}
             </div>
           </div>
-        </div>
+          </div>
+          
       </div>
+      
     
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'soup&salad' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'soup&salad'&& (
               <div class="card align-card ">
@@ -577,8 +577,9 @@ function TakeOutMenu() {
            
           </div>
         </div>
+
         <div className="col-lg-12 ">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'soup&salad' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === "soup&salad" && (
               <div class=" card align-card">
@@ -759,7 +760,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'stirFries' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'stirFries'&& (
               <div class="card align-card ">
@@ -933,8 +934,9 @@ function TakeOutMenu() {
            
           </div>
         </div>
-        <div className="col-lg-12 ">
-          <div className="row">
+
+        <div className="col-lg-12">
+          <div className={`row custom-margin-top ${activeContent === 'stirFries' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'stirFries'&& (
               <div class=" card align-card">
@@ -1119,7 +1121,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'curries' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'curries'&& (
               <div class="card align-card ">
@@ -1294,7 +1296,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'curries' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'curries'&& (
               <div class=" card align-card">
@@ -1476,7 +1478,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'noodle' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'noodle'&& (
               <div class="card align-card ">
@@ -1651,7 +1653,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'noodle' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'noodle'&& (
               <div class=" card align-card">
@@ -1831,7 +1833,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'friedRice' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'friedRice'&& (
               <div class="card align-card ">
@@ -2006,7 +2008,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'friedRice' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'friedRice'&& (
               <div class=" card align-card">
@@ -2186,7 +2188,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'vegan' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'vegan'&& (
               <div class="card align-card ">
@@ -2361,7 +2363,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'vegan' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4">
             {activeContent === 'vegan'&& (
               <div class=" card align-card">
@@ -2543,7 +2545,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'kidsMenu' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'kidsMenu'&& (
               <div class="card align-card ">
@@ -2718,7 +2720,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+          <div className={`row custom-margin-top ${activeContent === 'kidsMenu' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'kidsMenu'&& (
               <div class=" card align-card">
@@ -2899,7 +2901,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'seaFood' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'seaFood'&& (
               <div class="card align-card ">
@@ -3074,7 +3076,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+        <div className={`row custom-margin-top ${activeContent === 'seaFood' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'seaFood'&& (
               <div class=" card align-card">
@@ -3255,7 +3257,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'sides&Nibbels' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'sides&Nibbels'&& (
               <div class="card align-card ">
@@ -3430,7 +3432,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+        <div className={`row custom-margin-top ${activeContent === 'sides&Nibbels' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4  ">
             {activeContent === 'sides&Nibbels'&& (
               <div class=" card align-card">
@@ -3613,7 +3615,7 @@ function TakeOutMenu() {
 
       <div className="">
         <div className="col-lg-12">
-          <div className="row ">
+        <div className={`row custom-margin-top ${activeContent === 'beverages' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'beverages'&& (
               <div class="card align-card ">
@@ -3788,7 +3790,7 @@ function TakeOutMenu() {
           </div>
         </div>
         <div className="col-lg-12">
-          <div className="row">
+        <div className={`row custom-margin-top ${activeContent === 'beverages' ? 'mt-lg-5' : ''}`}>
             <div className="col-lg-4 ">
             {activeContent === 'beverages'&& (
               <div class=" card align-card">

@@ -52,11 +52,8 @@ function App() {
             <Route path='/takeout' element={<TakeOutMenu/>} />
             <Route path='/orderNow' element={<FootItem/>} />
             <Route path='/orderNow1' element={<Tray/>} />
-            {/* <Route path="/menu-detail" element={<Menu_Detail />} /> */}
-            
             <Route path="/aboutus" element={<NewAboutUs />} />
 
-            {/* <Route path="/catering-menu" element={<Catering_Menu />} /> */}
             <Route path="/completeorder" element={<CompleteYourOrder />} />
             <Route path="/success" element={<SuccessMsg />} />
             <Route path="/cancel" element={<CancelMsg />} />
@@ -69,7 +66,7 @@ function App() {
             <Route path="/grow" element={<Grow />} />
             <Route path="/location" element={<Map />} />
             <Route path="/storelocation" element={<StoreLocation />} />
-            <Route path="/About-us" element={<NewAboutUs/>}/>
+            
 
             <Route path="/verticalnavbar" element={<VerticalNavbar />} />
             <Route path="/accountdetails" element={<AccountDetails />} />
