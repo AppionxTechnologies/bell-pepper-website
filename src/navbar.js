@@ -86,7 +86,7 @@ const Navbar = () => {
               <a href="/location">LOCATIONS</a>
             </div>
             <div className="mt-2">
-              <a href="/About-us">ABOUT US</a>
+              <a href="/aboutus">ABOUT US</a>
               <MdKeyboardArrowDown className="arrow-down" />
             </div>
             <div className="mt-2">

@@ -1,7 +1,7 @@
 .orderconfirm {
   position: absolute;
   top: 13.5%;
-  height: 100vh;
+  height: 156vh;
   width: 100%;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.6);
@@ -19,7 +19,7 @@
   left: 390px;
 }
 .addressform-containerr {
-  height: 65%;
+  height: 43%;
   text-align: center;
   width: 450px;
   background-color: white;
@@ -83,12 +83,13 @@ input[type=checkbox] {
 
 @media (max-width: 400px) {
   .orderconfirm {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     margin-top: 30px;
   }
   .addressform-containerr {
+    height:45% ;
     width: 100%;
     font-size: 14px;
     border-radius: 0px;

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 110vh;
+  height: 169vh;
   top: 13.5%;
   transform: translate(0%, 0%);
   z-index: 99;
@@ -13,7 +13,7 @@
   width: 35%;
   background-color: white;
   border-radius: 15px;
-  height: 85%;
+  height: 55%;
 }
 .hidden {
   display: none;
@@ -80,10 +80,13 @@
 }
 
 @media (max-width:786px) {
+  .invoice-ordernow {
+    height: 325vh;
+  }
   .invoice-container {
       width: 100%;
       border-radius: 0px;
-      height: 100%;
+      height: 33%;
     }
     .cross-icon-invoice {
       left: 435px;
